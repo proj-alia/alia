@@ -1,0 +1,27 @@
+import {useEffect,useState,type FormEvent} from 'react';
+import {Panel,Badge,Empty,ResourceState} from '../../design-system/components';
+import {when} from '../../shared/labels';
+import {SourceEventInspector} from '../sources/SourceEventInspector';
+import {useSourceRead,useSourceSnapshot} from '../sources/useSourceRead';
+import {validTimeline,type TimelineView,type Interpretation} from './types';
+import './timeline.css';
+const status=(item:Interpretation)=>item.status==='current'?'当前解释':'已替代的历史解释';
+export function TimelineWorkspace(){
+ const snapshot=useSourceSnapshot(),[history,setHistory]=useState(false),[limit,setLimit]=useState(30),[draftLimit,setDraftLimit]=useState('30');
+ const [selected,setSelected]=useState<{id:string;key:string}|null>(null),[event,setEvent]=useState<string|null>(null);
+ const path=`/timeline?include_history=${history}&limit=${limit}`,r=useSourceRead<TimelineView>(path,snapshot),valid=validTimeline(r.data,snapshot.individual,history,limit),data=valid?r.data:null;
+ const key=JSON.stringify([path,snapshot.stamp,data?.state_version,data?.privacy_epoch]),item=selected?.key===key?data?.items.find(row=>row.id===selected.id):undefined;
+ useEffect(()=>{setSelected(null);setEvent(null);},[path,snapshot.stamp]);
+ const invalidLimit=!/^\d+$/.test(draftLimit)||!Number.isSafeInteger(Number(draftLimit))||Number(draftLimit)<1||Number(draftLimit)>100;
+ function clear(){setSelected(null);setEvent(null);}
+ function choose(row:Interpretation){setSelected({id:row.id,key});setEvent(null);}
+ function apply(e:FormEvent){e.preventDefault();if(invalidLimit)return;clear();const next=Number(draftLimit);if(next===limit)r.reload();else setLimit(next);}
+ const before=item?.supersedes?data?.items.find(row=>row.id===item.supersedes&&row.topic===item.topic):undefined;
+ return <>
+ <Panel title="自传时间线" subtitle="已保存的个人历史解释，按保存时间倒序；原始事件单独检查"><p>这些是个体对过往的理解，不替代原事件，也不证明陈述是世界事实。当前解释与已被替代的解释分别标明；本次读取不代表完整生命史。</p><form className="timeline-controls" onSubmit={apply}><label className="timeline-history"><input type="checkbox" checked={history} onChange={e=>{clear();setHistory(e.target.checked);}}/>包括已被替代的解释</label><label>最多读取的解释数<input type="number" min={1} max={100} step={1} value={draftLimit} aria-invalid={invalidLimit} onChange={e=>setDraftLimit(e.target.value)}/></label><button disabled={invalidLimit||r.loading}>应用读取上限</button><button type="button" onClick={()=>{clear();r.reload();}}>刷新自传解释</button></form>{invalidLimit&&<p role="alert" className="resource-error">请输入 1—100 的整数。</p>}<ResourceState loading={r.loading} error={r.error} retry={()=>{clear();r.reload();}}/>{r.data&&!valid&&<p role="alert" className="resource-error">响应未能验证为当前个体的自传解释视图，未显示内容。</p>}{data&&<div role="status" className="resource-feedback">本次返回 {data.items.length} 条 · 已应用上限 {limit} · {history?'当前与历史解释':'仅当前解释'}。{data.has_more?'仍有未返回的可见记录，可提高读取上限。':'本次条件下没有更多返回项。'}<small className="block">实际观测 <time dateTime={data.observed_at}>{when(data.observed_at)}</time>（浏览器本地时间）· 状态版本 {data.state_version} · 隐私代次 {data.privacy_epoch}</small></div>}</Panel>
+ <div className="timeline-workspace"><Panel title="解释记录" subtitle="选择后检查正文、版本与实际来源">{data&&(data.items.length?<div className="timeline-list" aria-label="自传解释列表">{data.items.map(row=><button className={`list-item${item?.id===row.id?' selected':''}`} key={row.id} aria-pressed={item?.id===row.id} aria-label={`选择自传解释：${row.title}`} onClick={()=>choose(row)}><Badge>{status(row)}</Badge><b>{row.title}</b><small>{row.topic} · 版本 {row.version} · 保存于 {when(row.created_at)}</small></button>)}</div>:<Empty>当前可见范围内没有自传解释。</Empty>)}{!data&&!r.loading&&<Empty>尚未取得可验证的自传解释。</Empty>}</Panel>
+ <Panel title="历史解释检查器" subtitle="解释与原始来源分开；这里不修改人格或历史">{!item?<Empty>选择一条本次返回的解释记录后查看正文与来源。</Empty>:<><Badge>{status(item)}</Badge><h3 className="timeline-text">{item.title}</h3><dl className="timeline-metadata"><dt>解释 ID / 版本</dt><dd><code>{item.id}</code> / {item.version}</dd><dt>主题</dt><dd><code>{item.topic}</code></dd><dt>保存时间</dt><dd><time dateTime={item.created_at}>{when(item.created_at)}</time></dd>{item.superseded_at&&<><dt>被替代时间</dt><dd><time dateTime={item.superseded_at}>{when(item.superseded_at)}</time></dd></>}</dl><section aria-label="解释版本对照" className="timeline-comparison"><div><h3>前身解释</h3>{before?<><Badge>{status(before)}</Badge><code className="block">{before.id}</code><p>版本 {before.version} · {when(before.created_at)}</p><pre className="timeline-text" aria-label="前身解释正文">{before.interpretation}</pre><button onClick={()=>choose(before)}>检查此前解释</button></>:item.supersedes?<><code className="block">{item.supersedes}</code><p>前身不在本次返回范围，可包括历史并提高读取上限；未读取的正文不在这里推断。</p></>:<p>没有已保存的前身引用。</p>}</div><div><h3>所选解释</h3><pre className="timeline-text" aria-label="所选解释正文">{item.interpretation}</pre></div></section>
+ <h3>原始事件来源</h3><p>打开来源仅是页面检查，不表示模型已读或新增经历。</p><div className="timeline-sources">{item.event_ids.map(id=><div key={id}><code>{id}</code><button aria-label={`检查自传来源 ${id}`} aria-pressed={event===id} onClick={()=>setEvent(id)}>检查原始来源</button></div>)}</div>{event&&item.event_ids.includes(event)&&<SourceEventInspector key={item.id+key} eventId={event} onClose={()=>setEvent(null)}/>}
+ <h3>已关联的认识</h3><p>认识引用表达立场依据；它们可能是历史版本，不能当作事实认证或事件 ID。</p>{item.belief_ids.length?<><ul className="timeline-beliefs">{item.belief_ids.map(id=><li key={id}><code>{id}</code></li>)}</ul><a href="#/identity/cognition">打开认知工作区（另行选择记录）</a></>:<Empty>没有已保存的认识引用。</Empty>}</> }</Panel></div>
+ </>;
+}

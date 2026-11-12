@@ -1,0 +1,19 @@
+export type Json=null|boolean|number|string|Json[]|{[key:string]:Json};
+export type DevelopmentStatus='proposed'|'trial'|'accepted'|'rejected'|'expired'|'reverted';
+export type RecordedStatus='Proposed'|'Trial'|'Accepted'|'Rejected'|'Expired'|'Reverted';
+export type Target='persona.traits'|'persona.values'|'persona.expression'|'persona.cognitive_preferences'|'task_strategy';
+export type Scope={kind:'goal'|'task';id:string};
+export type Outcome='Passed'|'Failed'|'Unverified';
+export type SourceClass='ObservedOutcome'|'ExternalReport'|'SignificantEvent'|'ModelSelfReport'|'TransientAffect'|'InitialSetting';
+export type Transition={from:RecordedStatus|null;to:RecordedStatus;occurred_at:string;before_value:Json;after_value:Json;reason:string;review_ids:string[];revision_id:string|null};
+export type Observation={case_id:string;context:string;source_event_ids:string[];result_event_id:string;outcome:Outcome};
+export type Validation={assessment:{review_id:string;reviewer_id:string;origin:'IndependentHuman'|'IndependentMeasurement'|'AuthorSelfAssessment';reviewed_evidence_ids:string[];reviewed_counterevidence_ids:string[];counter_search_event_ids:string[];counter_review:Outcome;observations:Observation[]};sources:{id:string;individual_id:string;class:SourceClass;recorded_at:string}[];recorded_at:string};
+export type Development={id:string;version:number;status:DevelopmentStatus;target_id:string;target:Target;scope:Scope|null;proposer_id:string;prepared_at:string;before_version:number;before_head:string|null;before_value:Json;proposed_value:Json;proposed_description:string;evidence_ids:string[];counterevidence_ids:string[];validation_plan:string;deadline:string;current_target_version:number;current_target_head:string|null;transitions?:Transition[];validations?:Validation[]};
+export type Meta={individual_id:string;state_version:number;privacy_epoch:number;observed_at:string};
+export type DevelopmentList=Meta&{include_history:boolean;items:Development[];has_more:boolean};
+export type DevelopmentDetail=Meta&{development:Development&{transitions:Transition[];validations:Validation[]}};
+export type Readiness={read_enabled:boolean;revert_enabled:boolean};
+/** Private reason remains only in this mounted, authenticated workspace. */
+export type RevertIntention={individualId:string;developmentId:string;version:number;etag:string;key:string;reason:string;acceptedHead:string};
+export type RevertReceipt={individual_id:string;development_id:string;event_id:string;state_version:number;development_version:number;status:'reverted';revision_id:string};
+export type RevertState={phase:'idle'|'submitting'|'unknown'|'rejected'|'confirmed';intention:RevertIntention|null;receipt:RevertReceipt|null;error:string};

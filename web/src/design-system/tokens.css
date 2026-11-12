@@ -1,0 +1,21 @@
+/* Console v4 mapping from docs/design/ALIA_UIUX/design/tokens.json.
+   Secondary/status text colors are darkened for small-text AA contrast.
+   Dark mode extends the supplied light-only palette. */
+:root{
+ --canvas:#f8f9fb;--surface:#ffffff;--subtle:#f2f4f8;--mutedSurface:#fafbfc;
+ --sidebar:#ffffff;--sidebarElevated:#f2f4f8;--border:#e5e8ef;
+ --textPrimary:#202636;--textSecondary:#626c7f;--textTertiary:#626c7f;
+ --accent:#5569cc;--accentStrong:#485bb9;--accentSoft:#eef0fc;--accentBorder:#cbd2f2;
+ --success:#14784e;--warning:#8a5b13;--danger:#b33440;--info:#485bb9;
+ --sidebar-width:230px;--sidebar-collapsed-width:64px;--topbar-height:62px;--statusbar-height:26px;
+ --card-radius:9px;--control-radius:6px;--modal-radius:10px;
+ color-scheme:light;
+}
+:root[data-theme="dark"]{
+ --canvas:#131722;--surface:#1c2230;--subtle:#252d3d;--mutedSurface:#202735;
+ --sidebar:#191f2b;--sidebarElevated:#252d3d;--border:#374153;
+ --textPrimary:#edf0f7;--textSecondary:#b0bbce;--textTertiary:#b0bbce;
+ --accent:#a9b8ff;--accentStrong:#b7c3ff;--accentSoft:#2c3658;--accentBorder:#566593;
+ --success:#83d7ae;--warning:#edc583;--danger:#ffa4ad;--info:#b7c3ff;
+ color-scheme:dark;
+}

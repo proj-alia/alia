@@ -1,0 +1,15 @@
+{
+  "scope": "actual SSE privacy invalidation and browser DOM/reconnect, including five tabs sharing a browser context; local evidence only; no full-release claim",
+  "sources": {
+    "web/scripts/test-sse-privacy.mjs": "56f33a3b49fdeaa920192879b7114b7a4162da32e153ce110e41b3ee0f4d0580",
+    "web/src/shared/useIndividual.ts": "9d73e4482e8f25ee6e090ae30bd0b02b0644317e772abd6b6b082c08eb4cd2f6"
+  },
+  "source_manifest": {
+    "path": "evals/results/p02-07-final-v3/source-manifest.json",
+    "sha256": "192ffbbcc4045dc457ed44c951e1f66ec7a580588560f67f9be59fc1fad9e7af"
+  },
+  "report": {
+    "path": "evals/results/p02-07-final-v3/report.json",
+    "sha256": "096197141d7799dd044d5afcb8e603a52fdd7c705bb211ad5412a88db717ab55"
+  }
+}

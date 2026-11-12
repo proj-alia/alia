@@ -1,0 +1,7 @@
+// Inspect the original offline prototype independently from production acceptance.
+import {chromium} from 'playwright';import {readFile} from 'node:fs/promises';import assert from 'node:assert/strict';
+const root=new URL('../../docs/design/ALIA_UIUX/prototype/',import.meta.url);let html=await readFile(new URL('index.html',root),'utf8');
+for(const name of ['base','theme'])html=html.replace(`<link rel="stylesheet" href="./assets/${name}.css" />`,`<style>${await readFile(new URL(`assets/${name}.css`,root),'utf8')}</style>`);
+html=html.replace('<script src="./assets/app.js" defer></script>',`<script>${await readFile(new URL('assets/app.js',root),'utf8')}</script>`);
+const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_EXECUTABLE?{executablePath:process.env.CHROMIUM_EXECUTABLE}:{})});
+try{const page=await browser.newPage({viewport:{width:1440,height:1080}});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.setContent(html);const routes=await page.locator('.nav-button').evaluateAll(nodes=>nodes.map(n=>n.dataset.nav));assert.equal(routes.length,10);for(const route of routes){await page.locator(`.nav-button[data-nav="${route}"]`).click();assert((await page.locator('#content').innerText()).length>30);}assert.deepEqual(errors,[]);console.log('PASS: original MOCK prototype, ten navigable pages; not product acceptance');}finally{await browser.close();}

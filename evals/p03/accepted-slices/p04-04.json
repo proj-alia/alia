@@ -1,0 +1,24 @@
+{
+  "format": "alia-accepted-slice/1",
+  "id": "p04-04",
+  "scope": "exact locally verified source slice; not full engineering, deployment or model semantic proof",
+  "handoff": "docs/ai/ALIA_P04_04_HANDOFF.md",
+  "handoff_sha256": "c48f038a2d1ebcb197a1cbe7b36e7555ea85b86de915bd563cddb7d8bd78cada",
+  "sources": {
+    "src/adapters/beliefs_view.rs": "0f0ce48e7e32c6f626318a9c32f943928bbf2c5c576950b33698602126ddf463",
+    "src/service/beliefs_view.rs": "ea0f04b8299b50cb8edef72355f1672fbed10306bc719617fb476c1560956c0a",
+    "tests/beliefs_view.rs": "5f7f6408e872bfd5133e0af7fec843aff73be0678f5f2beca5e95bd564ce9c86",
+    "web/src/features/Cognition.tsx": "e2fdbc961aaeeac3f876a31282ffb2a70c72f1c1ecc11dd472dd9c25d15e2ebf",
+    "web/scripts/test-beliefs.mjs": "59033d90a78c0793c5080f9e7b6a56bf8ff4f69c39d9eef5e6e4d6cc9c38c9d2",
+    "web/src/features/beliefs/BeliefsWorkspace.tsx": "7ccde3e0e3a259cf079d696a44cee01fb86733c959ceb94e5ccb66ab8550d52b",
+    "web/src/features/beliefs/beliefs.css": "0d9f69dc41af0f38b58da217364731cfea75623eee128e8653d98ca9eee3c5a8",
+    "web/src/features/beliefs/useBeliefsRead.ts": "e26fd35eb2b82a95c76871969382ac7d92bdb62c9df8a40bcdc7c5a9062b5b9a"
+  },
+  "evidence": {
+    "evals/results/p04-beliefs-ready-20261112-v1.json": "caf50b9f1f879d63722bf27ea540341d448b9012890e1651d332b1db9b2fd992",
+    "evals/results/p04-beliefs-targeted-20261112-v1/report.json": "aaeb327390bcee7dd93c8e7977841311a7e6d0ec423b9e4075578af892f9d536",
+    "evals/results/p04-beliefs-browser-20261112-v8/report.json": "5d3b4ebe0ff362b827b9c17d9e4637c045249f094558511652d1e93204bc6a86",
+    "evals/results/p04-beliefs-browser-20261112-v8/browser/report.json": "3ba7618ab6b57010141bf6148ce4c5be78c18bdf95f876819ff32f12cdce91c2",
+    "evals/results/p04-beliefs-browser-20261112-v8/source-manifest.json": "58e98c1175e4e9c51e01d89345007d0dbbf11b7f159c89c8022c56b33192aa7a"
+  }
+}

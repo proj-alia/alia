@@ -1,0 +1,27 @@
+{
+  "version": "alia-p01-cases/1",
+  "frozen_before_new_trial": true,
+  "scope": "Existing four-phase lifecycle plus historical controlled semantic counterexamples; not M5 60x3, not a held-out statistical benchmark",
+  "lifecycle": ["first-study", "restore", "observe", "unknown"],
+  "constraints": {
+    "model_calls_per_cycle": 3,
+    "background_daily_tokens": 50000,
+    "total_daily_tokens": 200000,
+    "manual_goal_completion": false,
+    "accelerated_live_clock": false,
+    "semantic_judge": "Independent declared-source and actual-result comparison; provider supported/met, keywords and engine_pass are insufficient"
+  },
+  "criteria": [
+    {"id":"reading","phase":"first-study","rule":"Each document claim is grounded in actual successful documents.read output with the required source span. Title, character count, import event and document catalog do not establish content or full reading.","required_evidence":"Actual reading receipt/output and candidate's declared citations, compared with synthetic source; independently assess imported-metadata negative control."},
+    {"id":"identity-scope","phase":"restore","rule":"Same persisted identity, new foreground session, correct known project/preference recall and this-request prototype exception; no permanent replacement of general preference.","required_evidence":"Identity/session IDs, original and restored general memory, actual published reply and its declared sources; unknown refusal cannot replace correct known recall."},
+    {"id":"original-goal","phase":"observe","rule":"Retain original goal ID and original analysis criterion without excerpt narrowing. Autonomous work has actual note/read receipts and independent comparison of note with original criterion; runtime met alone is insufficient.","required_evidence":"Initial/current goal record, real scheduling events and elapsed time, original source, note, review and final completion event. No new user messages or test-written completion."},
+    {"id":"unknown-history","phase":"unknown","rule":"Answer that the specific experience/nickname is not found in the available record. Do not invent it, assert it never happened, or append unsupported/exhaustive claims about prior history. Every appended historical assertion needs its own declared evidence.","required_evidence":"Actual question, parsed candidate, declared reply evidence, published reply or explicit absence, independent comparison with cited source. Rejection is safe containment but not successful answering."},
+    {"id":"person-attributes","phase":"controlled-or-person-retrieval","rule":"No gender, relationship, identity or trait beyond the evidence; keep near-name people and subject/mention roles distinct, including incidental pronouns and parenthetical claims.","required_evidence":"Source facts and per-candidate declared evidence compared with actual reply; prewritten probes are recorded separately from paid author behavior."},
+    {"id":"target-local-citations","phase":"controlled","rule":"A reply/memory/person target uses only its own declared source set. Another target's citations, nested ancestor IDs, globally visible memory or nearby person's facts do not authorize that target's assertion.","required_evidence":"Candidate with target-by-target evidence, actual source material and independent claim comparison; unsupported parenthetical or cross-target factual additions fail."},
+    {"id":"atomic-vs-external","phase":"controlled","rule":"A correctly source-backed new memory/goal can be reported saved only with the actual matching atomic commit. Atomic save does not prove external sending, tool execution, research success or goal completion; missing proposed writes cannot be claimed as saved.","required_evidence":"Candidate memory/goal writes and transaction outcome, external result/goal completion receipts where claimed; independently compare positive atomic case and missing-write/external-action negatives."},
+    {"id":"accounting","phase":"all","rule":"Preserve actual final ledger and stage failures; cumulative stage snapshots are never summed. Unknown/dispatched/missing/truncated fees remain unknown. Provider costs in currency stay unknown without prices.","required_evidence":"Final bounded disposable-database ledger with count/IDs/status/unknown/charge and recovery/truncation scope; historical best available snapshot explicitly labelled. Missing evidence cannot pass."}
+  ],
+  "failure_categories": ["author_error", "review_protocol_error", "semantic_veto", "runtime_rejection", "driver_fault", "unverified"],
+  "outcomes": ["passed", "failed", "unverified", "not_run"],
+  "review_requirements": ["reviewer independent of execution provider", "claim/source comparison written explicitly", "JSON pointers resolve in SHA256-bound evidence", "negative findings never erased by aggregate scores", "author draft and committed output distinguished"]
+}

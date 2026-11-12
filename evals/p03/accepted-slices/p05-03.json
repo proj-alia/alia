@@ -1,0 +1,23 @@
+{
+  "format": "alia-accepted-slice/1",
+  "id": "p05-03",
+  "scope": "exact locally verified source slice; not full engineering, deployment or model semantic proof",
+  "handoff": "docs/ai/ALIA_P05_03_HANDOFF.md",
+  "handoff_sha256": "2f52f2cbe0bb493c88c557deb9879b85d1726ba9c2fd41c6066df823461f727d",
+  "sources": {
+    "src/adapters/relationships_view.rs": "9467c4ccd6434c8db2bf2cfd44043cd4690ede8498993c0c8bc89e6ec2e9f44e",
+    "src/service/relationships_view.rs": "60207ec1f1f11e6d41b30c1ca859a80b101a05bf3fc7eab698842d5384a23991",
+    "tests/relationships_view.rs": "6c0d7bdf66e509cc04574d9a43b3393c3fca0ace505ed5cf601790696982c4c3",
+    "web/scripts/test-relationships.mjs": "3d6c3885b7af8b949783c869f5c979850fe78beb5d636d7ab1f019242578da4e",
+    "web/src/features/Relations.tsx": "f59facc5d8720fd0c972ebe2a143e831003fafab28aac4fd47978b4f31d92300",
+    "web/src/features/relationships/relationships.css": "a5ad1930814325b09e74d2a61155b58d98bd5ace6522bec18a17a2db395b4aad",
+    "web/src/features/relationships/types.ts": "d248d73d9ea67881f3efc3ba296d0307ba56ece9ad9932a05d51ac3f402bfcc5",
+    "web/src/features/relationships/useRelationshipsRead.ts": "8a6227f6fa75896c3a1d1b0f6377fd2aecc058b6d8d59e1132c46f7765115c52"
+  },
+  "evidence": {
+    "evals/results/p05-relationships-summary-v1.json": "59a3b2a1797e383da86cdc6a62c78c3823dae2c0e712875ea35282260a64d6af",
+    "evals/results/p05-relationships-local-v1/report.json": "2c9817a10cbdb901147c7207b0d8507d4ffac057bc7d955d273bbd0f36a19658",
+    "evals/results/p05-relationships-local-v2/browser/report.json": "c64431cf24fcff92c85b7aa707559aef1332a64e704be87fc20fa17ae7160666",
+    "evals/results/p05-relationships-local-v2/report.json": "61f0bd9ebc006c4f89e25f3ceefabee9547f0d6dd198ff8f7323e476e00c3388"
+  }
+}

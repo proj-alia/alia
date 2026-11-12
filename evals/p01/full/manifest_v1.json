@@ -1,0 +1,43 @@
+{
+  "version": "alia-eval-full-materials/1",
+  "task_id": "ALIA-P01-EVAL-03",
+  "status": "offline_authored_materials",
+  "files": {
+    "retrieval_dev_v1.json": "fce0a3656ee71658f76125305ef92fdb86f9313d73e48c8290cf14b848097c7e",
+    "retrieval_original_v1.json": "301b49c93c5a1a43e4ad20b888208c60ec1d51e2b9ee46d920cd7f97d8df1c12",
+    "negative_controls_v1.json": "a27b7ce50b83710997a0e2a70f75d0f7fb4302dfaca4ea015b4af268a6325652",
+    "growth_abc_v1.json": "e16fc616cf2351e859c69e1c15a047f86dbcfc371d6099b1dbc4edf7c0ab1dad",
+    "retrieval_holdout_v1.json": "dd2436c08369079cd0fe42610b89818e81879ace4cf247646a10af2b3b45910b",
+    "retrieval_supplemental_v1.json": "1a162460be1c56ec4a3ed1d9f9c7fe1cc5a36c3c7b0920cd74f3a4b08dd30e73",
+    "behaviour_zh_v1.json": "a9d0457e81d9dffacb44ad745abab4dca0b1a0e9b484977c3824a157493c303e",
+    "evidence_contract_v1.json": "4185139a45aa9fc3b520e89351341e9928a3812302255478b8a0f3ce53ba62c4"
+  },
+  "counts": {
+    "retrieval_holdout": 100,
+    "retrieval_dev": 20,
+    "behaviour_cases": 60,
+    "behaviour_runs": 180,
+    "fabrication_induction_cases": 20,
+    "growth_groups": 20,
+    "growth_conditions": 60,
+    "negative_controls": 24,
+    "retrieval_primary_events": 80,
+    "retrieval_primary_memories": 80,
+    "retrieval_supplemental": 100
+  },
+  "all_actual_runs": 0,
+  "actual_model_calls": 0,
+  "actual_db_calls": 0,
+  "semantic_verdict": "unverified",
+  "formal_acceptance": null,
+  "frozen_for_final_candidate_review": true,
+  "holdout_tuning_allowed": false,
+  "source_authority": [
+    "docs/BLUEPRINT.md",
+    "docs/CONTRACTS.md",
+    "docs/IMPLEMENTATION.md",
+    "docs/ai/ALIA_PARALLEL_COORDINATION.md"
+  ],
+  "latest_gate": "No new paid trial before complete M5 engineering; explicit final-candidate adapter and source binding required.",
+  "original_retrieval_dataset_sha256": "301b49c93c5a1a43e4ad20b888208c60ec1d51e2b9ee46d920cd7f97d8df1c12"
+}

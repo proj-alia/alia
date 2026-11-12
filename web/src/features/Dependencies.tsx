@@ -1,0 +1,3 @@
+import pkg from '../../package.json';
+import {Panel,Badge,Unavailable} from '../design-system/components';
+export function Dependencies(){return <><Panel title="前端构建清单" subtitle="来自当前构建的 package.json，固定直接运行依赖；不是扩展安装状态"><div className="table-scroll"><table><thead><tr><th>依赖</th><th>声明版本</th><th>来源</th><th>更新状态</th></tr></thead><tbody>{Object.entries(pkg.dependencies).map(([name,version])=><tr key={name}><td><code>{name}</code></td><td>{version}</td><td>应用构建</td><td><Badge>未检查</Badge></td></tr>)}</tbody></table></div></Panel><Panel title="扩展依赖与更新" action={<button disabled>检查扩展更新（未接入）</button>}><Unavailable>当前没有插件安装注册表、兼容性检查和依赖变更计划。更新、备份与回滚操作尚未开放。</Unavailable><p>后端 Rust 依赖由 Cargo.lock 管理，不通过浏览器执行主机包管理命令。</p></Panel></>;}

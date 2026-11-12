@@ -1,0 +1,52 @@
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+import json
+root=Path('/mnt/data/ALIA_Console_Reference_v4')
+url=(root/'prototype/index.html').as_uri()
+results=[]
+with sync_playwright() as p:
+ browser=p.chromium.launch(headless=True, executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+ page=browser.new_page(viewport={'width':1440,'height':900}, device_scale_factor=1)
+ errors=[]
+ page.on('pageerror', lambda e: errors.append(str(e)))
+ page.set_content((root/'prototype/index.html').read_text(), wait_until='domcontentloaded')
+ page.screenshot(path=str(root/'qa/01-extensions-desktop.png'),full_page=True)
+ def test(n, f):
+  try:
+   f();results.append({'test':n,'ok':True})
+  except Exception as e:
+   results.append({'test':n,'ok':False,'error':str(e)[:500]})
+ test('默认扩展管理',lambda:page.get_by_role('heading',name='扩展管理').wait_for())
+ test('已安装插件列表和选中详情',lambda:page.get_by_text('Memory Core',exact=True).first.wait_for())
+ test('扩展筛选', lambda:(page.locator('#pluginSearch').fill('calendar'),page.get_by_text('Calendar Sync',exact=True).first.wait_for()))
+ test('搜索恢复', lambda:page.locator('#pluginSearch').fill(''))
+ test('扩展切换', lambda:(page.locator('[data-action="pickPlugin:web-reader"]').click(),page.get_by_role('heading',name='Web Reader').wait_for()))
+ test('配置修改提示', lambda:(page.locator('[data-dirty="1"]').first.select_option(label='60 秒'),page.get_by_text('有未保存修改').first.wait_for()))
+ test('模拟保存', lambda:(page.locator('[data-action="saveDirty"]').first.click(),page.get_by_text('演示保存').wait_for()))
+ test('插件市场切换', lambda:(page.locator('[data-action="extTab:插件市场"]').click(),page.get_by_text('Voice Bridge',exact=True).wait_for()))
+ page.screenshot(path=str(root/'qa/02-market-desktop.png'),full_page=True)
+ test('市场安装确认', lambda:(page.locator('[data-action="modal:install:web-search"]').click(),page.get_by_text('风险审查').wait_for(),page.locator('[data-action="closeModal"]').first.click()))
+ test('模型配置页', lambda:(page.locator('a[data-page="models"]').click(),page.get_by_role('heading',name='模型服务').wait_for()))
+ page.screenshot(path=str(root/'qa/03-models-desktop.png'),full_page=True)
+ test('模型切换详情', lambda:(page.locator('[data-action="pickProvider:local-1"]').click(),page.get_by_role('heading',name='Local Runtime').wait_for()))
+ test('配置页面', lambda:(page.locator('a[data-page="config"]').click(),page.get_by_role('heading',name='配置文件').wait_for()))
+ page.screenshot(path=str(root/'qa/04-config-desktop.png'),full_page=True)
+ test('配置分区切换', lambda:(page.locator('[data-action="configTab:访问控制"]').click(),page.get_by_text('Session 白名单').wait_for()))
+ test('追踪页面', lambda:(page.locator('a[data-page="data"]').click(),page.locator('[data-action="dataTab:追踪"]').click(),page.get_by_text('tr-8421').first.wait_for()))
+ page.screenshot(path=str(root/'qa/05-trace-desktop.png'),full_page=True)
+ test('追踪筛选', lambda:(page.locator('#traceSearch').fill('tr-8420'),page.get_by_text('tr-8420').first.wait_for()))
+ test('权限确认', lambda:(page.locator('a[data-page="governance"]').click(),page.locator('[data-action="modal:approve:req-101"]').click(),page.get_by_text('服务端核验').first.wait_for()))
+ test('关闭权限确认', lambda:page.locator('[data-action="closeModal"]').first.click())
+ test('沙盒', lambda:(page.locator('a[data-page="console"]').click(),page.locator('[data-action="runSandbox"]').click(),page.get_by_text('模拟测试已结束').wait_for()))
+ test('没有浏览器 JS 异常', lambda: (_ for _ in ()).throw(RuntimeError(str(errors))) if errors else None)
+ page.screenshot(path=str(root/'qa/06-sandbox-desktop.png'),full_page=True)
+ mobile=browser.new_page(viewport={'width':390,'height':844},device_scale_factor=1)
+ mobile.set_content((root/'prototype/index.html').read_text(), wait_until='domcontentloaded')
+ test('移动端页面不溢出',lambda: (_ for _ in ()).throw(RuntimeError('overflow')) if mobile.evaluate('document.documentElement.scrollWidth > innerWidth') else None)
+ mobile.screenshot(path=str(root/'qa/07-mobile-extensions.png'),full_page=True)
+ test('移动端侧栏切换',lambda:(mobile.locator('#menuButton').click(),mobile.locator('#sidebar.mobile-show').wait_for(),mobile.locator('a[data-page="config"]').click(),mobile.get_by_role('heading',name='配置文件').wait_for()))
+ mobile.screenshot(path=str(root/'qa/08-mobile-config.png'),full_page=True)
+ test('移动端 config 不溢出',lambda: (_ for _ in ()).throw(RuntimeError('overflow')) if mobile.evaluate('document.documentElement.scrollWidth > innerWidth') else None)
+ browser.close()
+(root/'qa/results.json').write_text(json.dumps({'tests':results,'passed':sum(i['ok'] for i in results),'failed':sum(not i['ok'] for i in results)},ensure_ascii=False,indent=2))
+for x in results: print(('PASS' if x['ok'] else 'FAIL'),x['test'],x.get('error',''))

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "reply": "",
+  "reply_evidence_ids": [],
+  "memory_changes": [],
+  "goal_changes": [],
+  "tool_intents": [
+    {
+      "capability_id": "documents.read",
+      "input": {
+        "document_id": "00000000-0000-4000-8000-000000000001",
+        "offset": 0,
+        "max_chars": 2048
+      }
+    },
+    {
+      "capability_id": "memory.search",
+      "input": {
+        "query": "先研究",
+        "limit": 3,
+        "person_name": "林澄"
+      }
+    },
+    {
+      "capability_id": "notes.write",
+      "input": {
+        "title": "摘录示例",
+        "text": "这是一段示例资料",
+        "citations": [
+          {
+            "document_id": "00000000-0000-4000-8000-000000000001",
+            "start_char": 0,
+            "end_char": 8
+          }
+        ]
+      }
+    }
+  ],
+  "development": null,
+  "brief_reason": "先读取资料与相关认识，等待实际回执后再作判断。示例ID不是生产资料。"
+}

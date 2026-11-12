@@ -1,0 +1,100 @@
+{
+  "format": "alia-social-delivery-index/1",
+  "task_id": "P01-EVIDENCE-INDEX-01",
+  "scope": "file integrity and evidence scope only",
+  "artifacts": {
+    "social_review_ready": {
+      "path": "evals/results/p01-social-review01-v1/review-ready.json",
+      "sha256": "7acdb129436cef8b2317f58b6060382b51dfb00fb2d0999dfd11c898393b1b03"
+    },
+    "social_review_actual_report": {
+      "path": "evals/results/p01-social-review01-v1/report.json",
+      "sha256": "99741afdd6ed51b6456be6c0b2e3ca99f128ee531d763edcf485118bce09397e"
+    },
+    "social_fixed_input_manifest": {
+      "path": "evals/results/root-social-context-v2/source-manifest.json",
+      "sha256": "4b4bdaf369f48b65f3dd22c031cac35bd5ac719399cb5fb0fff080ef28ab8604"
+    },
+    "social_v2_original_report": {
+      "path": "evals/results/root-social-context-v2/checks/report.json",
+      "sha256": "c174a0c645b47cdd7902ed6556bf47f7ee906fd511915d1e9467a8320b6240e0"
+    },
+    "social_review_pg_log": {
+      "path": "evals/results/p01-social-review01-v1/boundary-pg.log",
+      "sha256": "068417f42a3b5cbaf1ce62d7a729d750e3e36799ad559803d8910d33c73035ce"
+    },
+    "social_review_clippy_log": {
+      "path": "evals/results/p01-social-review01-v1/boundary-clippy.log",
+      "sha256": "14db184b1f68d37f1437ac9c384d5b54d68b2e57ed879e8a3557d9194eceb645"
+    },
+    "social_cases": {
+      "path": "evals/p01/social_write_cases_v1.json",
+      "sha256": "761e31d5be41e7c1de091016761a88140ce7c3755d8bb9f949d3997e86d58baf"
+    },
+    "social_cases_checker": {
+      "path": "evals/p01/social_write_cases_check.py",
+      "sha256": "ae556682f3d35a0d77089d7ace14ea3c7f6b6539faa0e3454fa2d427bf1549ff"
+    },
+    "social_cases_tests": {
+      "path": "evals/p01/social_write_cases_test.py",
+      "sha256": "8f7631707122c74161c1ac8fdacba537b37bffe7103aa54a7e15945dea67a967"
+    },
+    "social_cases_delivery_ready": {
+      "path": "/home/zero/Documents/Codex/2026-11-12/alia-p01-acceptance/outputs/ALIA-P01-SOCIAL-WRITE-CASES-01/evidence/ready.json",
+      "sha256": "dc11663dd5bb14b5f837d0018d8761d9ca9440b34a9ecc6b901033c2fdaf84a1"
+    },
+    "social_cases_tests_log": {
+      "path": "/home/zero/Documents/Codex/2026-11-12/alia-p01-acceptance/outputs/ALIA-P01-SOCIAL-WRITE-CASES-01/evidence/tests.log",
+      "sha256": "fd31449bfeaad73f821b9bc98c098e3d9f2eb744cc18638409382059255cb021"
+    },
+    "original_gates": {
+      "path": "evals/p01/full/evidence_contract_v1.json",
+      "sha256": "4185139a45aa9fc3b520e89351341e9928a3812302255478b8a0f3ce53ba62c4"
+    }
+  },
+  "social_review": {
+    "base_manifest_sha256": "4b4bdaf369f48b65f3dd22c031cac35bd5ac719399cb5fb0fff080ef28ab8604",
+    "actual_pg_passed": 3,
+    "actual_pg_failed": 0,
+    "strict_clippy_exit": 101,
+    "lint": "clippy::question_mark",
+    "fixed_version": "root-social-context-v2",
+    "semantic_verdict": "unverified"
+  },
+  "social_write_cases": {
+    "case_count": 8,
+    "offline_tests_passed": 4,
+    "status": "not_run",
+    "semantic_verdict": "unverified",
+    "formal_acceptance": null
+  },
+  "original_thresholds": {
+    "retrieval_queries": 100,
+    "recall_at_10_minimum": 0.9,
+    "behavior_cases": 60,
+    "repeats_per_case": 3,
+    "behavior_runs": 180,
+    "behavior_minimum": 0.9,
+    "growth_groups": 20,
+    "growth_minimum": 16
+  },
+  "not_run": [
+    "social-write semantic review",
+    "social-write actual model and database execution",
+    "social-write receipt/budget/transaction lifecycle evaluation",
+    "M5 concentrated acceptance",
+    "14 real calendar days"
+  ],
+  "protocol_01": "platform_review_interrupted; not_run; no product pass or failure; prepared files retained",
+  "real_model_calls": 0,
+  "db_calls": 0,
+  "docker_calls": 0,
+  "formal_acceptance": null,
+  "protocol_01_isolation": {
+    "original_path": "tests/skill_protocol_regression.rs",
+    "preserved_path": "work/p01-capability-protocol-01/interrupted-not-run/source.rs.disabled",
+    "original_sha256": "b1c73bf3a1a50d3b76404bb76f7c250c83004fb0f0e3cc1f1b86e809934a7c43",
+    "preserved_sha256": "b1c73bf3a1a50d3b76404bb76f7c250c83004fb0f0e3cc1f1b86e809934a7c43",
+    "reason": "prevent Cargo automatic test discovery"
+  }
+}

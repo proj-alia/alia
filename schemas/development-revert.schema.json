@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alia.invalid/schemas/development-revert.schema.json",
+  "title": "Alia owner development revert request v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "reason"
+  ],
+  "properties": {
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000,
+      "pattern": "\\S",
+      "not": {
+        "pattern": "\\u0000"
+      }
+    }
+  }
+}

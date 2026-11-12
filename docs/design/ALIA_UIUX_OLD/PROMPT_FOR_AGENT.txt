@@ -1,0 +1,25 @@
+请在当前项目仓库内实施「彼我 / ALIA」数字个体管理控制台的 UI/UX。
+
+设计交付包已解压到：docs/design/alia/
+
+【先完整读取】
+- docs/design/alia/AGENT_START_HERE.md
+- docs/design/alia/design/02-page-specs.md
+- docs/design/alia/design/04-design-system.md
+- docs/design/alia/design/tokens.json
+- docs/design/alia/engineering/01-domain-api.md
+- docs/design/alia/engineering/03-acceptance.md
+
+【视觉与交互权威参考】docs/design/alia/prototype/index.html
+注意同时加载该目录下的 assets/base.css、assets/theme.css、assets/app.js；不要只看 HTML 文件文本。
+
+【必须遵守】
+1. 这是纯 UI/UX 管理面板开发，不使用角色立绘、头像插画、动漫背景或任何角色形象素材。
+2. 主体是持久数字个体；模型、会话、记忆、媒介和工具只是独立模块。
+3. 先审计仓库技术栈和已有组件/API，最大限度复用，不另起一套平行项目，不擅自替换整体架构。
+4. 按 M0→M6 实施 10 个页面和其完整状态，不只实现首页，也不把静态 HTML 直接当作生产代码。
+5. 真实写操作必须经服务端权限校验、审批和审计；没有后端时明确标记不可用，不能假装成功。
+6. 每一阶段实际改动代码、构建/测试、记录结果；失败应主动修复并报告。
+7. 更新 docs/ai/ALIA_UI_STATUS.md、ALIA_UI_TEST_REPORT.md、ALIA_UI_RISKS.md。
+
+请现在直接开始 M0 仓库审计，再持续推进后续可以实施的阶段；无需重复询问文档已经回答的问题。最终返回完成的页面、真实测试证据、未实现项和阻塞依赖。

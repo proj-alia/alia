@@ -1,0 +1,14 @@
+{
+  "goal_id": "00000000-0000-4000-8000-000000000001",
+  "goal_revision": 1,
+  "criterion": "比较方法并保留来源。",
+  "verdict": "not_met",
+  "reason": "现有笔记仅摘录，缺少比较。",
+  "evidence_ids": [
+    "00000000-0000-4000-8000-000000000002"
+  ],
+  "unmet_conditions": [
+    "缺少两种方法的比较。"
+  ],
+  "uncertainties": []
+}

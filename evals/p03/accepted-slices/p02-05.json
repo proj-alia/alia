@@ -1,0 +1,28 @@
+{
+  "scope": "online deletion UI + authenticated lifecycle/progress on frozen root-privacy-http-v2; targeted acceptance only; local evidence only; no full-release claim",
+  "sources": {
+    "web/src/features/Memory.tsx": "576caaff7e875e6e1e592d101706da6d03ee2ead803b5cb26e700fe13d90a496",
+    "web/src/features/memory/MemoryInspector.tsx": "def38f0482968338021366827f2a3e3b387396a698092dbdf16d1ae4bb8418d3",
+    "web/src/app/App.tsx": "e9d8320a5571b9dd192c628566ca8391baf62b3b83f861093b7cded68ad0d467",
+    "web/scripts/test-memory-deletion.mjs": "18597ea6fa3f07cd029cc13d32fbf9f1a998bd48f41fe103272e9c3e28458133",
+    "web/scripts/test-memory-revisions.mjs": "54ad66d61cc44c5a8841cbe63d1b6681b6addabe1a29f26ebd8f20b1ac330bd8",
+    "web/scripts/test-source-inspector.mjs": "8250d538246dfa50046c674431e34a10f92ed82051a8be9cbde39f7c01e3953c",
+    "web/src/features/privacy/PrivacyContext.tsx": "fe84a13ff9ed1d6cfe50432b3e184ab718ba6d12c240f23b3f896153f0f05e56",
+    "web/src/features/privacy/PrivacyPanel.tsx": "48341816e4fcd6c9b11ddec6968edddf8b713c5373785992d64140fe43fc7520",
+    "web/src/features/privacy/PrivacyProvider.tsx": "03cf9cf629111c72938cdc8247abeed9fa93dc4b7cc4f25e88dac68bf7792c66",
+    "web/src/features/privacy/client.ts": "8d3fed19db9dc5e22b2093f4f9e01fc16c56cfac74f94014ab04f3c508616509",
+    "web/src/features/privacy/privacy.css": "6fcfad1bf24eb59e53716a3f79b46e1cd1dc061e746a58a044ecbe6c7d445633",
+    "web/src/features/privacy/recovery.ts": "c796ef70801c8d62cf126536dbadec57cd6549864df5202af38a4ae4c08230b3",
+    "web/src/features/privacy/stateMachine.ts": "103ea67f55ee92e1f388ed374139c00c0226d122bf41d0e6226a9704e306f82b",
+    "web/src/features/privacy/types.ts": "95674f01d1f200d3dcdb9957f2e01427e64a9e7f2dc5cb2614ec90fcb5979eca",
+    "web/src/features/privacy/usePrivacyRead.ts": "a98842962066dce1ddfda712dee26441bd7c3240860a51a65a9658d91097242a"
+  },
+  "source_manifest": {
+    "path": "evals/results/p02-05-full-v5/source-manifest.json",
+    "sha256": "3b02b37f8d777d26284d06b19bd5f6e110ae58e029b6eb4f2ba1356ec429e481"
+  },
+  "report": {
+    "path": "evals/results/p02-05-full-v5/report.json",
+    "sha256": "03b5e6e12b539f0a957923c21668916fb1d32f2e49808b99e7817a1f3d6eaa9a"
+  }
+}

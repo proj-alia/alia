@@ -1,0 +1,1423 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alia.invalid/schemas/decision.schema.json",
+  "title": "Alia decision v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "reply",
+    "reply_evidence_ids",
+    "memory_changes",
+    "goal_changes",
+    "tool_intents",
+    "development",
+    "brief_reason"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "reply": {
+      "type": "string",
+      "maxLength": 16000
+    },
+    "reply_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "minItems": 0,
+      "maxItems": 32,
+      "uniqueItems": true
+    },
+    "memory_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "content",
+          "kind",
+          "scope",
+          "source_event_ids",
+          "supersedes"
+        ],
+        "properties": {
+          "content": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "kind": {
+            "enum": [
+              "working",
+              "episodic",
+              "semantic",
+              "procedural",
+              "autobiographical",
+              "relational",
+              "affective",
+              "prospective",
+              "meta"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "source_event_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "minItems": 1,
+            "maxItems": 32,
+            "uniqueItems": true
+          },
+          "supersedes": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uuid"
+              }
+            ]
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 6,
+      "uniqueItems": true
+    },
+    "goal_changes": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "action",
+              "description",
+              "success_criterion",
+              "next_step",
+              "stop_condition",
+              "priority",
+              "origins"
+            ],
+            "properties": {
+              "action": {
+                "const": "create"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "success_criterion": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "next_step": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "stop_condition": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "priority": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "completion": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "document_id",
+                  "start_char",
+                  "end_char",
+                  "kind"
+                ],
+                "properties": {
+                  "document_id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "start_char": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1048575
+                  },
+                  "end_char": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1048576
+                  },
+                  "kind": {
+                    "const": "source_excerpt"
+                  }
+                },
+                "description": "可选的确定性摘录交付：Unicode字符半开区间，长度8至2048。必须先实际读取，再保存带同一区间引用且含原文的笔记。不证明理解或研究质量。"
+              },
+              "origins": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 16,
+                "uniqueItems": true,
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "origin_type",
+                        "origin_id"
+                      ],
+                      "properties": {
+                        "origin_type": {
+                          "const": "event"
+                        },
+                        "origin_id": {
+                          "type": "string",
+                          "format": "uuid"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "origin_type",
+                        "origin_id"
+                      ],
+                      "properties": {
+                        "origin_type": {
+                          "const": "interest"
+                        },
+                        "origin_id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 100
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "required": [
+                    "completion"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "success_criterion": {
+                      "const": "保存指定资料片段的逐字摘录，并保留读取与笔记来源。"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "action",
+              "origin_type",
+              "origin_ids",
+              "description",
+              "success_criterion",
+              "next_step",
+              "stop_condition",
+              "priority"
+            ],
+            "properties": {
+              "action": {
+                "const": "create"
+              },
+              "origin_type": {
+                "enum": [
+                  "event",
+                  "interest"
+                ]
+              },
+              "origin_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 100
+                },
+                "minItems": 1,
+                "maxItems": 16,
+                "uniqueItems": true
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "success_criterion": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "next_step": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "stop_condition": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "priority": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "completion": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "document_id",
+                  "start_char",
+                  "end_char",
+                  "kind"
+                ],
+                "properties": {
+                  "document_id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "start_char": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1048575
+                  },
+                  "end_char": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 1048576
+                  },
+                  "kind": {
+                    "const": "source_excerpt"
+                  }
+                },
+                "description": "可选的确定性摘录交付：Unicode字符半开区间，长度8至2048。必须先实际读取，再保存带同一区间引用且含原文的笔记。不证明理解或研究质量。"
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "required": [
+                    "completion"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "success_criterion": {
+                      "const": "保存指定资料片段的逐字摘录，并保留读取与笔记来源。"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "action",
+              "goal_id",
+              "reason",
+              "evidence_ids"
+            ],
+            "properties": {
+              "action": {
+                "enum": [
+                  "activate",
+                  "wait",
+                  "complete",
+                  "abandon"
+                ]
+              },
+              "goal_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uuid"
+                },
+                "minItems": 0,
+                "maxItems": 16,
+                "uniqueItems": true
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "tool_intents": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "capability_id",
+              "input"
+            ],
+            "properties": {
+              "capability_id": {
+                "const": "memory.search"
+              },
+              "input": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 5,
+                    "default": 5
+                  },
+                  "person_id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "person_name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  }
+                },
+                "not": {
+                  "required": [
+                    "person_id",
+                    "person_name"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "capability_id",
+              "input"
+            ],
+            "properties": {
+              "capability_id": {
+                "const": "documents.read"
+              },
+              "input": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "document_id"
+                ],
+                "properties": {
+                  "document_id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "offset": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1048576,
+                    "default": 0
+                  },
+                  "max_chars": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 4096,
+                    "default": 4096
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "capability_id",
+              "input"
+            ],
+            "properties": {
+              "capability_id": {
+                "const": "notes.write"
+              },
+              "input": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "title",
+                  "text"
+                ],
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 200
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 12000
+                  },
+                  "citations": {
+                    "type": "array",
+                    "maxItems": 8,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "document_id",
+                        "start_char",
+                        "end_char"
+                      ],
+                      "properties": {
+                        "document_id": {
+                          "type": "string",
+                          "format": "uuid"
+                        },
+                        "start_char": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 1048575
+                        },
+                        "end_char": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "maximum": 1048576
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "capability_id",
+              "input"
+            ],
+            "properties": {
+              "capability_id": {
+                "const": "web.read_allowed"
+              },
+              "input": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "url"
+                ],
+                "properties": {
+                  "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^https://",
+                    "maxLength": 4096
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "development": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "target",
+            "before_version",
+            "proposed_value",
+            "proposed_description",
+            "evidence_ids",
+            "counterevidence_ids",
+            "validation_plan",
+            "deadline"
+          ],
+          "properties": {
+            "target": {
+              "enum": [
+                "persona.traits",
+                "persona.values",
+                "persona.expression",
+                "persona.cognitive_preferences",
+                "task_strategy"
+              ]
+            },
+            "before_version": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9223372036854775807
+            },
+            "proposed_description": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "evidence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "minItems": 1,
+              "maxItems": 32,
+              "uniqueItems": true
+            },
+            "counterevidence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "minItems": 0,
+              "maxItems": 32,
+              "uniqueItems": true
+            },
+            "validation_plan": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "deadline": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "proposed_value": {}
+          },
+          "oneOf": [
+            {
+              "properties": {
+                "target": {
+                  "const": "persona.traits"
+                },
+                "proposed_value": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "curiosity",
+                    "caution",
+                    "sociability",
+                    "assertiveness",
+                    "openness_to_revision"
+                  ],
+                  "properties": {
+                    "curiosity": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "caution": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "sociability": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "assertiveness": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    },
+                    "openness_to_revision": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "properties": {
+                "target": {
+                  "const": "persona.values"
+                },
+                "proposed_value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "id",
+                      "description",
+                      "priority"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      "description": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 500
+                      },
+                      "priority": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "minItems": 1,
+                  "maxItems": 20,
+                  "uniqueItems": true
+                }
+              }
+            },
+            {
+              "properties": {
+                "target": {
+                  "const": "persona.expression"
+                },
+                "proposed_value": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "language",
+                    "tone",
+                    "verbosity",
+                    "humor",
+                    "disagreement"
+                  ],
+                  "properties": {
+                    "language": {
+                      "const": "zh-CN"
+                    },
+                    "tone": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 300
+                    },
+                    "verbosity": {
+                      "enum": [
+                        "concise",
+                        "contextual",
+                        "detailed"
+                      ]
+                    },
+                    "humor": {
+                      "enum": [
+                        "rare",
+                        "occasional",
+                        "frequent"
+                      ]
+                    },
+                    "disagreement": {
+                      "const": "respectful"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "properties": {
+                "target": {
+                  "const": "persona.cognitive_preferences"
+                },
+                "proposed_value": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 500
+                  },
+                  "minItems": 1,
+                  "maxItems": 20,
+                  "uniqueItems": true
+                }
+              }
+            },
+            {
+              "properties": {
+                "target": {
+                  "const": "task_strategy"
+                },
+                "proposed_value": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "scope",
+                    "description"
+                  ],
+                  "properties": {
+                    "scope": {
+                      "oneOf": [
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "kind",
+                            "id"
+                          ],
+                          "properties": {
+                            "kind": {
+                              "const": "goal"
+                            },
+                            "id": {
+                              "type": "string",
+                              "format": "uuid"
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "kind",
+                            "id"
+                          ],
+                          "properties": {
+                            "kind": {
+                              "const": "task"
+                            },
+                            "id": {
+                              "type": "string",
+                              "format": "uuid"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "brief_reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "entity_changes": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "memory",
+          "person",
+          "role",
+          "source"
+        ],
+        "properties": {
+          "memory": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "id"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "existing"
+                  },
+                  "id": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "index"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "created"
+                  },
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 5
+                  }
+                }
+              }
+            ]
+          },
+          "person": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "id"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "existing"
+                  },
+                  "id": {
+                    "type": "string",
+                    "format": "uuid"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "name"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "new"
+                  },
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "index"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "prior"
+                  },
+                  "index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 5
+                  }
+                }
+              }
+            ]
+          },
+          "role": {
+            "enum": [
+              "subject",
+              "mentioned"
+            ]
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "event_id",
+              "start_char",
+              "end_char"
+            ],
+            "properties": {
+              "event_id": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "start_char": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1048576
+              },
+              "end_char": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 1048576
+              }
+            }
+          },
+          "memory_start_char": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2000
+          }
+        }
+      }
+    },
+    "belief_changes": {
+      "type": "array",
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "statement",
+          "scope",
+          "position",
+          "support_event_ids",
+          "counter_event_ids",
+          "supersedes",
+          "brief_basis"
+        ],
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "position": {
+            "enum": [
+              "tentative",
+              "held",
+              "questioned"
+            ]
+          },
+          "support_event_ids": {
+            "type": "array",
+            "maxItems": 32,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "counter_event_ids": {
+            "type": "array",
+            "maxItems": 32,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "supersedes": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uuid"
+              }
+            ]
+          },
+          "brief_basis": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    "autobiography_changes": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "topic",
+          "title",
+          "interpretation",
+          "event_ids",
+          "belief_ids",
+          "supersedes"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_.-]{0,79}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "event_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 32,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "belief_ids": {
+            "type": "array",
+            "maxItems": 8,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "supersedes": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uuid"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "appraisal_changes": {
+      "type": "array",
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_ids",
+          "goal_id",
+          "subject_id",
+          "valence",
+          "arousal",
+          "goal_relevance",
+          "expectation_gap",
+          "controllability",
+          "uncertainty",
+          "brief_basis"
+        ],
+        "properties": {
+          "event_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 32,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "goal_id": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uuid"
+              }
+            ]
+          },
+          "subject_id": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uuid"
+              }
+            ]
+          },
+          "valence": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "arousal": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "goal_relevance": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "expectation_gap": {
+            "type": "number",
+            "minimum": -1,
+            "maximum": 1
+          },
+          "controllability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "uncertainty": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "brief_basis": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    "attitude_changes": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "topic",
+          "subject_id",
+          "stance",
+          "event_ids",
+          "supersedes",
+          "brief_basis"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_.-]{0,79}$"
+          },
+          "subject_id": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uuid"
+              }
+            ]
+          },
+          "stance": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "event_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 32,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "supersedes": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "uuid"
+              }
+            ]
+          },
+          "brief_basis": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    "relationship_changes": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "subject_id",
+          "expected_relationship_version",
+          "changes",
+          "event_ids",
+          "brief_basis"
+        ],
+        "properties": {
+          "subject_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "expected_relationship_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "changes": {
+            "type": "object",
+            "additionalProperties": false,
+            "minProperties": 1,
+            "properties": {
+              "stage": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 80
+                  }
+                ]
+              },
+              "expectations": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "maxItems": 16,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    }
+                  }
+                ]
+              },
+              "boundaries": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "maxItems": 16,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    }
+                  }
+                ]
+              },
+              "commitments": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "maxItems": 16,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    }
+                  }
+                ]
+              },
+              "unresolved": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "maxItems": 16,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2000
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "event_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 32,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "brief_basis": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Optional explicit deployment override. Keep this directory independently of
+# the PostgreSQL volume and provision it privately for the application UID.
+services:
+  app:
+    environment:
+      ALIA_DELETION_JOURNAL: /app/privacy/deletion.jsonl
+    volumes:
+      - type: bind
+        source: ${ALIA_PRIVACY_DIR:?Provision a private durable journal directory first}
+        target: /app/privacy
+        bind:
+          create_host_path: false

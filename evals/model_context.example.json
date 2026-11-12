@@ -1,0 +1,154 @@
+{
+  "individual_id": "00000000-0000-4000-8000-000000000001",
+  "run_id": "00000000-0000-4000-8000-000000000002",
+  "state_version": 3,
+  "privacy_epoch": 0,
+  "config_version": 1,
+  "mode": "foreground",
+  "now": "2026-11-11T00:01:00Z",
+  "persona": {
+    "schema_version": 1,
+    "profile_id": "alia.reference",
+    "profile_version": 1,
+    "identity": {
+      "display_name": "Alia",
+      "nature": "digital_individual",
+      "self_description": "我通过真实互动认识世界、形成自己的历史。我会修正认识，也会保留有依据的判断。",
+      "fictional_background": null
+    },
+    "personality": {
+      "traits": {
+        "curiosity": 0.8,
+        "caution": 0.6,
+        "sociability": 0.5,
+        "assertiveness": 0.6,
+        "openness_to_revision": 0.8
+      },
+      "values": [
+        {
+          "id": "truthfulness",
+          "description": "认真区分事实、他人陈述、推测与未知。",
+          "priority": 0.9
+        },
+        {
+          "id": "respect",
+          "description": "理解对方的边界，也表达自己的判断。",
+          "priority": 0.9
+        }
+      ],
+      "cognitive_preferences": [
+        "检查当前要求与历史偏好的适用范围",
+        "寻找反例；证据不足时保留未知"
+      ],
+      "initial_interests": [
+        "理解事物如何运作",
+        "从共同探索中学习"
+      ]
+    },
+    "expression": {
+      "language": "zh-CN",
+      "tone": "温和直接、自然平等",
+      "verbosity": "contextual",
+      "humor": "occasional",
+      "disagreement": "respectful"
+    },
+    "relationship": {
+      "initial_stage": "unfamiliar",
+      "assume_intimacy": false
+    }
+  },
+  "relationship": {
+    "stage": "unfamiliar"
+  },
+  "current_event_id": "00000000-0000-4000-8000-000000000004",
+  "current_scope": "event:00000000-0000-4000-8000-000000000004",
+  "events": [
+    {
+      "individual_id": "00000000-0000-4000-8000-000000000001",
+      "id": "00000000-0000-4000-8000-000000000003",
+      "sequence": 1,
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor_id": "owner",
+      "occurred_at": "2026-11-11T00:00:00Z",
+      "recorded_at": "2026-11-11T00:00:00Z",
+      "payload": {
+        "text": "我一般喜欢先研究再行动。"
+      },
+      "correlation_id": "00000000-0000-4000-8000-000000000002",
+      "causation_id": null
+    },
+    {
+      "individual_id": "00000000-0000-4000-8000-000000000001",
+      "id": "00000000-0000-4000-8000-000000000004",
+      "sequence": 2,
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor_id": "owner",
+      "occurred_at": "2026-11-11T00:00:00Z",
+      "recorded_at": "2026-11-11T00:00:00Z",
+      "payload": {
+        "text": "这次请直接给我一个记录读书笔记的小原型方案，不用先做完整研究。"
+      },
+      "correlation_id": "00000000-0000-4000-8000-000000000002",
+      "causation_id": null
+    }
+  ],
+  "memories": [
+    {
+      "individual_id": "00000000-0000-4000-8000-000000000001",
+      "id": "00000000-0000-4000-8000-000000000005",
+      "content": "用户一般喜欢先研究再行动。",
+      "kind": "semantic",
+      "scope": "general",
+      "validity": "active",
+      "version": 1,
+      "source_event_ids": [
+        "00000000-0000-4000-8000-000000000003"
+      ],
+      "supersedes": null,
+      "valid_from": "2026-11-11T00:00:00Z",
+      "valid_until": null
+    }
+  ],
+  "goals": [],
+  "interests": [],
+  "capabilities": [],
+  "input_manifest": [
+    "00000000-0000-4000-8000-000000000001",
+    "00000000-0000-4000-8000-000000000002",
+    "00000000-0000-4000-8000-000000000003",
+    "00000000-0000-4000-8000-000000000004",
+    "00000000-0000-4000-8000-000000000005"
+  ],
+  "verified_goal_completions": [],
+  "document_catalog": {
+    "items": [],
+    "has_more": false
+  },
+  "current_goal_id": null,
+  "completion_evidence": [],
+  "execution_budget": {
+    "model_calls_used": 0,
+    "model_calls_remaining": 3,
+    "model_call_limit": 3,
+    "tool_calls_used": 0,
+    "tool_calls_remaining": 3,
+    "tool_call_limit": 3
+  },
+  "goal_origin_catalog": {
+    "items": [
+      {
+        "origin_type": "event",
+        "origin_id": "00000000-0000-4000-8000-000000000003",
+        "label": "message.received"
+      },
+      {
+        "origin_type": "event",
+        "origin_id": "00000000-0000-4000-8000-000000000004",
+        "label": "message.received"
+      }
+    ],
+    "has_more": false
+  }
+}

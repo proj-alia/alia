@@ -1,0 +1,36 @@
+name: alia
+services:
+  db:
+    image: pgvector/pgvector:pg17@sha256:7d0a41464797aeb9862dfdc0bbf1526b82cfd324cdd8036df19e3545f4a9ccb8
+    environment:
+      POSTGRES_DB: alia
+      POSTGRES_USER: alia
+      POSTGRES_PASSWORD: ${ALIA_DB_PASSWORD:?Generate ALIA_DB_PASSWORD in .env}
+    volumes:
+      - alia-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U alia -d alia"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+  app:
+    build: .
+    environment:
+      DATABASE_URL: postgres://alia:${ALIA_DB_PASSWORD}@db:5432/alia
+      ALIA_INSTANCE_TOKEN: ${ALIA_INSTANCE_TOKEN:?Generate ALIA_INSTANCE_TOKEN in .env}
+      ALIA_BIND: 0.0.0.0:3000
+      ALIA_WEB_DIR: /app/web/dist
+      ALIA_MODEL_PROVIDER: ${ALIA_MODEL_PROVIDER:-deepseek}
+      ALIA_MODEL_ENDPOINT: ${ALIA_MODEL_ENDPOINT:-}
+      ALIA_MODEL: ${ALIA_MODEL:-}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      OPENCODE_API_KEY: ${OPENCODE_API_KEY:-}
+    ports:
+      - "127.0.0.1:${ALIA_PORT:-3000}:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  alia-db:

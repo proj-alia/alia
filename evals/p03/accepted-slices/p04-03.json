@@ -1,0 +1,12 @@
+{
+  "format": "alia-accepted-slice/1",
+  "id": "p04-03",
+  "scope": "locally verified safe source event reads on stable derived base; full integration separate",
+  "handoff": "docs/ai/ALIA_P04_03_HANDOFF.md",
+  "handoff_sha256": "5eff5975a46e1f02c3a8dc76468d916d265bc35eb7fed1bf65062c77122bf060",
+  "sources": {
+    "src/adapters/source_events.rs": "7a15d35ee42cbc033765176cd549e590adf9eeb57f1709a1f351d12b8d0d516c",
+    "src/service/source_events.rs": "c101b9f19ca1c785690c9350a20c4854bc37ca6deb7ef57ef2705b6c0ad0dfe1",
+    "tests/source_events.rs": "c999132c076e40136048309bfc75b6f459f98f8bbcabe47c33292f7b00ceacc3"
+  }
+}

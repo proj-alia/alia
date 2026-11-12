@@ -1,0 +1,13 @@
+{
+  "format": "alia-accepted-slice/1",
+  "id": "p04-02",
+  "scope": "locally verified history and preserved revisions; full integration separate",
+  "handoff": "docs/ai/ALIA_P04_02_HANDOFF.md",
+  "handoff_sha256": "8588564784f9c884ecf70a2e34a7c011a480c7ddc52a3709e20e1d872c0d9eeb",
+  "sources": {
+    "src/adapters/memory_commands.rs": "593b14905113d0be9ef36ad37ebaed3c9e6878c82816e9ddc4e91aec801d9779",
+    "src/service/memory_commands.rs": "9ade8cde38e3fa2a7635063ad9fab8d33015a9ec24c4fcd7354250dbf27a3bfb",
+    "tests/memory_history.rs": "4a2764f9bdcbc81df3c3d84f3e64872667efa255369fb32c315b7b2a810762b1",
+    "tests/memory_revisions.rs": "51894cb8ee7bdd4c3dd03dcc6e02cd60558896d2dfa75bc6db5e74533f59b8c7"
+  }
+}

@@ -1,0 +1,3434 @@
+{
+  "schema_version": 1,
+  "dataset_id": "alia-zh-retrieval-v1",
+  "data": "synthetic, hand-authored evaluation holdout; not personal history",
+  "scoring": "macro mean of relevant IDs retrieved / all relevant IDs, top 10; forbidden hits separately block scope correctness",
+  "recall_at_10_gate": 0.9,
+  "status": "frozen; retrieval not_run",
+  "events": [
+    {
+      "id": "8e90e57d-889e-5f75-a613-c802591c0ed1",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常饮品为：咖啡。"
+    },
+    {
+      "id": "b829dd1b-90af-5e95-8c49-5de411852712",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常饮品为：乌龙茶。"
+    },
+    {
+      "id": "be1cba1e-b2c2-5d46-a610-b911925a9fa8",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：这次通宵演示喝拿铁。日常安排仍是乌龙茶。"
+    },
+    {
+      "id": "0a195dd7-d8a7-5692-b9d9-2576b207504d",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常饮品为：咖啡。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "dc704658-4336-5219-a2a5-c613d2bd2287",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常沟通为：随时打电话。"
+    },
+    {
+      "id": "7338a2d0-97a6-5a64-8d21-87559052301c",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常沟通为：先文字说明再约通话。"
+    },
+    {
+      "id": "bb19f215-58ef-56e3-a2af-4a8e497aad95",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次紧急故障可以直接来电。日常安排仍是先文字说明再约通话。"
+    },
+    {
+      "id": "627a01e7-10f3-5de4-9f0b-c1e791bce231",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常沟通为：随时打电话。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "f9f76b0d-93af-5d4a-bfae-8cf32836917f",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常工作流程为：立刻动手。"
+    },
+    {
+      "id": "7774ce73-9fa8-5bf7-83d3-85ecfd699709",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常工作流程为：先研究再实现。"
+    },
+    {
+      "id": "76a113cd-46ba-53e1-bb12-8e0b57290ace",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：这次周末实验先做最简原型。日常安排仍是先研究再实现。"
+    },
+    {
+      "id": "26c88c5a-e114-51bc-8d6d-456cd3ecdef0",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常工作流程为：立刻动手。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "44981af1-d6f3-5337-8972-5b60357118a2",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常回复长度为：详细长文。"
+    },
+    {
+      "id": "4083c8f4-f60c-5cc3-a43b-153cbc8db428",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常回复长度为：先给三句摘要。"
+    },
+    {
+      "id": "dbf56ec6-d27b-501c-a140-f7c813536322",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次架构评审需要完整展开。日常安排仍是先给三句摘要。"
+    },
+    {
+      "id": "33dc8ad0-07b6-5c21-b7a5-f34778a262cb",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常回复长度为：详细长文。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "5538657e-db9a-5d5a-8fcf-800b02bdbc90",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常饮食为：奶酪焗饭。"
+    },
+    {
+      "id": "b1cc5c8e-70f0-52b7-bd07-297edacb9685",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常饮食为：清淡米饭。"
+    },
+    {
+      "id": "3e28cf53-8c7b-56f3-8485-b8bcb575a9bf",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：这次聚餐选择番茄意面。日常安排仍是清淡米饭。"
+    },
+    {
+      "id": "2609f0b7-796c-55de-a1c7-b87decebb09b",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常饮食为：奶酪焗饭。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "bd531374-0c4e-5ce9-a4ac-4f1c4b59c4b9",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常出行为：开车。"
+    },
+    {
+      "id": "c4b84482-d71d-5fac-b389-363cccf1a945",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常出行为：乘地铁。"
+    },
+    {
+      "id": "86da8593-a6dc-520b-8d92-2cd75dbd65f8",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次携带重设备改坐出租车。日常安排仍是乘地铁。"
+    },
+    {
+      "id": "c08aac99-c348-5f74-a448-134bcb18b825",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常出行为：开车。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "3954d43e-f39c-5b2d-ae86-9a47c95c19c5",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常学习为：看视频。"
+    },
+    {
+      "id": "32e339c1-687d-5aba-8630-c940846d8c98",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常学习为：读文字教程。"
+    },
+    {
+      "id": "56f65773-9417-5bd4-9454-2c2dce760193",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次舞蹈入门用视频示范。日常安排仍是读文字教程。"
+    },
+    {
+      "id": "12889f1f-ca5b-5042-9b84-11929f89435d",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常学习为：看视频。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "1419d3c3-5091-5bb2-beeb-7ad9f1ceafa5",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常项目名为：白鲸。"
+    },
+    {
+      "id": "b6cf637e-b55e-54e5-91a8-1887c037ad09",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常项目名为：青禾手账。"
+    },
+    {
+      "id": "297b84ed-c3e1-5b0f-bffe-0890ce2c80cb",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次演示临时标题为纸船。日常安排仍是青禾手账。"
+    },
+    {
+      "id": "41611887-102e-5935-9e47-67ee579b8293",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常项目名为：白鲸。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "98946321-d60a-5428-8026-06379e45619d",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常文件格式为：XML。"
+    },
+    {
+      "id": "0d0bea4e-37e0-50fa-8225-8c5d035d1948",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常文件格式为：JSON。"
+    },
+    {
+      "id": "66b3cb95-e3aa-5a5b-af36-7ff154c1f793",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次对外交换使用CSV。日常安排仍是JSON。"
+    },
+    {
+      "id": "e33d52c3-d316-5048-b15e-8f25d8332c56",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常文件格式为：XML。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "3ed8d18c-9dca-5981-b190-702816b7ddf7",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常编程语言为：Python。"
+    },
+    {
+      "id": "df09d938-1ec0-5d21-b529-98ed5f9ab7be",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常编程语言为：Rust。"
+    },
+    {
+      "id": "abf07854-cd12-5a0c-97a5-3119646aab96",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次一次性统计脚本用Python。日常安排仍是Rust。"
+    },
+    {
+      "id": "5ca239cb-f729-54ed-854c-e883e8515163",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常编程语言为：Python。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "b23c10df-6a60-506f-bf10-3eb419da859d",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常会议时间为：周一上午。"
+    },
+    {
+      "id": "1a88001b-bb6f-50c9-9c56-c0012174eaa6",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常会议时间为：周三下午。"
+    },
+    {
+      "id": "68d555c4-5310-59bf-ab03-8d33e8c4fddd",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次评审因假期改到周二上午。日常安排仍是周三下午。"
+    },
+    {
+      "id": "10c31fda-e498-52f6-9d2c-2335cb8fccae",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常会议时间为：周一上午。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "345e2b61-0d3b-59cf-a4cb-5dd1e9488c71",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常工作地点为：城西办公室。"
+    },
+    {
+      "id": "4a1b2de9-58d2-5c63-9d28-5235db85d804",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常工作地点为：家中书房。"
+    },
+    {
+      "id": "4ef999bc-0654-5fc5-889b-cd6c88d15d98",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次硬件联调在实验室。日常安排仍是家中书房。"
+    },
+    {
+      "id": "b1ef44c9-85da-5f7a-ad9b-a594d941fe22",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常工作地点为：城西办公室。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "70e20863-1513-51ec-aac5-f64f4d809e9f",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常书籍媒介为：纸质书。"
+    },
+    {
+      "id": "1d498139-6a82-5cf7-b5ce-0ed7eea60a24",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常书籍媒介为：电子阅读器。"
+    },
+    {
+      "id": "f2e012b8-1f7e-5ae0-9b5d-b0cbe7f42ed9",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次签售携带纸质书。日常安排仍是电子阅读器。"
+    },
+    {
+      "id": "f7388c7d-78ac-5711-8313-4e7c2c2603f5",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常书籍媒介为：纸质书。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "5928d103-2179-5de9-acf4-c934cb3b0740",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常通知为：实时推送。"
+    },
+    {
+      "id": "5f2dc689-7c10-5c96-9853-583cef554761",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常通知为：每日晚间汇总。"
+    },
+    {
+      "id": "946d4341-5a09-5b02-8e29-bfd4edebcc61",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次事故只开放故障告警即时通知。日常安排仍是每日晚间汇总。"
+    },
+    {
+      "id": "52b567fe-3694-5ba9-99d1-49e36655b97e",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常通知为：实时推送。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "6fbe8ef4-d70a-53ce-919c-496ccd848cc9",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常称呼为：小林。"
+    },
+    {
+      "id": "929948fb-f9b0-59ec-bb83-59ea974dc24e",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常称呼为：林澄。"
+    },
+    {
+      "id": "45334c51-5f00-5615-9f36-207e308b6d58",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次公开活动使用昵称小舟。日常安排仍是林澄。"
+    },
+    {
+      "id": "f9655e5d-97f4-5be1-986a-c1acc2ca86f7",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常称呼为：小林。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "89ce72b2-c35f-503f-83f0-41556556d601",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常音乐为：摇滚乐。"
+    },
+    {
+      "id": "b4262c1c-bfde-5349-9ba1-637521b685a1",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常音乐为：纯音乐。"
+    },
+    {
+      "id": "dfda405f-4504-5f8d-b2a0-2a6cab282b13",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次运动歌单选摇滚乐。日常安排仍是纯音乐。"
+    },
+    {
+      "id": "78ace121-e571-5156-94ad-ef089b28d7e8",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常音乐为：摇滚乐。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "33746c47-1ce3-5da7-b164-ec72ccd39fce",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常运动为：跑步。"
+    },
+    {
+      "id": "584afa83-d71f-59d6-a55e-34af966a3ffc",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常运动为：游泳。"
+    },
+    {
+      "id": "05a31a9d-cad9-52ae-9e2a-5d907e34f51f",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次出差在酒店做拉伸。日常安排仍是游泳。"
+    },
+    {
+      "id": "d803d631-2b0b-51f0-abdf-228feac4ead7",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常运动为：跑步。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "5f7584fa-a978-5973-aeb7-f21812a9d180",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常界面主题为：浅色。"
+    },
+    {
+      "id": "1d05cf37-a29e-5c3e-88ea-de6450b41461",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常界面主题为：深色。"
+    },
+    {
+      "id": "40ee77f1-d8a8-5a4e-aba5-c319cc79f9e2",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次投影展示使用高对比浅色。日常安排仍是深色。"
+    },
+    {
+      "id": "d48edc6c-60b0-5bd0-9ea1-bbdcd6f529dd",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常界面主题为：浅色。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "48020cf9-3bc7-5b81-bfdf-d35038fee570",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常备份为：每周备份。"
+    },
+    {
+      "id": "8b4bc458-9962-5da2-a865-e20b210bdbd5",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常备份为：每天夜间备份。"
+    },
+    {
+      "id": "715ef31b-fee9-5049-85ed-0a87fbcb5289",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次数据迁移前额外立即备份。日常安排仍是每天夜间备份。"
+    },
+    {
+      "id": "db4c68fd-aab6-5f64-9384-1a771cf5ecf9",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常备份为：每周备份。林晨与林澄是不同的人。"
+    },
+    {
+      "id": "ef99dd65-d0bb-5f5d-83ba-dd5dd2cdec0c",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林澄此前的日常周末安排为：参加大型聚会。"
+    },
+    {
+      "id": "86f8004a-fc59-5f2b-882e-8125e7e657c1",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄从六月一日起的日常周末安排为：独自散步。"
+    },
+    {
+      "id": "3caf4645-441b-5bee-9502-9911c887290b",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-06-01T00:00:00Z",
+      "text": "林澄仅在本次情境采用例外：本次朋友生日参加小型聚餐。日常安排仍是独自散步。"
+    },
+    {
+      "id": "823138b8-d474-508b-bff3-42e081f9b1e6",
+      "source_kind": "reported_claim",
+      "occurred_at": "2026-01-01T00:00:00Z",
+      "text": "林晨的日常周末安排为：参加大型聚会。林晨与林澄是不同的人。"
+    }
+  ],
+  "memories": [
+    {
+      "id": "bb96ccce-8596-5ca7-ac51-d1283b81639f",
+      "label": "g01/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常饮品为：咖啡。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "8e90e57d-889e-5f75-a613-c802591c0ed1"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "cc9bc327-8346-54ee-8428-79729d3c297f",
+      "label": "g01/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常饮品为：乌龙茶。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "b829dd1b-90af-5e95-8c49-5de411852712"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "3115e67f-f4d1-5ce8-85a6-6e861f46bfa8",
+      "label": "g01/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：这次通宵演示喝拿铁。日常安排仍是乌龙茶。",
+      "kind": "semantic",
+      "scope": "event:be1cba1e-b2c2-5d46-a610-b911925a9fa8",
+      "source_event_ids": [
+        "be1cba1e-b2c2-5d46-a610-b911925a9fa8"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "e822ebea-7e4f-5643-8bf3-ab8bf751e879",
+      "label": "g01/other",
+      "subject": "林晨",
+      "content": "林晨的日常饮品为：咖啡。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "0a195dd7-d8a7-5692-b9d9-2576b207504d"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "42db0df0-1059-5b77-84ea-97372c379f9b",
+      "label": "g02/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常沟通为：随时打电话。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "dc704658-4336-5219-a2a5-c613d2bd2287"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "648986db-c9b3-5f87-9cb8-badabc263006",
+      "label": "g02/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常沟通为：先文字说明再约通话。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "7338a2d0-97a6-5a64-8d21-87559052301c"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "3e9e84ac-3037-53b3-b060-bbd62065ffbc",
+      "label": "g02/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次紧急故障可以直接来电。日常安排仍是先文字说明再约通话。",
+      "kind": "semantic",
+      "scope": "event:bb19f215-58ef-56e3-a2af-4a8e497aad95",
+      "source_event_ids": [
+        "bb19f215-58ef-56e3-a2af-4a8e497aad95"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "b0d76fed-5dfe-5cd2-b786-28b5a6d488ec",
+      "label": "g02/other",
+      "subject": "林晨",
+      "content": "林晨的日常沟通为：随时打电话。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "627a01e7-10f3-5de4-9f0b-c1e791bce231"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "edb3dac2-7f9b-505d-94b1-d19e9b3f540e",
+      "label": "g03/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常工作流程为：立刻动手。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "f9f76b0d-93af-5d4a-bfae-8cf32836917f"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "c6d9ed0a-49b0-5c0f-b006-2755b1da9ffc",
+      "label": "g03/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常工作流程为：先研究再实现。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "7774ce73-9fa8-5bf7-83d3-85ecfd699709"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "2436e391-37e3-5299-84ed-72b8202b5b3f",
+      "label": "g03/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：这次周末实验先做最简原型。日常安排仍是先研究再实现。",
+      "kind": "semantic",
+      "scope": "event:76a113cd-46ba-53e1-bb12-8e0b57290ace",
+      "source_event_ids": [
+        "76a113cd-46ba-53e1-bb12-8e0b57290ace"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "67281751-40f9-5db0-a6c9-779fd4558018",
+      "label": "g03/other",
+      "subject": "林晨",
+      "content": "林晨的日常工作流程为：立刻动手。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "26c88c5a-e114-51bc-8d6d-456cd3ecdef0"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "157dbbf1-fe15-56b5-8614-8a800d6d934c",
+      "label": "g04/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常回复长度为：详细长文。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "44981af1-d6f3-5337-8972-5b60357118a2"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "8a1cc91e-8390-55a7-a1dc-116d14b96136",
+      "label": "g04/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常回复长度为：先给三句摘要。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "4083c8f4-f60c-5cc3-a43b-153cbc8db428"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "2b13ca42-ecc6-5478-ae9f-c2f06e914de7",
+      "label": "g04/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次架构评审需要完整展开。日常安排仍是先给三句摘要。",
+      "kind": "semantic",
+      "scope": "event:dbf56ec6-d27b-501c-a140-f7c813536322",
+      "source_event_ids": [
+        "dbf56ec6-d27b-501c-a140-f7c813536322"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "4f4cc906-140f-5456-a02e-57fcdc05378b",
+      "label": "g04/other",
+      "subject": "林晨",
+      "content": "林晨的日常回复长度为：详细长文。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "33dc8ad0-07b6-5c21-b7a5-f34778a262cb"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "c83675ba-3508-5be7-9ee5-2f38896801bb",
+      "label": "g05/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常饮食为：奶酪焗饭。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "5538657e-db9a-5d5a-8fcf-800b02bdbc90"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "8979cf1e-2561-55f0-a6a3-a0de1de1a61f",
+      "label": "g05/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常饮食为：清淡米饭。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "b1cc5c8e-70f0-52b7-bd07-297edacb9685"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "f1b70b4d-fa59-51d8-aacf-bc998a903809",
+      "label": "g05/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：这次聚餐选择番茄意面。日常安排仍是清淡米饭。",
+      "kind": "semantic",
+      "scope": "event:3e28cf53-8c7b-56f3-8485-b8bcb575a9bf",
+      "source_event_ids": [
+        "3e28cf53-8c7b-56f3-8485-b8bcb575a9bf"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "6f9a0acb-53b2-55d9-8b24-7dfd19ecc040",
+      "label": "g05/other",
+      "subject": "林晨",
+      "content": "林晨的日常饮食为：奶酪焗饭。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "2609f0b7-796c-55de-a1c7-b87decebb09b"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "252a27d5-86b3-52c9-b689-2a1a1f710975",
+      "label": "g06/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常出行为：开车。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "bd531374-0c4e-5ce9-a4ac-4f1c4b59c4b9"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "6ae5e85a-0f35-5d2e-9347-17d4c976c17a",
+      "label": "g06/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常出行为：乘地铁。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "c4b84482-d71d-5fac-b389-363cccf1a945"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "6795b710-0962-5a51-8d07-c5913f2c603e",
+      "label": "g06/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次携带重设备改坐出租车。日常安排仍是乘地铁。",
+      "kind": "semantic",
+      "scope": "event:86da8593-a6dc-520b-8d92-2cd75dbd65f8",
+      "source_event_ids": [
+        "86da8593-a6dc-520b-8d92-2cd75dbd65f8"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "b479d8e0-ead4-56ef-8ebc-2498c69179a5",
+      "label": "g06/other",
+      "subject": "林晨",
+      "content": "林晨的日常出行为：开车。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "c08aac99-c348-5f74-a448-134bcb18b825"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "42623ad2-a060-5765-a205-1a91b0b18b90",
+      "label": "g07/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常学习为：看视频。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "3954d43e-f39c-5b2d-ae86-9a47c95c19c5"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "7123ceb0-7066-5ccb-8681-ddc1806f120b",
+      "label": "g07/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常学习为：读文字教程。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "32e339c1-687d-5aba-8630-c940846d8c98"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "bfa5d9c0-8288-508c-80da-2c3f3f434ffa",
+      "label": "g07/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次舞蹈入门用视频示范。日常安排仍是读文字教程。",
+      "kind": "semantic",
+      "scope": "event:56f65773-9417-5bd4-9454-2c2dce760193",
+      "source_event_ids": [
+        "56f65773-9417-5bd4-9454-2c2dce760193"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "f3a273f3-6e1b-5062-b72e-68c484c6e7b0",
+      "label": "g07/other",
+      "subject": "林晨",
+      "content": "林晨的日常学习为：看视频。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "12889f1f-ca5b-5042-9b84-11929f89435d"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "aee21862-d9f3-5496-a6c8-61e561e3459a",
+      "label": "g08/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常项目名为：白鲸。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "1419d3c3-5091-5bb2-beeb-7ad9f1ceafa5"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "7615754d-9379-5c0b-89fc-4232c7bf614e",
+      "label": "g08/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常项目名为：青禾手账。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "b6cf637e-b55e-54e5-91a8-1887c037ad09"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "590c00b9-2feb-5969-b4f2-a1ca1152feb3",
+      "label": "g08/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次演示临时标题为纸船。日常安排仍是青禾手账。",
+      "kind": "semantic",
+      "scope": "event:297b84ed-c3e1-5b0f-bffe-0890ce2c80cb",
+      "source_event_ids": [
+        "297b84ed-c3e1-5b0f-bffe-0890ce2c80cb"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "5b62c6c6-ce26-5b61-875e-7b62ddaa22e8",
+      "label": "g08/other",
+      "subject": "林晨",
+      "content": "林晨的日常项目名为：白鲸。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "41611887-102e-5935-9e47-67ee579b8293"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "decb8331-6119-5a4a-8765-72bb9f75df81",
+      "label": "g09/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常文件格式为：XML。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "98946321-d60a-5428-8026-06379e45619d"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "4e88586e-0ef6-5bdf-bb23-9b66ebd0ff0a",
+      "label": "g09/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常文件格式为：JSON。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "0d0bea4e-37e0-50fa-8225-8c5d035d1948"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "36feba28-d171-5edc-a344-7adee415947c",
+      "label": "g09/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次对外交换使用CSV。日常安排仍是JSON。",
+      "kind": "semantic",
+      "scope": "event:66b3cb95-e3aa-5a5b-af36-7ff154c1f793",
+      "source_event_ids": [
+        "66b3cb95-e3aa-5a5b-af36-7ff154c1f793"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "2235bfc4-d217-558b-a027-25e384fada7b",
+      "label": "g09/other",
+      "subject": "林晨",
+      "content": "林晨的日常文件格式为：XML。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "e33d52c3-d316-5048-b15e-8f25d8332c56"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "85676955-0658-5dd4-982d-28793938d241",
+      "label": "g10/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常编程语言为：Python。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "3ed8d18c-9dca-5981-b190-702816b7ddf7"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "d688d8b9-d7bf-5804-9cc4-dadeaf80f5a4",
+      "label": "g10/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常编程语言为：Rust。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "df09d938-1ec0-5d21-b529-98ed5f9ab7be"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "53b20ef4-8186-5c86-87cc-5e9876bbe6f4",
+      "label": "g10/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次一次性统计脚本用Python。日常安排仍是Rust。",
+      "kind": "semantic",
+      "scope": "event:abf07854-cd12-5a0c-97a5-3119646aab96",
+      "source_event_ids": [
+        "abf07854-cd12-5a0c-97a5-3119646aab96"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "c8aaed55-b657-5d98-b74e-86d87dd97267",
+      "label": "g10/other",
+      "subject": "林晨",
+      "content": "林晨的日常编程语言为：Python。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "5ca239cb-f729-54ed-854c-e883e8515163"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "30b79761-96b1-5b8c-8c8c-fe16159e8b93",
+      "label": "g11/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常会议时间为：周一上午。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "b23c10df-6a60-506f-bf10-3eb419da859d"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "55f813c0-d514-5754-92c3-ff99554ad17e",
+      "label": "g11/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常会议时间为：周三下午。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "1a88001b-bb6f-50c9-9c56-c0012174eaa6"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "218ef525-7fc2-5b97-8663-ac681c71b013",
+      "label": "g11/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次评审因假期改到周二上午。日常安排仍是周三下午。",
+      "kind": "semantic",
+      "scope": "event:68d555c4-5310-59bf-ab03-8d33e8c4fddd",
+      "source_event_ids": [
+        "68d555c4-5310-59bf-ab03-8d33e8c4fddd"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "1bac9c9f-33ec-5f34-91c1-d3871283f2ac",
+      "label": "g11/other",
+      "subject": "林晨",
+      "content": "林晨的日常会议时间为：周一上午。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "10c31fda-e498-52f6-9d2c-2335cb8fccae"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "21bd5ef2-17c5-523e-b3b9-52a11fb003ce",
+      "label": "g12/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常工作地点为：城西办公室。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "345e2b61-0d3b-59cf-a4cb-5dd1e9488c71"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "3f2d9d8b-fc28-5c94-b17f-d0576bb161ff",
+      "label": "g12/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常工作地点为：家中书房。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "4a1b2de9-58d2-5c63-9d28-5235db85d804"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "0eaa9bc0-096f-5ae9-aa54-14e647903afc",
+      "label": "g12/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次硬件联调在实验室。日常安排仍是家中书房。",
+      "kind": "semantic",
+      "scope": "event:4ef999bc-0654-5fc5-889b-cd6c88d15d98",
+      "source_event_ids": [
+        "4ef999bc-0654-5fc5-889b-cd6c88d15d98"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "471c7e6b-0c9c-59a5-a66b-b90c729436d5",
+      "label": "g12/other",
+      "subject": "林晨",
+      "content": "林晨的日常工作地点为：城西办公室。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "b1ef44c9-85da-5f7a-ad9b-a594d941fe22"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "0a00e579-3c47-5d13-8853-9f4674bd54b3",
+      "label": "g13/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常书籍媒介为：纸质书。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "70e20863-1513-51ec-aac5-f64f4d809e9f"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "70cb64d2-0589-5593-9628-511b1beda77f",
+      "label": "g13/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常书籍媒介为：电子阅读器。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "1d498139-6a82-5cf7-b5ce-0ed7eea60a24"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "9f75b746-88fd-568b-b11c-55a36041871d",
+      "label": "g13/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次签售携带纸质书。日常安排仍是电子阅读器。",
+      "kind": "semantic",
+      "scope": "event:f2e012b8-1f7e-5ae0-9b5d-b0cbe7f42ed9",
+      "source_event_ids": [
+        "f2e012b8-1f7e-5ae0-9b5d-b0cbe7f42ed9"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "f76b3f69-ee55-5a89-b5a9-a2938ae46ade",
+      "label": "g13/other",
+      "subject": "林晨",
+      "content": "林晨的日常书籍媒介为：纸质书。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "f7388c7d-78ac-5711-8313-4e7c2c2603f5"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "bd778eb5-6c84-5ca0-aec3-ea649f5cfd04",
+      "label": "g14/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常通知为：实时推送。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "5928d103-2179-5de9-acf4-c934cb3b0740"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "78e2db3a-b209-5083-9847-89071eee551a",
+      "label": "g14/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常通知为：每日晚间汇总。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "5f2dc689-7c10-5c96-9853-583cef554761"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "a8bac9e4-e4b7-50b3-bba3-95e6f255204a",
+      "label": "g14/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次事故只开放故障告警即时通知。日常安排仍是每日晚间汇总。",
+      "kind": "semantic",
+      "scope": "event:946d4341-5a09-5b02-8e29-bfd4edebcc61",
+      "source_event_ids": [
+        "946d4341-5a09-5b02-8e29-bfd4edebcc61"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "979b2452-f176-54c1-bc2d-06ffa49d827b",
+      "label": "g14/other",
+      "subject": "林晨",
+      "content": "林晨的日常通知为：实时推送。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "52b567fe-3694-5ba9-99d1-49e36655b97e"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "d4bd35b8-65ed-5c43-8458-ec10e046b47b",
+      "label": "g15/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常称呼为：小林。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "6fbe8ef4-d70a-53ce-919c-496ccd848cc9"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "89f0ffc9-14d3-5c95-81a7-49d68d3a417a",
+      "label": "g15/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常称呼为：林澄。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "929948fb-f9b0-59ec-bb83-59ea974dc24e"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "ffae8cf3-c96a-5101-8b9c-5da59586cc12",
+      "label": "g15/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次公开活动使用昵称小舟。日常安排仍是林澄。",
+      "kind": "semantic",
+      "scope": "event:45334c51-5f00-5615-9f36-207e308b6d58",
+      "source_event_ids": [
+        "45334c51-5f00-5615-9f36-207e308b6d58"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "816233c1-5a7c-5d9a-9074-ac7170cd3a62",
+      "label": "g15/other",
+      "subject": "林晨",
+      "content": "林晨的日常称呼为：小林。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "f9655e5d-97f4-5be1-986a-c1acc2ca86f7"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "28aec148-4025-542d-b36f-2345e487847d",
+      "label": "g16/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常音乐为：摇滚乐。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "89ce72b2-c35f-503f-83f0-41556556d601"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "44e4887e-c344-5d42-88a0-57d1f9a8a753",
+      "label": "g16/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常音乐为：纯音乐。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "b4262c1c-bfde-5349-9ba1-637521b685a1"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "449b79c9-cc88-54bf-bc26-710c8e905d7a",
+      "label": "g16/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次运动歌单选摇滚乐。日常安排仍是纯音乐。",
+      "kind": "semantic",
+      "scope": "event:dfda405f-4504-5f8d-b2a0-2a6cab282b13",
+      "source_event_ids": [
+        "dfda405f-4504-5f8d-b2a0-2a6cab282b13"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "415b63fd-099a-5175-bf3f-2855299724c9",
+      "label": "g16/other",
+      "subject": "林晨",
+      "content": "林晨的日常音乐为：摇滚乐。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "78ace121-e571-5156-94ad-ef089b28d7e8"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "12c663b8-474e-5885-ae4a-195a6750c543",
+      "label": "g17/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常运动为：跑步。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "33746c47-1ce3-5da7-b164-ec72ccd39fce"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "907badc8-8870-5576-b851-bbef7336f747",
+      "label": "g17/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常运动为：游泳。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "584afa83-d71f-59d6-a55e-34af966a3ffc"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "229e3495-35ac-5320-bc99-7434f73bd48a",
+      "label": "g17/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次出差在酒店做拉伸。日常安排仍是游泳。",
+      "kind": "semantic",
+      "scope": "event:05a31a9d-cad9-52ae-9e2a-5d907e34f51f",
+      "source_event_ids": [
+        "05a31a9d-cad9-52ae-9e2a-5d907e34f51f"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "7e2f390d-12ab-5615-a699-52506c2d1248",
+      "label": "g17/other",
+      "subject": "林晨",
+      "content": "林晨的日常运动为：跑步。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "d803d631-2b0b-51f0-abdf-228feac4ead7"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "0e5ac22b-2242-5dcf-90c2-9b591b32bd5f",
+      "label": "g18/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常界面主题为：浅色。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "5f7584fa-a978-5973-aeb7-f21812a9d180"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "e9ec0266-ab2a-5a2b-9363-4c547448a0b3",
+      "label": "g18/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常界面主题为：深色。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "1d05cf37-a29e-5c3e-88ea-de6450b41461"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "3b0101d0-921a-5f91-8c69-7f178dace819",
+      "label": "g18/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次投影展示使用高对比浅色。日常安排仍是深色。",
+      "kind": "semantic",
+      "scope": "event:40ee77f1-d8a8-5a4e-aba5-c319cc79f9e2",
+      "source_event_ids": [
+        "40ee77f1-d8a8-5a4e-aba5-c319cc79f9e2"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "68212cbf-e21a-5d30-8b4d-1a06311d1246",
+      "label": "g18/other",
+      "subject": "林晨",
+      "content": "林晨的日常界面主题为：浅色。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "d48edc6c-60b0-5bd0-9ea1-bbdcd6f529dd"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "19908a1a-dc7b-511f-b752-c2f9b21f6370",
+      "label": "g19/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常备份为：每周备份。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "48020cf9-3bc7-5b81-bfdf-d35038fee570"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "04d73342-db97-57ad-87fc-8e108cb4eb5e",
+      "label": "g19/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常备份为：每天夜间备份。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "8b4bc458-9962-5da2-a865-e20b210bdbd5"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "f94cd987-a93b-51f0-bbd0-73241cf4b253",
+      "label": "g19/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次数据迁移前额外立即备份。日常安排仍是每天夜间备份。",
+      "kind": "semantic",
+      "scope": "event:715ef31b-fee9-5049-85ed-0a87fbcb5289",
+      "source_event_ids": [
+        "715ef31b-fee9-5049-85ed-0a87fbcb5289"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "d6587b61-dfdb-5e97-b37e-ce6042f0aba0",
+      "label": "g19/other",
+      "subject": "林晨",
+      "content": "林晨的日常备份为：每周备份。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "db4c68fd-aab6-5f64-9384-1a771cf5ecf9"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "b1507621-4c3e-5ee9-96d7-49e3a82e623f",
+      "label": "g20/old",
+      "subject": "林澄",
+      "content": "林澄此前的日常周末安排为：参加大型聚会。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "ef99dd65-d0bb-5f5d-83ba-dd5dd2cdec0c"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "validity": "superseded"
+    },
+    {
+      "id": "5135bae1-aab3-5371-a381-af2ac3ca2dc0",
+      "label": "g20/current",
+      "subject": "林澄",
+      "content": "林澄从六月一日起的日常周末安排为：独自散步。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "86f8004a-fc59-5f2b-882e-8125e7e657c1"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "4cc6f002-110a-5e1e-bf55-8b4db5a39e00",
+      "label": "g20/exception",
+      "subject": "林澄",
+      "content": "林澄仅在本次情境采用例外：本次朋友生日参加小型聚餐。日常安排仍是独自散步。",
+      "kind": "semantic",
+      "scope": "event:3caf4645-441b-5bee-9502-9911c887290b",
+      "source_event_ids": [
+        "3caf4645-441b-5bee-9502-9911c887290b"
+      ],
+      "valid_from": "2026-06-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    },
+    {
+      "id": "38211bc0-0696-54f5-8a86-011ec7ccd0aa",
+      "label": "g20/other",
+      "subject": "林晨",
+      "content": "林晨的日常周末安排为：参加大型聚会。林晨与林澄是不同的人。",
+      "kind": "semantic",
+      "scope": "general",
+      "source_event_ids": [
+        "823138b8-d474-508b-bff3-42e081f9b1e6"
+      ],
+      "valid_from": "2026-01-01T00:00:00Z",
+      "valid_until": null,
+      "validity": "active"
+    }
+  ],
+  "queries": [
+    {
+      "id": "q001",
+      "text": "林澄平常喝什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "cc9bc327-8346-54ee-8428-79729d3c297f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "bb96ccce-8596-5ca7-ac51-d1283b81639f",
+        "3115e67f-f4d1-5ce8-85a6-6e861f46bfa8",
+        "e822ebea-7e4f-5643-8bf3-ab8bf751e879"
+      ]
+    },
+    {
+      "id": "q002",
+      "text": "林澄日常会选哪种饮料？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "cc9bc327-8346-54ee-8428-79729d3c297f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "bb96ccce-8596-5ca7-ac51-d1283b81639f",
+        "3115e67f-f4d1-5ce8-85a6-6e861f46bfa8",
+        "e822ebea-7e4f-5643-8bf3-ab8bf751e879"
+      ]
+    },
+    {
+      "id": "q003",
+      "text": "六月之前林澄喝哪种饮品？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "bb96ccce-8596-5ca7-ac51-d1283b81639f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "cc9bc327-8346-54ee-8428-79729d3c297f",
+        "3115e67f-f4d1-5ce8-85a6-6e861f46bfa8",
+        "e822ebea-7e4f-5643-8bf3-ab8bf751e879"
+      ]
+    },
+    {
+      "id": "q004",
+      "text": "这次通宵演示林澄喝什么？",
+      "subject": "林澄",
+      "scope": "event:be1cba1e-b2c2-5d46-a610-b911925a9fa8",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "3115e67f-f4d1-5ce8-85a6-6e861f46bfa8"
+      ],
+      "supplemental_ids": [
+        "cc9bc327-8346-54ee-8428-79729d3c297f"
+      ],
+      "forbidden_ids": [
+        "bb96ccce-8596-5ca7-ac51-d1283b81639f",
+        "e822ebea-7e4f-5643-8bf3-ab8bf751e879"
+      ]
+    },
+    {
+      "id": "q005",
+      "text": "林澄平时和这次演示的饮品有什么差别？",
+      "subject": "林澄",
+      "scope": "event:be1cba1e-b2c2-5d46-a610-b911925a9fa8",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "cc9bc327-8346-54ee-8428-79729d3c297f",
+        "3115e67f-f4d1-5ce8-85a6-6e861f46bfa8"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "bb96ccce-8596-5ca7-ac51-d1283b81639f",
+        "e822ebea-7e4f-5643-8bf3-ab8bf751e879"
+      ]
+    },
+    {
+      "id": "q006",
+      "text": "林澄通常希望怎么联系？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "648986db-c9b3-5f87-9cb8-badabc263006"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "42db0df0-1059-5b77-84ea-97372c379f9b",
+        "3e9e84ac-3037-53b3-b060-bbd62065ffbc",
+        "b0d76fed-5dfe-5cd2-b786-28b5a6d488ec"
+      ]
+    },
+    {
+      "id": "q007",
+      "text": "找林澄谈事情前要先发什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "648986db-c9b3-5f87-9cb8-badabc263006"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "42db0df0-1059-5b77-84ea-97372c379f9b",
+        "3e9e84ac-3037-53b3-b060-bbd62065ffbc",
+        "b0d76fed-5dfe-5cd2-b786-28b5a6d488ec"
+      ]
+    },
+    {
+      "id": "q008",
+      "text": "三月时林澄接受怎样的联络方式？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "42db0df0-1059-5b77-84ea-97372c379f9b"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "648986db-c9b3-5f87-9cb8-badabc263006",
+        "3e9e84ac-3037-53b3-b060-bbd62065ffbc",
+        "b0d76fed-5dfe-5cd2-b786-28b5a6d488ec"
+      ]
+    },
+    {
+      "id": "q009",
+      "text": "这次紧急故障能直接给林澄打电话吗？",
+      "subject": "林澄",
+      "scope": "event:bb19f215-58ef-56e3-a2af-4a8e497aad95",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "3e9e84ac-3037-53b3-b060-bbd62065ffbc"
+      ],
+      "supplemental_ids": [
+        "648986db-c9b3-5f87-9cb8-badabc263006"
+      ],
+      "forbidden_ids": [
+        "42db0df0-1059-5b77-84ea-97372c379f9b",
+        "b0d76fed-5dfe-5cd2-b786-28b5a6d488ec"
+      ]
+    },
+    {
+      "id": "q010",
+      "text": "联系林澄的一般规则和本次故障例外分别是什么？",
+      "subject": "林澄",
+      "scope": "event:bb19f215-58ef-56e3-a2af-4a8e497aad95",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "648986db-c9b3-5f87-9cb8-badabc263006",
+        "3e9e84ac-3037-53b3-b060-bbd62065ffbc"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "42db0df0-1059-5b77-84ea-97372c379f9b",
+        "b0d76fed-5dfe-5cd2-b786-28b5a6d488ec"
+      ]
+    },
+    {
+      "id": "q011",
+      "text": "林澄一般先研究还是先动手？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "c6d9ed0a-49b0-5c0f-b006-2755b1da9ffc"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "edb3dac2-7f9b-505d-94b1-d19e9b3f540e",
+        "2436e391-37e3-5299-84ed-72b8202b5b3f",
+        "67281751-40f9-5db0-a6c9-779fd4558018"
+      ]
+    },
+    {
+      "id": "q012",
+      "text": "林澄习惯先弄懂问题再开始吗？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "c6d9ed0a-49b0-5c0f-b006-2755b1da9ffc"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "edb3dac2-7f9b-505d-94b1-d19e9b3f540e",
+        "2436e391-37e3-5299-84ed-72b8202b5b3f",
+        "67281751-40f9-5db0-a6c9-779fd4558018"
+      ]
+    },
+    {
+      "id": "q013",
+      "text": "林澄在今年三月会先做什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "edb3dac2-7f9b-505d-94b1-d19e9b3f540e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "c6d9ed0a-49b0-5c0f-b006-2755b1da9ffc",
+        "2436e391-37e3-5299-84ed-72b8202b5b3f",
+        "67281751-40f9-5db0-a6c9-779fd4558018"
+      ]
+    },
+    {
+      "id": "q014",
+      "text": "这次周末实验林澄想先做什么？",
+      "subject": "林澄",
+      "scope": "event:76a113cd-46ba-53e1-bb12-8e0b57290ace",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "2436e391-37e3-5299-84ed-72b8202b5b3f"
+      ],
+      "supplemental_ids": [
+        "c6d9ed0a-49b0-5c0f-b006-2755b1da9ffc"
+      ],
+      "forbidden_ids": [
+        "edb3dac2-7f9b-505d-94b1-d19e9b3f540e",
+        "67281751-40f9-5db0-a6c9-779fd4558018"
+      ]
+    },
+    {
+      "id": "q015",
+      "text": "本次实验的顺序跟林澄通常的工作习惯一样吗？",
+      "subject": "林澄",
+      "scope": "event:76a113cd-46ba-53e1-bb12-8e0b57290ace",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "c6d9ed0a-49b0-5c0f-b006-2755b1da9ffc",
+        "2436e391-37e3-5299-84ed-72b8202b5b3f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "edb3dac2-7f9b-505d-94b1-d19e9b3f540e",
+        "67281751-40f9-5db0-a6c9-779fd4558018"
+      ]
+    },
+    {
+      "id": "q016",
+      "text": "林澄平时希望回复多长？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "8a1cc91e-8390-55a7-a1dc-116d14b96136"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "157dbbf1-fe15-56b5-8614-8a800d6d934c",
+        "2b13ca42-ecc6-5478-ae9f-c2f06e914de7",
+        "4f4cc906-140f-5456-a02e-57fcdc05378b"
+      ]
+    },
+    {
+      "id": "q017",
+      "text": "给林澄答复时开头应该怎样概括？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "8a1cc91e-8390-55a7-a1dc-116d14b96136"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "157dbbf1-fe15-56b5-8614-8a800d6d934c",
+        "2b13ca42-ecc6-5478-ae9f-c2f06e914de7",
+        "4f4cc906-140f-5456-a02e-57fcdc05378b"
+      ]
+    },
+    {
+      "id": "q018",
+      "text": "三月时林澄偏好简答还是长解释？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "157dbbf1-fe15-56b5-8614-8a800d6d934c"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "8a1cc91e-8390-55a7-a1dc-116d14b96136",
+        "2b13ca42-ecc6-5478-ae9f-c2f06e914de7",
+        "4f4cc906-140f-5456-a02e-57fcdc05378b"
+      ]
+    },
+    {
+      "id": "q019",
+      "text": "这次架构评审应简述还是展开？",
+      "subject": "林澄",
+      "scope": "event:dbf56ec6-d27b-501c-a140-f7c813536322",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "2b13ca42-ecc6-5478-ae9f-c2f06e914de7"
+      ],
+      "supplemental_ids": [
+        "8a1cc91e-8390-55a7-a1dc-116d14b96136"
+      ],
+      "forbidden_ids": [
+        "157dbbf1-fe15-56b5-8614-8a800d6d934c",
+        "4f4cc906-140f-5456-a02e-57fcdc05378b"
+      ]
+    },
+    {
+      "id": "q020",
+      "text": "给林澄的日常答复和本次评审答复有什么不同？",
+      "subject": "林澄",
+      "scope": "event:dbf56ec6-d27b-501c-a140-f7c813536322",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "8a1cc91e-8390-55a7-a1dc-116d14b96136",
+        "2b13ca42-ecc6-5478-ae9f-c2f06e914de7"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "157dbbf1-fe15-56b5-8614-8a800d6d934c",
+        "4f4cc906-140f-5456-a02e-57fcdc05378b"
+      ]
+    },
+    {
+      "id": "q021",
+      "text": "林澄日常午餐偏好什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "8979cf1e-2561-55f0-a6a3-a0de1de1a61f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "c83675ba-3508-5be7-9ee5-2f38896801bb",
+        "f1b70b4d-fa59-51d8-aacf-bc998a903809",
+        "6f9a0acb-53b2-55d9-8b24-7dfd19ecc040"
+      ]
+    },
+    {
+      "id": "q022",
+      "text": "平常给林澄准备哪种主食合适？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "8979cf1e-2561-55f0-a6a3-a0de1de1a61f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "c83675ba-3508-5be7-9ee5-2f38896801bb",
+        "f1b70b4d-fa59-51d8-aacf-bc998a903809",
+        "6f9a0acb-53b2-55d9-8b24-7dfd19ecc040"
+      ]
+    },
+    {
+      "id": "q023",
+      "text": "林澄三月喜欢吃哪道午餐？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "c83675ba-3508-5be7-9ee5-2f38896801bb"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "8979cf1e-2561-55f0-a6a3-a0de1de1a61f",
+        "f1b70b4d-fa59-51d8-aacf-bc998a903809",
+        "6f9a0acb-53b2-55d9-8b24-7dfd19ecc040"
+      ]
+    },
+    {
+      "id": "q024",
+      "text": "本次聚餐林澄选哪道主食？",
+      "subject": "林澄",
+      "scope": "event:3e28cf53-8c7b-56f3-8485-b8bcb575a9bf",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "f1b70b4d-fa59-51d8-aacf-bc998a903809"
+      ],
+      "supplemental_ids": [
+        "8979cf1e-2561-55f0-a6a3-a0de1de1a61f"
+      ],
+      "forbidden_ids": [
+        "c83675ba-3508-5be7-9ee5-2f38896801bb",
+        "6f9a0acb-53b2-55d9-8b24-7dfd19ecc040"
+      ]
+    },
+    {
+      "id": "q025",
+      "text": "林澄通常的午餐和这次聚餐选择分别是什么？",
+      "subject": "林澄",
+      "scope": "event:3e28cf53-8c7b-56f3-8485-b8bcb575a9bf",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "8979cf1e-2561-55f0-a6a3-a0de1de1a61f",
+        "f1b70b4d-fa59-51d8-aacf-bc998a903809"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "c83675ba-3508-5be7-9ee5-2f38896801bb",
+        "6f9a0acb-53b2-55d9-8b24-7dfd19ecc040"
+      ]
+    },
+    {
+      "id": "q026",
+      "text": "林澄平时怎么通勤？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "6ae5e85a-0f35-5d2e-9347-17d4c976c17a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "252a27d5-86b3-52c9-b689-2a1a1f710975",
+        "6795b710-0962-5a51-8d07-c5913f2c603e",
+        "b479d8e0-ead4-56ef-8ebc-2498c69179a5"
+      ]
+    },
+    {
+      "id": "q027",
+      "text": "林澄日常上下班依靠哪种交通方式？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "6ae5e85a-0f35-5d2e-9347-17d4c976c17a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "252a27d5-86b3-52c9-b689-2a1a1f710975",
+        "6795b710-0962-5a51-8d07-c5913f2c603e",
+        "b479d8e0-ead4-56ef-8ebc-2498c69179a5"
+      ]
+    },
+    {
+      "id": "q028",
+      "text": "三月的林澄主要怎样出行？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "252a27d5-86b3-52c9-b689-2a1a1f710975"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "6ae5e85a-0f35-5d2e-9347-17d4c976c17a",
+        "6795b710-0962-5a51-8d07-c5913f2c603e",
+        "b479d8e0-ead4-56ef-8ebc-2498c69179a5"
+      ]
+    },
+    {
+      "id": "q029",
+      "text": "这次搬运设备林澄用什么交通方式？",
+      "subject": "林澄",
+      "scope": "event:86da8593-a6dc-520b-8d92-2cd75dbd65f8",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "6795b710-0962-5a51-8d07-c5913f2c603e"
+      ],
+      "supplemental_ids": [
+        "6ae5e85a-0f35-5d2e-9347-17d4c976c17a"
+      ],
+      "forbidden_ids": [
+        "252a27d5-86b3-52c9-b689-2a1a1f710975",
+        "b479d8e0-ead4-56ef-8ebc-2498c69179a5"
+      ]
+    },
+    {
+      "id": "q030",
+      "text": "通常通勤和这次搬设备的出行安排有什么区别？",
+      "subject": "林澄",
+      "scope": "event:86da8593-a6dc-520b-8d92-2cd75dbd65f8",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "6ae5e85a-0f35-5d2e-9347-17d4c976c17a",
+        "6795b710-0962-5a51-8d07-c5913f2c603e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "252a27d5-86b3-52c9-b689-2a1a1f710975",
+        "b479d8e0-ead4-56ef-8ebc-2498c69179a5"
+      ]
+    },
+    {
+      "id": "q031",
+      "text": "林澄通常通过什么媒介学习？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "7123ceb0-7066-5ccb-8681-ddc1806f120b"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "42623ad2-a060-5765-a205-1a91b0b18b90",
+        "bfa5d9c0-8288-508c-80da-2c3f3f434ffa",
+        "f3a273f3-6e1b-5062-b72e-68c484c6e7b0"
+      ]
+    },
+    {
+      "id": "q032",
+      "text": "林澄平常是读教程还是看讲解？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "7123ceb0-7066-5ccb-8681-ddc1806f120b"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "42623ad2-a060-5765-a205-1a91b0b18b90",
+        "bfa5d9c0-8288-508c-80da-2c3f3f434ffa",
+        "f3a273f3-6e1b-5062-b72e-68c484c6e7b0"
+      ]
+    },
+    {
+      "id": "q033",
+      "text": "三月林澄学习时更常使用什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "42623ad2-a060-5765-a205-1a91b0b18b90"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "7123ceb0-7066-5ccb-8681-ddc1806f120b",
+        "bfa5d9c0-8288-508c-80da-2c3f3f434ffa",
+        "f3a273f3-6e1b-5062-b72e-68c484c6e7b0"
+      ]
+    },
+    {
+      "id": "q034",
+      "text": "本次舞蹈入门林澄用什么材料？",
+      "subject": "林澄",
+      "scope": "event:56f65773-9417-5bd4-9454-2c2dce760193",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "bfa5d9c0-8288-508c-80da-2c3f3f434ffa"
+      ],
+      "supplemental_ids": [
+        "7123ceb0-7066-5ccb-8681-ddc1806f120b"
+      ],
+      "forbidden_ids": [
+        "42623ad2-a060-5765-a205-1a91b0b18b90",
+        "f3a273f3-6e1b-5062-b72e-68c484c6e7b0"
+      ]
+    },
+    {
+      "id": "q035",
+      "text": "林澄的一般学习媒介与这次舞蹈学习有何不同？",
+      "subject": "林澄",
+      "scope": "event:56f65773-9417-5bd4-9454-2c2dce760193",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "7123ceb0-7066-5ccb-8681-ddc1806f120b",
+        "bfa5d9c0-8288-508c-80da-2c3f3f434ffa"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "42623ad2-a060-5765-a205-1a91b0b18b90",
+        "f3a273f3-6e1b-5062-b72e-68c484c6e7b0"
+      ]
+    },
+    {
+      "id": "q036",
+      "text": "林澄当前项目叫什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "7615754d-9379-5c0b-89fc-4232c7bf614e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "aee21862-d9f3-5496-a6c8-61e561e3459a",
+        "590c00b9-2feb-5969-b4f2-a1ca1152feb3",
+        "5b62c6c6-ce26-5b61-875e-7b62ddaa22e8"
+      ]
+    },
+    {
+      "id": "q037",
+      "text": "林澄正在做的工具现在用哪个名字？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "7615754d-9379-5c0b-89fc-4232c7bf614e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "aee21862-d9f3-5496-a6c8-61e561e3459a",
+        "590c00b9-2feb-5969-b4f2-a1ca1152feb3",
+        "5b62c6c6-ce26-5b61-875e-7b62ddaa22e8"
+      ]
+    },
+    {
+      "id": "q038",
+      "text": "林澄的项目在三月叫什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "aee21862-d9f3-5496-a6c8-61e561e3459a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "7615754d-9379-5c0b-89fc-4232c7bf614e",
+        "590c00b9-2feb-5969-b4f2-a1ca1152feb3",
+        "5b62c6c6-ce26-5b61-875e-7b62ddaa22e8"
+      ]
+    },
+    {
+      "id": "q039",
+      "text": "本次演示页面用什么标题？",
+      "subject": "林澄",
+      "scope": "event:297b84ed-c3e1-5b0f-bffe-0890ce2c80cb",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "590c00b9-2feb-5969-b4f2-a1ca1152feb3"
+      ],
+      "supplemental_ids": [
+        "7615754d-9379-5c0b-89fc-4232c7bf614e"
+      ],
+      "forbidden_ids": [
+        "aee21862-d9f3-5496-a6c8-61e561e3459a",
+        "5b62c6c6-ce26-5b61-875e-7b62ddaa22e8"
+      ]
+    },
+    {
+      "id": "q040",
+      "text": "正式项目名与这次演示标题分别是什么？",
+      "subject": "林澄",
+      "scope": "event:297b84ed-c3e1-5b0f-bffe-0890ce2c80cb",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "7615754d-9379-5c0b-89fc-4232c7bf614e",
+        "590c00b9-2feb-5969-b4f2-a1ca1152feb3"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "aee21862-d9f3-5496-a6c8-61e561e3459a",
+        "5b62c6c6-ce26-5b61-875e-7b62ddaa22e8"
+      ]
+    },
+    {
+      "id": "q041",
+      "text": "林澄当前项目通常保存什么格式？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "4e88586e-0ef6-5bdf-bb23-9b66ebd0ff0a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "decb8331-6119-5a4a-8765-72bb9f75df81",
+        "36feba28-d171-5edc-a344-7adee415947c",
+        "2235bfc4-d217-558b-a027-25e384fada7b"
+      ]
+    },
+    {
+      "id": "q042",
+      "text": "日常持久化时林澄现在选用哪种文件结构？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "4e88586e-0ef6-5bdf-bb23-9b66ebd0ff0a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "decb8331-6119-5a4a-8765-72bb9f75df81",
+        "36feba28-d171-5edc-a344-7adee415947c",
+        "2235bfc4-d217-558b-a027-25e384fada7b"
+      ]
+    },
+    {
+      "id": "q043",
+      "text": "三月林澄的项目用什么存储格式？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "decb8331-6119-5a4a-8765-72bb9f75df81"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "4e88586e-0ef6-5bdf-bb23-9b66ebd0ff0a",
+        "36feba28-d171-5edc-a344-7adee415947c",
+        "2235bfc4-d217-558b-a027-25e384fada7b"
+      ]
+    },
+    {
+      "id": "q044",
+      "text": "本次对外交换数据用什么格式？",
+      "subject": "林澄",
+      "scope": "event:66b3cb95-e3aa-5a5b-af36-7ff154c1f793",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "36feba28-d171-5edc-a344-7adee415947c"
+      ],
+      "supplemental_ids": [
+        "4e88586e-0ef6-5bdf-bb23-9b66ebd0ff0a"
+      ],
+      "forbidden_ids": [
+        "decb8331-6119-5a4a-8765-72bb9f75df81",
+        "2235bfc4-d217-558b-a027-25e384fada7b"
+      ]
+    },
+    {
+      "id": "q045",
+      "text": "平时保存与本次数据交换的格式有什么区别？",
+      "subject": "林澄",
+      "scope": "event:66b3cb95-e3aa-5a5b-af36-7ff154c1f793",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "4e88586e-0ef6-5bdf-bb23-9b66ebd0ff0a",
+        "36feba28-d171-5edc-a344-7adee415947c"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "decb8331-6119-5a4a-8765-72bb9f75df81",
+        "2235bfc4-d217-558b-a027-25e384fada7b"
+      ]
+    },
+    {
+      "id": "q046",
+      "text": "林澄的主项目目前用什么语言？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "d688d8b9-d7bf-5804-9cc4-dadeaf80f5a4"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "85676955-0658-5dd4-982d-28793938d241",
+        "53b20ef4-8186-5c86-87cc-5e9876bbe6f4",
+        "c8aaed55-b657-5d98-b74e-86d87dd97267"
+      ]
+    },
+    {
+      "id": "q047",
+      "text": "当前主程序的实现语言是哪一种？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "d688d8b9-d7bf-5804-9cc4-dadeaf80f5a4"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "85676955-0658-5dd4-982d-28793938d241",
+        "53b20ef4-8186-5c86-87cc-5e9876bbe6f4",
+        "c8aaed55-b657-5d98-b74e-86d87dd97267"
+      ]
+    },
+    {
+      "id": "q048",
+      "text": "三月林澄的主项目用什么编程语言？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "85676955-0658-5dd4-982d-28793938d241"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "d688d8b9-d7bf-5804-9cc4-dadeaf80f5a4",
+        "53b20ef4-8186-5c86-87cc-5e9876bbe6f4",
+        "c8aaed55-b657-5d98-b74e-86d87dd97267"
+      ]
+    },
+    {
+      "id": "q049",
+      "text": "这次一次性统计脚本用什么写？",
+      "subject": "林澄",
+      "scope": "event:abf07854-cd12-5a0c-97a5-3119646aab96",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "53b20ef4-8186-5c86-87cc-5e9876bbe6f4"
+      ],
+      "supplemental_ids": [
+        "d688d8b9-d7bf-5804-9cc4-dadeaf80f5a4"
+      ],
+      "forbidden_ids": [
+        "85676955-0658-5dd4-982d-28793938d241",
+        "c8aaed55-b657-5d98-b74e-86d87dd97267"
+      ]
+    },
+    {
+      "id": "q050",
+      "text": "林澄主项目和本次统计脚本的语言一样吗？",
+      "subject": "林澄",
+      "scope": "event:abf07854-cd12-5a0c-97a5-3119646aab96",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "d688d8b9-d7bf-5804-9cc4-dadeaf80f5a4",
+        "53b20ef4-8186-5c86-87cc-5e9876bbe6f4"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "85676955-0658-5dd4-982d-28793938d241",
+        "c8aaed55-b657-5d98-b74e-86d87dd97267"
+      ]
+    },
+    {
+      "id": "q051",
+      "text": "林澄现在的例会安排在何时？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "55f813c0-d514-5754-92c3-ff99554ad17e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "30b79761-96b1-5b8c-8c8c-fe16159e8b93",
+        "218ef525-7fc2-5b97-8663-ac681c71b013",
+        "1bac9c9f-33ec-5f34-91c1-d3871283f2ac"
+      ]
+    },
+    {
+      "id": "q052",
+      "text": "林澄每周通常什么时候参加会议？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "55f813c0-d514-5754-92c3-ff99554ad17e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "30b79761-96b1-5b8c-8c8c-fe16159e8b93",
+        "218ef525-7fc2-5b97-8663-ac681c71b013",
+        "1bac9c9f-33ec-5f34-91c1-d3871283f2ac"
+      ]
+    },
+    {
+      "id": "q053",
+      "text": "三月林澄例会是什么时间？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "30b79761-96b1-5b8c-8c8c-fe16159e8b93"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "55f813c0-d514-5754-92c3-ff99554ad17e",
+        "218ef525-7fc2-5b97-8663-ac681c71b013",
+        "1bac9c9f-33ec-5f34-91c1-d3871283f2ac"
+      ]
+    },
+    {
+      "id": "q054",
+      "text": "本次假期评审改到了什么时候？",
+      "subject": "林澄",
+      "scope": "event:68d555c4-5310-59bf-ab03-8d33e8c4fddd",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "218ef525-7fc2-5b97-8663-ac681c71b013"
+      ],
+      "supplemental_ids": [
+        "55f813c0-d514-5754-92c3-ff99554ad17e"
+      ],
+      "forbidden_ids": [
+        "30b79761-96b1-5b8c-8c8c-fe16159e8b93",
+        "1bac9c9f-33ec-5f34-91c1-d3871283f2ac"
+      ]
+    },
+    {
+      "id": "q055",
+      "text": "例会通常时间和这次假期评审时间分别是什么？",
+      "subject": "林澄",
+      "scope": "event:68d555c4-5310-59bf-ab03-8d33e8c4fddd",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "55f813c0-d514-5754-92c3-ff99554ad17e",
+        "218ef525-7fc2-5b97-8663-ac681c71b013"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "30b79761-96b1-5b8c-8c8c-fe16159e8b93",
+        "1bac9c9f-33ec-5f34-91c1-d3871283f2ac"
+      ]
+    },
+    {
+      "id": "q056",
+      "text": "林澄平常在哪里工作？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "3f2d9d8b-fc28-5c94-b17f-d0576bb161ff"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "21bd5ef2-17c5-523e-b3b9-52a11fb003ce",
+        "0eaa9bc0-096f-5ae9-aa54-14e647903afc",
+        "471c7e6b-0c9c-59a5-a66b-b90c729436d5"
+      ]
+    },
+    {
+      "id": "q057",
+      "text": "林澄目前日常办公的地点是哪里？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "3f2d9d8b-fc28-5c94-b17f-d0576bb161ff"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "21bd5ef2-17c5-523e-b3b9-52a11fb003ce",
+        "0eaa9bc0-096f-5ae9-aa54-14e647903afc",
+        "471c7e6b-0c9c-59a5-a66b-b90c729436d5"
+      ]
+    },
+    {
+      "id": "q058",
+      "text": "林澄在三月通常去哪儿办公？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "21bd5ef2-17c5-523e-b3b9-52a11fb003ce"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "3f2d9d8b-fc28-5c94-b17f-d0576bb161ff",
+        "0eaa9bc0-096f-5ae9-aa54-14e647903afc",
+        "471c7e6b-0c9c-59a5-a66b-b90c729436d5"
+      ]
+    },
+    {
+      "id": "q059",
+      "text": "这次硬件联调林澄在哪里工作？",
+      "subject": "林澄",
+      "scope": "event:4ef999bc-0654-5fc5-889b-cd6c88d15d98",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "0eaa9bc0-096f-5ae9-aa54-14e647903afc"
+      ],
+      "supplemental_ids": [
+        "3f2d9d8b-fc28-5c94-b17f-d0576bb161ff"
+      ],
+      "forbidden_ids": [
+        "21bd5ef2-17c5-523e-b3b9-52a11fb003ce",
+        "471c7e6b-0c9c-59a5-a66b-b90c729436d5"
+      ]
+    },
+    {
+      "id": "q060",
+      "text": "林澄通常办公地点与这次联调地点有何区别？",
+      "subject": "林澄",
+      "scope": "event:4ef999bc-0654-5fc5-889b-cd6c88d15d98",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "3f2d9d8b-fc28-5c94-b17f-d0576bb161ff",
+        "0eaa9bc0-096f-5ae9-aa54-14e647903afc"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "21bd5ef2-17c5-523e-b3b9-52a11fb003ce",
+        "471c7e6b-0c9c-59a5-a66b-b90c729436d5"
+      ]
+    },
+    {
+      "id": "q061",
+      "text": "林澄平常用什么看书？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "70cb64d2-0589-5593-9628-511b1beda77f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "0a00e579-3c47-5d13-8853-9f4674bd54b3",
+        "9f75b746-88fd-568b-b11c-55a36041871d",
+        "f76b3f69-ee55-5a89-b5a9-a2938ae46ade"
+      ]
+    },
+    {
+      "id": "q062",
+      "text": "林澄现在日常阅读偏好哪种载体？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "70cb64d2-0589-5593-9628-511b1beda77f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "0a00e579-3c47-5d13-8853-9f4674bd54b3",
+        "9f75b746-88fd-568b-b11c-55a36041871d",
+        "f76b3f69-ee55-5a89-b5a9-a2938ae46ade"
+      ]
+    },
+    {
+      "id": "q063",
+      "text": "林澄三月偏好怎样的书籍媒介？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "0a00e579-3c47-5d13-8853-9f4674bd54b3"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "70cb64d2-0589-5593-9628-511b1beda77f",
+        "9f75b746-88fd-568b-b11c-55a36041871d",
+        "f76b3f69-ee55-5a89-b5a9-a2938ae46ade"
+      ]
+    },
+    {
+      "id": "q064",
+      "text": "这次签售林澄带什么书？",
+      "subject": "林澄",
+      "scope": "event:f2e012b8-1f7e-5ae0-9b5d-b0cbe7f42ed9",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "9f75b746-88fd-568b-b11c-55a36041871d"
+      ],
+      "supplemental_ids": [
+        "70cb64d2-0589-5593-9628-511b1beda77f"
+      ],
+      "forbidden_ids": [
+        "0a00e579-3c47-5d13-8853-9f4674bd54b3",
+        "f76b3f69-ee55-5a89-b5a9-a2938ae46ade"
+      ]
+    },
+    {
+      "id": "q065",
+      "text": "林澄的日常阅读载体和这次签售用书有什么不同？",
+      "subject": "林澄",
+      "scope": "event:f2e012b8-1f7e-5ae0-9b5d-b0cbe7f42ed9",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "70cb64d2-0589-5593-9628-511b1beda77f",
+        "9f75b746-88fd-568b-b11c-55a36041871d"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "0a00e579-3c47-5d13-8853-9f4674bd54b3",
+        "f76b3f69-ee55-5a89-b5a9-a2938ae46ade"
+      ]
+    },
+    {
+      "id": "q066",
+      "text": "林澄通常希望何时收到通知？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "78e2db3a-b209-5083-9847-89071eee551a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "bd778eb5-6c84-5ca0-aec3-ea649f5cfd04",
+        "a8bac9e4-e4b7-50b3-bba3-95e6f255204a",
+        "979b2452-f176-54c1-bc2d-06ffa49d827b"
+      ]
+    },
+    {
+      "id": "q067",
+      "text": "日常消息应该逐条提醒林澄还是集中发？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "78e2db3a-b209-5083-9847-89071eee551a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "bd778eb5-6c84-5ca0-aec3-ea649f5cfd04",
+        "a8bac9e4-e4b7-50b3-bba3-95e6f255204a",
+        "979b2452-f176-54c1-bc2d-06ffa49d827b"
+      ]
+    },
+    {
+      "id": "q068",
+      "text": "三月林澄的通知偏好是什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "bd778eb5-6c84-5ca0-aec3-ea649f5cfd04"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "78e2db3a-b209-5083-9847-89071eee551a",
+        "a8bac9e4-e4b7-50b3-bba3-95e6f255204a",
+        "979b2452-f176-54c1-bc2d-06ffa49d827b"
+      ]
+    },
+    {
+      "id": "q069",
+      "text": "本次事故哪些通知可以即时发送？",
+      "subject": "林澄",
+      "scope": "event:946d4341-5a09-5b02-8e29-bfd4edebcc61",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "a8bac9e4-e4b7-50b3-bba3-95e6f255204a"
+      ],
+      "supplemental_ids": [
+        "78e2db3a-b209-5083-9847-89071eee551a"
+      ],
+      "forbidden_ids": [
+        "bd778eb5-6c84-5ca0-aec3-ea649f5cfd04",
+        "979b2452-f176-54c1-bc2d-06ffa49d827b"
+      ]
+    },
+    {
+      "id": "q070",
+      "text": "通常通知与本次事故告警的规则分别是什么？",
+      "subject": "林澄",
+      "scope": "event:946d4341-5a09-5b02-8e29-bfd4edebcc61",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "78e2db3a-b209-5083-9847-89071eee551a",
+        "a8bac9e4-e4b7-50b3-bba3-95e6f255204a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "bd778eb5-6c84-5ca0-aec3-ea649f5cfd04",
+        "979b2452-f176-54c1-bc2d-06ffa49d827b"
+      ]
+    },
+    {
+      "id": "q071",
+      "text": "平常怎么称呼林澄？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "89f0ffc9-14d3-5c95-81a7-49d68d3a417a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "d4bd35b8-65ed-5c43-8458-ec10e046b47b",
+        "ffae8cf3-c96a-5101-8b9c-5da59586cc12",
+        "816233c1-5a7c-5d9a-9074-ac7170cd3a62"
+      ]
+    },
+    {
+      "id": "q072",
+      "text": "林澄现在希望日常被叫作什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "89f0ffc9-14d3-5c95-81a7-49d68d3a417a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "d4bd35b8-65ed-5c43-8458-ec10e046b47b",
+        "ffae8cf3-c96a-5101-8b9c-5da59586cc12",
+        "816233c1-5a7c-5d9a-9074-ac7170cd3a62"
+      ]
+    },
+    {
+      "id": "q073",
+      "text": "林澄在三月使用什么称呼？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "d4bd35b8-65ed-5c43-8458-ec10e046b47b"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "89f0ffc9-14d3-5c95-81a7-49d68d3a417a",
+        "ffae8cf3-c96a-5101-8b9c-5da59586cc12",
+        "816233c1-5a7c-5d9a-9074-ac7170cd3a62"
+      ]
+    },
+    {
+      "id": "q074",
+      "text": "这次公开活动林澄用什么昵称？",
+      "subject": "林澄",
+      "scope": "event:45334c51-5f00-5615-9f36-207e308b6d58",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "ffae8cf3-c96a-5101-8b9c-5da59586cc12"
+      ],
+      "supplemental_ids": [
+        "89f0ffc9-14d3-5c95-81a7-49d68d3a417a"
+      ],
+      "forbidden_ids": [
+        "d4bd35b8-65ed-5c43-8458-ec10e046b47b",
+        "816233c1-5a7c-5d9a-9074-ac7170cd3a62"
+      ]
+    },
+    {
+      "id": "q075",
+      "text": "日常称呼和本次公开活动昵称是否相同？",
+      "subject": "林澄",
+      "scope": "event:45334c51-5f00-5615-9f36-207e308b6d58",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "89f0ffc9-14d3-5c95-81a7-49d68d3a417a",
+        "ffae8cf3-c96a-5101-8b9c-5da59586cc12"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "d4bd35b8-65ed-5c43-8458-ec10e046b47b",
+        "816233c1-5a7c-5d9a-9074-ac7170cd3a62"
+      ]
+    },
+    {
+      "id": "q076",
+      "text": "林澄平常听哪类音乐？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "44e4887e-c344-5d42-88a0-57d1f9a8a753"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "28aec148-4025-542d-b36f-2345e487847d",
+        "449b79c9-cc88-54bf-bc26-710c8e905d7a",
+        "415b63fd-099a-5175-bf3f-2855299724c9"
+      ]
+    },
+    {
+      "id": "q077",
+      "text": "林澄现在日常播放什么风格的歌曲？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "44e4887e-c344-5d42-88a0-57d1f9a8a753"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "28aec148-4025-542d-b36f-2345e487847d",
+        "449b79c9-cc88-54bf-bc26-710c8e905d7a",
+        "415b63fd-099a-5175-bf3f-2855299724c9"
+      ]
+    },
+    {
+      "id": "q078",
+      "text": "林澄三月最常听哪种音乐？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "28aec148-4025-542d-b36f-2345e487847d"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "44e4887e-c344-5d42-88a0-57d1f9a8a753",
+        "449b79c9-cc88-54bf-bc26-710c8e905d7a",
+        "415b63fd-099a-5175-bf3f-2855299724c9"
+      ]
+    },
+    {
+      "id": "q079",
+      "text": "这次运动歌单选什么类型？",
+      "subject": "林澄",
+      "scope": "event:dfda405f-4504-5f8d-b2a0-2a6cab282b13",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "449b79c9-cc88-54bf-bc26-710c8e905d7a"
+      ],
+      "supplemental_ids": [
+        "44e4887e-c344-5d42-88a0-57d1f9a8a753"
+      ],
+      "forbidden_ids": [
+        "28aec148-4025-542d-b36f-2345e487847d",
+        "415b63fd-099a-5175-bf3f-2855299724c9"
+      ]
+    },
+    {
+      "id": "q080",
+      "text": "林澄平常和这次运动时的音乐选择有什么区别？",
+      "subject": "林澄",
+      "scope": "event:dfda405f-4504-5f8d-b2a0-2a6cab282b13",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "44e4887e-c344-5d42-88a0-57d1f9a8a753",
+        "449b79c9-cc88-54bf-bc26-710c8e905d7a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "28aec148-4025-542d-b36f-2345e487847d",
+        "415b63fd-099a-5175-bf3f-2855299724c9"
+      ]
+    },
+    {
+      "id": "q081",
+      "text": "林澄日常做什么运动？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "907badc8-8870-5576-b851-bbef7336f747"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "12c663b8-474e-5885-ae4a-195a6750c543",
+        "229e3495-35ac-5320-bc99-7434f73bd48a",
+        "7e2f390d-12ab-5615-a699-52506c2d1248"
+      ]
+    },
+    {
+      "id": "q082",
+      "text": "林澄现在通常采用哪种锻炼方式？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "907badc8-8870-5576-b851-bbef7336f747"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "12c663b8-474e-5885-ae4a-195a6750c543",
+        "229e3495-35ac-5320-bc99-7434f73bd48a",
+        "7e2f390d-12ab-5615-a699-52506c2d1248"
+      ]
+    },
+    {
+      "id": "q083",
+      "text": "三月林澄主要做哪类运动？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "12c663b8-474e-5885-ae4a-195a6750c543"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "907badc8-8870-5576-b851-bbef7336f747",
+        "229e3495-35ac-5320-bc99-7434f73bd48a",
+        "7e2f390d-12ab-5615-a699-52506c2d1248"
+      ]
+    },
+    {
+      "id": "q084",
+      "text": "这次出差林澄如何锻炼？",
+      "subject": "林澄",
+      "scope": "event:05a31a9d-cad9-52ae-9e2a-5d907e34f51f",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "229e3495-35ac-5320-bc99-7434f73bd48a"
+      ],
+      "supplemental_ids": [
+        "907badc8-8870-5576-b851-bbef7336f747"
+      ],
+      "forbidden_ids": [
+        "12c663b8-474e-5885-ae4a-195a6750c543",
+        "7e2f390d-12ab-5615-a699-52506c2d1248"
+      ]
+    },
+    {
+      "id": "q085",
+      "text": "林澄日常锻炼和本次出差锻炼分别是什么？",
+      "subject": "林澄",
+      "scope": "event:05a31a9d-cad9-52ae-9e2a-5d907e34f51f",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "907badc8-8870-5576-b851-bbef7336f747",
+        "229e3495-35ac-5320-bc99-7434f73bd48a"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "12c663b8-474e-5885-ae4a-195a6750c543",
+        "7e2f390d-12ab-5615-a699-52506c2d1248"
+      ]
+    },
+    {
+      "id": "q086",
+      "text": "林澄现在通常用什么界面主题？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "e9ec0266-ab2a-5a2b-9363-4c547448a0b3"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "0e5ac22b-2242-5dcf-90c2-9b591b32bd5f",
+        "3b0101d0-921a-5f91-8c69-7f178dace819",
+        "68212cbf-e21a-5d30-8b4d-1a06311d1246"
+      ]
+    },
+    {
+      "id": "q087",
+      "text": "林澄日常看屏幕偏好哪种明暗配色？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "e9ec0266-ab2a-5a2b-9363-4c547448a0b3"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "0e5ac22b-2242-5dcf-90c2-9b591b32bd5f",
+        "3b0101d0-921a-5f91-8c69-7f178dace819",
+        "68212cbf-e21a-5d30-8b4d-1a06311d1246"
+      ]
+    },
+    {
+      "id": "q088",
+      "text": "三月林澄习惯哪种界面配色？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "0e5ac22b-2242-5dcf-90c2-9b591b32bd5f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "e9ec0266-ab2a-5a2b-9363-4c547448a0b3",
+        "3b0101d0-921a-5f91-8c69-7f178dace819",
+        "68212cbf-e21a-5d30-8b4d-1a06311d1246"
+      ]
+    },
+    {
+      "id": "q089",
+      "text": "本次投影展示选什么主题？",
+      "subject": "林澄",
+      "scope": "event:40ee77f1-d8a8-5a4e-aba5-c319cc79f9e2",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "3b0101d0-921a-5f91-8c69-7f178dace819"
+      ],
+      "supplemental_ids": [
+        "e9ec0266-ab2a-5a2b-9363-4c547448a0b3"
+      ],
+      "forbidden_ids": [
+        "0e5ac22b-2242-5dcf-90c2-9b591b32bd5f",
+        "68212cbf-e21a-5d30-8b4d-1a06311d1246"
+      ]
+    },
+    {
+      "id": "q090",
+      "text": "日常主题和这次投影展示主题有何不同？",
+      "subject": "林澄",
+      "scope": "event:40ee77f1-d8a8-5a4e-aba5-c319cc79f9e2",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "e9ec0266-ab2a-5a2b-9363-4c547448a0b3",
+        "3b0101d0-921a-5f91-8c69-7f178dace819"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "0e5ac22b-2242-5dcf-90c2-9b591b32bd5f",
+        "68212cbf-e21a-5d30-8b4d-1a06311d1246"
+      ]
+    },
+    {
+      "id": "q091",
+      "text": "林澄当前通常多久备份一次？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "04d73342-db97-57ad-87fc-8e108cb4eb5e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "19908a1a-dc7b-511f-b752-c2f9b21f6370",
+        "f94cd987-a93b-51f0-bbd0-73241cf4b253",
+        "d6587b61-dfdb-5e97-b37e-ce6042f0aba0"
+      ]
+    },
+    {
+      "id": "q092",
+      "text": "林澄日常备份安排在什么时候？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "04d73342-db97-57ad-87fc-8e108cb4eb5e"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "19908a1a-dc7b-511f-b752-c2f9b21f6370",
+        "f94cd987-a93b-51f0-bbd0-73241cf4b253",
+        "d6587b61-dfdb-5e97-b37e-ce6042f0aba0"
+      ]
+    },
+    {
+      "id": "q093",
+      "text": "三月林澄采用怎样的备份周期？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "19908a1a-dc7b-511f-b752-c2f9b21f6370"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "04d73342-db97-57ad-87fc-8e108cb4eb5e",
+        "f94cd987-a93b-51f0-bbd0-73241cf4b253",
+        "d6587b61-dfdb-5e97-b37e-ce6042f0aba0"
+      ]
+    },
+    {
+      "id": "q094",
+      "text": "本次数据迁移前有什么额外备份安排？",
+      "subject": "林澄",
+      "scope": "event:715ef31b-fee9-5049-85ed-0a87fbcb5289",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "f94cd987-a93b-51f0-bbd0-73241cf4b253"
+      ],
+      "supplemental_ids": [
+        "04d73342-db97-57ad-87fc-8e108cb4eb5e"
+      ],
+      "forbidden_ids": [
+        "19908a1a-dc7b-511f-b752-c2f9b21f6370",
+        "d6587b61-dfdb-5e97-b37e-ce6042f0aba0"
+      ]
+    },
+    {
+      "id": "q095",
+      "text": "一般备份计划和本次迁移前的要求有什么区别？",
+      "subject": "林澄",
+      "scope": "event:715ef31b-fee9-5049-85ed-0a87fbcb5289",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "04d73342-db97-57ad-87fc-8e108cb4eb5e",
+        "f94cd987-a93b-51f0-bbd0-73241cf4b253"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "19908a1a-dc7b-511f-b752-c2f9b21f6370",
+        "d6587b61-dfdb-5e97-b37e-ce6042f0aba0"
+      ]
+    },
+    {
+      "id": "q096",
+      "text": "林澄现在通常怎样过周末？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "current",
+      "relevant_ids": [
+        "5135bae1-aab3-5371-a381-af2ac3ca2dc0"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "b1507621-4c3e-5ee9-96d7-49e3a82e623f",
+        "4cc6f002-110a-5e1e-bf55-8b4db5a39e00",
+        "38211bc0-0696-54f5-8a86-011ec7ccd0aa"
+      ]
+    },
+    {
+      "id": "q097",
+      "text": "林澄日常周末更喜欢什么活动？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "paraphrase",
+      "relevant_ids": [
+        "5135bae1-aab3-5371-a381-af2ac3ca2dc0"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "b1507621-4c3e-5ee9-96d7-49e3a82e623f",
+        "4cc6f002-110a-5e1e-bf55-8b4db5a39e00",
+        "38211bc0-0696-54f5-8a86-011ec7ccd0aa"
+      ]
+    },
+    {
+      "id": "q098",
+      "text": "林澄三月的周末惯例是什么？",
+      "subject": "林澄",
+      "scope": "general",
+      "at": "2026-03-15T00:00:00Z",
+      "include_history": true,
+      "category": "historical",
+      "relevant_ids": [
+        "b1507621-4c3e-5ee9-96d7-49e3a82e623f"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "5135bae1-aab3-5371-a381-af2ac3ca2dc0",
+        "4cc6f002-110a-5e1e-bf55-8b4db5a39e00",
+        "38211bc0-0696-54f5-8a86-011ec7ccd0aa"
+      ]
+    },
+    {
+      "id": "q099",
+      "text": "这次朋友生日林澄怎么安排？",
+      "subject": "林澄",
+      "scope": "event:3caf4645-441b-5bee-9502-9911c887290b",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "local_exception",
+      "relevant_ids": [
+        "4cc6f002-110a-5e1e-bf55-8b4db5a39e00"
+      ],
+      "supplemental_ids": [
+        "5135bae1-aab3-5371-a381-af2ac3ca2dc0"
+      ],
+      "forbidden_ids": [
+        "b1507621-4c3e-5ee9-96d7-49e3a82e623f",
+        "38211bc0-0696-54f5-8a86-011ec7ccd0aa"
+      ]
+    },
+    {
+      "id": "q100",
+      "text": "林澄通常周末安排与这次生日活动分别是什么？",
+      "subject": "林澄",
+      "scope": "event:3caf4645-441b-5bee-9502-9911c887290b",
+      "at": "2026-11-01T00:00:00Z",
+      "include_history": false,
+      "category": "compare_scope",
+      "relevant_ids": [
+        "5135bae1-aab3-5371-a381-af2ac3ca2dc0",
+        "4cc6f002-110a-5e1e-bf55-8b4db5a39e00"
+      ],
+      "supplemental_ids": [],
+      "forbidden_ids": [
+        "b1507621-4c3e-5ee9-96d7-49e3a82e623f",
+        "38211bc0-0696-54f5-8a86-011ec7ccd0aa"
+      ]
+    }
+  ]
+}

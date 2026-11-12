@@ -1,0 +1,12 @@
+{
+  "format": "alia-accepted-slice/1",
+  "handoff": "docs/ai/ALIA_P04_HANDOFF.md",
+  "handoff_sha256": "cd0ec8785f98704354209b29ffc43357bbb00f02077c6e7ab0b9882df6e94527",
+  "id": "p04-01",
+  "scope": "locally verified task sources; full integration acceptance remains separate",
+  "sources": {
+    "src/adapters/memory_commands.rs": "307ba5c872ae59fc1a2ad88e806da86b59476153f77656732b86cfba4361cd4a",
+    "src/service/memory_commands.rs": "d41baf8462d9c16a64e658b2c7f98a305961376ea3681d01e2ece7399aaf7dc8",
+    "tests/memory_revisions.rs": "51894cb8ee7bdd4c3dd03dcc6e02cd60558896d2dfa75bc6db5e74533f59b8c7"
+  }
+}

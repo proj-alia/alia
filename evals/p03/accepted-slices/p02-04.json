@@ -1,0 +1,19 @@
+{
+  "format": "alia-accepted-slice/1",
+  "id": "p02-04",
+  "scope": "exact locally verified source slice; not full engineering, deployment or model semantic proof",
+  "handoff": "docs/ai/ALIA_P02_04_HANDOFF.md",
+  "handoff_sha256": "e0df3d71d00e10f7b651fc673ca3d5a26738d0ae205cc30a55bb94be656356d4",
+  "sources": {
+    "web/src/features/memory/MemoryInspector.tsx": "47576efd661958ce14e9b323170d7d5d6f1511a3fca0e19554026a83e5f05a4a",
+    "web/scripts/test-source-inspector.mjs": "e42b5a3a042286c9578582b6e9464fad365a08e024194886ddeb8be6e655c717",
+    "web/src/features/sources/SourceEventInspector.tsx": "1acfc702364276008691043ed544535bbc0cb71cde13ef1a1f109bbbe72fbe5c",
+    "web/src/features/sources/sources.css": "ea4719ef6a8fda38eda7374974546cc08e8b138b230272646f74b32b15e8e6aa",
+    "web/src/features/sources/types.ts": "010ef2ea2567b835881723a1feb0a796f47839107ff8e0ce625560b15d38100d",
+    "web/src/features/sources/useSourceRead.ts": "fbe19942fc92b338dec235cc5b52d3093a59ee69522011497fd70e39fd224f5f"
+  },
+  "evidence": {
+    "evals/results/p02-04-source-v4/report.json": "bb3e1f63f657ffba2054ae73799e14965d328522fb17a54864a6517bd3bd6832",
+    "evals/results/p02-04-source-v4/browser/report.json": "5586bf0c0de16419b432d77b8077e09a14a33836fd805c4999af04b2a3219309"
+  }
+}

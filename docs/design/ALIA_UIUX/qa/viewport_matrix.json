@@ -1,0 +1,461 @@
+{
+  "checks": [
+    {
+      "viewport": 360,
+      "page": "overview",
+      "heading": "运行概览",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "console",
+      "heading": "测试沙盒",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "identity",
+      "heading": "身份与人格",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "memory",
+      "heading": "记忆管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "platforms",
+      "heading": "接入渠道",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "models",
+      "heading": "模型服务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "extensions",
+      "heading": "扩展管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "deps",
+      "heading": "依赖管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "config",
+      "heading": "配置文件",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "tasks",
+      "heading": "自动化任务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "data",
+      "heading": "数据与日志",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "governance",
+      "heading": "权限与审批",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 360,
+      "page": "settings",
+      "heading": "系统设置",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "overview",
+      "heading": "运行概览",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "console",
+      "heading": "测试沙盒",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "identity",
+      "heading": "身份与人格",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "memory",
+      "heading": "记忆管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "platforms",
+      "heading": "接入渠道",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "models",
+      "heading": "模型服务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "extensions",
+      "heading": "扩展管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "deps",
+      "heading": "依赖管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "config",
+      "heading": "配置文件",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "tasks",
+      "heading": "自动化任务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "data",
+      "heading": "数据与日志",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "governance",
+      "heading": "权限与审批",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 390,
+      "page": "settings",
+      "heading": "系统设置",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "overview",
+      "heading": "运行概览",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "console",
+      "heading": "测试沙盒",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "identity",
+      "heading": "身份与人格",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "memory",
+      "heading": "记忆管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "platforms",
+      "heading": "接入渠道",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "models",
+      "heading": "模型服务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "extensions",
+      "heading": "扩展管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "deps",
+      "heading": "依赖管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "config",
+      "heading": "配置文件",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "tasks",
+      "heading": "自动化任务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "data",
+      "heading": "数据与日志",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "governance",
+      "heading": "权限与审批",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 768,
+      "page": "settings",
+      "heading": "系统设置",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "overview",
+      "heading": "运行概览",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "console",
+      "heading": "测试沙盒",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "identity",
+      "heading": "身份与人格",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "memory",
+      "heading": "记忆管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "platforms",
+      "heading": "接入渠道",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "models",
+      "heading": "模型服务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "extensions",
+      "heading": "扩展管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "deps",
+      "heading": "依赖管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "config",
+      "heading": "配置文件",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "tasks",
+      "heading": "自动化任务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "data",
+      "heading": "数据与日志",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "governance",
+      "heading": "权限与审批",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1080,
+      "page": "settings",
+      "heading": "系统设置",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "overview",
+      "heading": "运行概览",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "console",
+      "heading": "测试沙盒",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "identity",
+      "heading": "身份与人格",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "memory",
+      "heading": "记忆管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "platforms",
+      "heading": "接入渠道",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "models",
+      "heading": "模型服务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "extensions",
+      "heading": "扩展管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "deps",
+      "heading": "依赖管理",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "config",
+      "heading": "配置文件",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "tasks",
+      "heading": "自动化任务",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "data",
+      "heading": "数据与日志",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "governance",
+      "heading": "权限与审批",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "viewport": 1440,
+      "page": "settings",
+      "heading": "系统设置",
+      "no_js_error": true,
+      "no_horizontal_overflow": true
+    }
+  ],
+  "ok": 65,
+  "total": 65
+}

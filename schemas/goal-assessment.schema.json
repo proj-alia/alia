@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Alia goal assessment v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "goal_id",
+    "goal_revision",
+    "criterion",
+    "verdict",
+    "reason",
+    "evidence_ids",
+    "unmet_conditions",
+    "uncertainties"
+  ],
+  "properties": {
+    "goal_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "goal_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "criterion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "verdict": {
+      "enum": [
+        "met",
+        "not_met",
+        "uncertain"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "evidence_ids": {
+      "type": "array",
+      "maxItems": 128,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "unmet_conditions": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2000
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 2000
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "met"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unmet_conditions": {
+            "maxItems": 0
+          },
+          "uncertainties": {
+            "maxItems": 0
+          },
+          "evidence_ids": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "not_met"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unmet_conditions": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "uncertain"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "uncertainties": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

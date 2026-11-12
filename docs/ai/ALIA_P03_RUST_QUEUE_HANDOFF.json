@@ -1,0 +1,66 @@
+{
+  "task": "M34-QA-RUST-QUEUE",
+  "revision": 1,
+  "owner": "P03",
+  "reviewers": [
+    "Root",
+    "P04"
+  ],
+  "state": "defined",
+  "at": "2026-11-12T20:16:51.962985+00:00",
+  "finding": "Independent target/database/workspace locks do not establish global Rust compile concurrency=1",
+  "actual_inspection": {
+    "A": [
+      [
+        "target",
+        "/tmp/alia-p03-target-A"
+      ]
+    ],
+    "B": [
+      [
+        "target",
+        "/tmp/alia-p03-target-B"
+      ]
+    ],
+    "shared_lock_keys": [],
+    "inspection_exit_code": 0
+  },
+  "fixed_sources": {
+    "scripts/qa/common.py": "2e01643abc1b219933bdbc8e2efc352d4966ebb3ac618daea26649dd8d3850c9",
+    "scripts/qa/run_engineering.py": "44ca71a64356a810e2fafbfb13728ffe6f5c7c51badbd8a98e212cd6206c9dbd",
+    "docs/ai/ALIA_PARALLEL_COORDINATION.md": "d585e7dcdba7b6ac45c0dfe6b3d488c488ddb6c45377efe2315d1f11cda05024"
+  },
+  "existing_parallel_evidence": {
+    "path": "evals/results/p03/concurrency-20261112-v1/report.json",
+    "sha256": "0deb0f0d86d8f7ef76698456afd825536e47f8b0fb64a7f4ba831cf6127fca47",
+    "historical_overlap_seconds": 65.576,
+    "unchanged": true
+  },
+  "policy_conflict": "Current Root coordination section approves resource-isolated parallelism; no canonical global compile key or concurrency=1 policy found in inspected rules",
+  "proposal": {
+    "resource": [
+      "rust-compile",
+      "shared"
+    ],
+    "computed_key": "rust-compile:a4d26868017c0ccffe2efe50",
+    "authority": "Root decision pending; not a released interface",
+    "implementation": "Existing common.resource_locks unchanged; each owner adopts identical key around Cargo compiler-capable phase only, with own target lock",
+    "lifetime": "Build/test-build/clippy/incremental compilation subprocess tree until exit; release before network/model waits and noncompile DB/browser lifecycle",
+    "open_boundary": "Root must settle Cargo test phases that both compile and run: avoid holding a global compile lock throughout long PG/model execution; prefer explicit build/no-run then direct test binary",
+    "adoption": "P03 stage_resources and standalone Root/P02/P04/P05 runners must all adopt; changing P03 alone cannot prove global concurrency=1"
+  },
+  "required_validation": [
+    "Two independent processes using the accepted key with a barrier and monotonic acquisition/release timestamps; second must wait for first exit",
+    "Real bounded compiler operations in separate fixed source/target/output trees; validate non-overlap, queue_seconds, exact PID/FD identities and cleanup",
+    "Independent network/model resource remains acquirable while compile queue is occupied",
+    "Interrupted waiting/holding compiler process leaves no orphan compilation and later owner acquires lock"
+  ],
+  "not_run": [
+    "new global queue probe",
+    "new compilation",
+    "full matrix",
+    "model calls"
+  ],
+  "changes": "fault packet only; no code/common/lock file deletion/active process interruption",
+  "next_dependency": "Root decision on canonical key, lifetime and adoption boundary; then P03 implements and supplies actual queued evidence"
+}

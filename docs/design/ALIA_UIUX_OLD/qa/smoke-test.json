@@ -1,0 +1,135 @@
+{
+  "product": "ALIA UIUX no character v2.0",
+  "date": "2026-11-11",
+  "target": "interactive prototype, not production Agent",
+  "total": 25,
+  "passed": 25,
+  "failed": 0,
+  "checks": [
+    {
+      "test": "startup-no-js-errors",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "test": "default-light-theme",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "no-character-images",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "has-10-navigation-routes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "page-overview",
+      "status": "PASS",
+      "detail": "matched text 数字个体控制台"
+    },
+    {
+      "test": "page-identity",
+      "status": "PASS",
+      "detail": "matched text 身份锚点与人格边界"
+    },
+    {
+      "test": "page-memory",
+      "status": "PASS",
+      "detail": "matched text 记忆不是一份可以随意重写的简介"
+    },
+    {
+      "test": "page-cognition",
+      "status": "PASS",
+      "detail": "matched text 认知"
+    },
+    {
+      "test": "page-relations",
+      "status": "PASS",
+      "detail": "matched text 关系不是一项亲密度分数"
+    },
+    {
+      "test": "page-agency",
+      "status": "PASS",
+      "detail": "matched text 行动"
+    },
+    {
+      "test": "page-media",
+      "status": "PASS",
+      "detail": "matched text 媒介"
+    },
+    {
+      "test": "page-governance",
+      "status": "PASS",
+      "detail": "matched text 授权"
+    },
+    {
+      "test": "page-events",
+      "status": "PASS",
+      "detail": "matched text 行为与状态审计记录"
+    },
+    {
+      "test": "page-settings",
+      "status": "PASS",
+      "detail": "matched text 运行状态"
+    },
+    {
+      "test": "memory-search-empty",
+      "status": "PASS",
+      "detail": "5->0"
+    },
+    {
+      "test": "memory-search-restores",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "approval-shows-confirmation",
+      "status": "PASS",
+      "detail": "ALIA / CONFIRMATION\n批准「申请使用邮件媒介」？\n\n预期行为：向 design-review@example.invalid 发送项目说明邮件"
+    },
+    {
+      "test": "approval-mock-updates",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "theme-switch",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "no-horizontal-overflow-wide",
+      "status": "PASS",
+      "detail": "excess px=0"
+    },
+    {
+      "test": "no-horizontal-overflow-mobile",
+      "status": "PASS",
+      "detail": "excess px=0"
+    },
+    {
+      "test": "mobile-drawer-open",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "mobile-drawer-nav-closes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "no-horizontal-overflow-small-mobile",
+      "status": "PASS",
+      "detail": "excess px=0"
+    },
+    {
+      "test": "end-no-js-errors",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "format": "alia-accepted-slice/1",
+  "id": "p02-03",
+  "scope": "locally verified task sources; no broad release/model semantic claim",
+  "handoff": "docs/ai/ALIA_P02_03_HANDOFF.md",
+  "handoff_sha256": "57a826da44df81f7c59c6ae635c19fcc112f96a961e4f2a5556246a25f133826",
+  "sources": {
+    "web/src/features/Memory.tsx": "b0faa7c085e7adf4641ffd50ea9e074f51171db7759c4101bb3c4cfec98fbffd",
+    "web/src/app/App.tsx": "e0313e99551de77db526d274feb690ad74738916ef3ee78630102296cbc504c9",
+    "web/src/app/useConsoleNavigation.ts": "fb6addcf552a9ab566e47a4f60e7721e27e016c78c3efd79b50a84f0961c79f5",
+    "web/scripts/test-memory-revisions.mjs": "2b1db2c8cdc1cbed80c04ffe86071e0a9690807c07e509959cc29dfcfaac16bb",
+    "web/src/features/memory/EditorGuard.tsx": "87de1147931b72ed5ca9c199550c59f3af13fabbcaf95713c5f4a1be6a43701e",
+    "web/src/features/memory/MemoryHistory.tsx": "3883b6d5bdfb339ce586f2ed3a7b5abbcd5dc66457aafeb30d4174e3ad5b6b1e",
+    "web/src/features/memory/MemoryInspector.tsx": "c3263ec4919e62ee566878a58dc8f4a7253e3b909dea558ed6a09e0ebb7026cd",
+    "web/src/features/memory/RevisionPreview.tsx": "9de5353dd2ef881d537722c321d95dcbbd90b34c9dbc76995df9777926ace83b",
+    "web/src/features/memory/client.ts": "7337534833adff6c580fff15447efbe982f73820cb04b00021f1ccff4d496e48",
+    "web/src/features/memory/memory.css": "9df9e91d9814beaca79e5a7e7ffeedb61459533c6e750978ef564499c513b537",
+    "web/src/features/memory/types.ts": "2d53477a6ffe5e1ae3ae4f13a2ba66c5610e5ac7c3add20604c71e9a47cd84ba",
+    "web/src/features/memory/useMemoryRead.ts": "7fda433a73b8136290976b123f86e78d9dba76f4325ae92067f754c3127c2bec"
+  }
+}

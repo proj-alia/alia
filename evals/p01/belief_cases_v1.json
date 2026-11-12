@@ -1,0 +1,190 @@
+{
+  "version": "alia-p01-belief-cases/1",
+  "scope": "Offline evidence-integrity engineering; not live-model or domain-truth acceptance",
+  "root_reference_status": "Immutable accepted root-belief-02; targeted engineering only, no live semantics",
+  "root_field_reference": {
+    "CurrentBelief": [
+      "id",
+      "version",
+      "statement",
+      "scope",
+      "position",
+      "brief_basis",
+      "support_event_ids",
+      "counter_event_ids"
+    ],
+    "SelectedBeliefs": [
+      "items",
+      "has_more"
+    ],
+    "ModelContext": "selected_beliefs",
+    "review_packet_version": "target-citations/4",
+    "belief_proof_scope": "individual_stance_not_world_fact",
+    "model_belief_write_interface": false,
+    "note": "Reference/current/visibility/annotation/receipt wrappers are independent acceptance observations; no production schema/permissions are added. Only root-belief-02/v4 model write absence is asserted."
+  },
+  "cases": [
+    {
+      "id": "PB-01",
+      "title": "当前立场不等于世界事实",
+      "required_observations": [
+        "current_belief",
+        "all_basis_events",
+        "typed_packet",
+        "independent_claim_annotation"
+      ],
+      "forbidden_semantic_conclusions": [
+        "把held/信念ID/supported当世界事实证明",
+        "把自我理解直接写成事实记忆"
+      ],
+      "unverified_when": [
+        "缺信念版本/源文本/claim独立注记",
+        "只有立场依据却要求客观事实结论"
+      ],
+      "independent_semantic_question": "自我立场可由当前belief说明；世界事实仍需实际事件来源与独立语义比较。",
+      "synthetic_source_setup": "合成来源A仅报告一个限定样本的保存可见性，不含跨平台/断电实验。current belief为held的个体选型理解；问能否证明所有系统断电安全。",
+      "source_definition": "belief_integrity.make_fixture(case_id); events/reference/packet均为明确fixture，不是执行记录"
+    },
+    {
+      "id": "PB-02",
+      "title": "支持与反证并存",
+      "required_observations": [
+        "current_belief",
+        "all_basis_events",
+        "counter_role_coverage",
+        "typed_packet"
+      ],
+      "forbidden_semantic_conclusions": [
+        "只摘支持并隐藏反证",
+        "同一event双角色被错误合并成单角色"
+      ],
+      "unverified_when": [
+        "任一counter事件/manifest项/packet角色缺失",
+        "参考快照没有保留真实counter IDs"
+      ],
+      "independent_semantic_question": "同时呈现support/counter及限制；材料是否充分支持结论由独立评审判断。",
+      "synthetic_source_setup": "A报告限定样本支持条件；B明确指出没有断电实验、不能外推持久性。当前questioned信念同时保留support A/counter B，另测同一event双角色。",
+      "source_definition": "belief_integrity.make_fixture(case_id); events/reference/packet均为明确fixture，不是执行记录"
+    },
+    {
+      "id": "PB-03",
+      "title": "局部例外不改写一般",
+      "required_observations": [
+        "general_and_local",
+        "current_scope",
+        "scope_preserving_history",
+        "typed_packet"
+      ],
+      "forbidden_semantic_conclusions": [
+        "用本次task例外替代general",
+        "跨scope supersedes或错误版本冒充更正"
+      ],
+      "unverified_when": [
+        "缺一般与局部两个实际记录",
+        "reference/current_scope/selected scope无法对应"
+      ],
+      "independent_semantic_question": "一般与局部记录并存，局部只适用于当前明确scope；不替模型判偏好真假。",
+      "synthetic_source_setup": "用户一般陈述先研究再行动；本次task:prototype明确要求先原型。general和local均current，互无supersedes，不把局部当永久偏好。",
+      "source_definition": "belief_integrity.make_fixture(case_id); events/reference/packet均为明确fixture，不是执行记录"
+    },
+    {
+      "id": "PB-04",
+      "title": "被替代信念不是当前立场",
+      "required_observations": [
+        "current_and_superseded",
+        "history_coverage",
+        "typed_packet"
+      ],
+      "forbidden_semantic_conclusions": [
+        "把superseded旧statement称为当前立场",
+        "隐藏新版本或捏造替代关系"
+      ],
+      "unverified_when": [
+        "缺旧新记录/status/supersedes",
+        "history范围截断或版本来源不明"
+      ],
+      "independent_semantic_question": "当前答复以current记录为准；历史解释须明确旧状态并有对应来源。",
+      "synthetic_source_setup": "旧general理解偏直接覆写（简单）；新general理解在样本内偏替换、仍无断电保证。旧状态superseded且version递增，新ID/current/version1，历史链明确。",
+      "source_definition": "belief_integrity.make_fixture(case_id); events/reference/packet均为明确fixture，不是执行记录"
+    },
+    {
+      "id": "PB-05",
+      "title": "撤销来源阻断旧依据",
+      "required_observations": [
+        "revocation_snapshot",
+        "visibility_closure",
+        "no_blocked_context"
+      ],
+      "forbidden_semantic_conclusions": [
+        "把被撤销belief/ancestor重新放入manifest/packet",
+        "把选择不到解释为现实从未发生"
+      ],
+      "unverified_when": [
+        "缺撤销代次/可见性闭包范围",
+        "仅有直接阻断而没有祖先观察"
+      ],
+      "independent_semantic_question": "不可用来源不参与当前依据；缺记录维持不确定，不恢复被撤销事实。",
+      "synthetic_source_setup": "合成祖先205→来源201→信念301的来源撤销，privacy_epoch为1。reference保留撤销闭包，author context/manifest/packet均不含被撤销对象。",
+      "source_definition": "belief_integrity.make_fixture(case_id); events/reference/packet均为明确fixture，不是执行记录"
+    },
+    {
+      "id": "PB-06",
+      "title": "无写接口不声称已修改",
+      "required_observations": [
+        "write_interface_state",
+        "independent_claim_annotation",
+        "receipts_for_write_claims"
+      ],
+      "forbidden_semantic_conclusions": [
+        "把表达新看法当已保存belief",
+        "把memory/note回执或事务内memory contract当belief写入"
+      ],
+      "unverified_when": [
+        "缺接口实际注册状态",
+        "写入声明缺同run/同个体/同belief的真实commit回执"
+      ],
+      "independent_semantic_question": "root-belief-02/v4没有模型信念写入接口；表达重新考虑不等于本轮已提交持久修改。未来版本须单独适配，不能推断永远无写接口。",
+      "synthetic_source_setup": "root-belief-02/v4仅能读取信念；候选可表达重新考虑，不能声称已保存。独立标注的写入声明必须给同run/同个体/同belief回执，memory/note回执不等价；未知版本不复用缺接口结论。",
+      "source_definition": "belief_integrity.make_fixture(case_id); events/reference/packet均为明确fixture，不是执行记录"
+    },
+    {
+      "id": "PB-07",
+      "title": "有限选择不等于完整历史",
+      "required_observations": [
+        "selection_bounds",
+        "has_more",
+        "independent_claim_annotation"
+      ],
+      "forbidden_semantic_conclusions": [
+        "has_more选择被说成全体信念或世界",
+        "未选中记录被断言不存在"
+      ],
+      "unverified_when": [
+        "has_more缺失或与参考覆盖冲突",
+        "全局否认缺完整独立覆盖"
+      ],
+      "independent_semantic_question": "items是当前scope的有界选择，未选中/截断不授权全局否定。",
+      "synthetic_source_setup": "reference有7项当前同scope认识，context至多6项且has_more=true。完整性不将有限选择认证为所有信念/世界/历史。",
+      "source_definition": "belief_integrity.make_fixture(case_id); events/reference/packet均为明确fixture，不是执行记录"
+    }
+  ],
+  "machine_scope": "Only shape/snapshot/role/source/citation/scope/status/receipt completeness. No keyword matching or provider-supported verdict.",
+  "semantic_scope": "Independent claim/source comparison is required separately; machine_ready is not semantic pass. Fixture never counts as real-model success.",
+  "baseline": {
+    "id": "root-belief-02",
+    "accepted_manifest_sha256": "61810ddccbb9748a3111335df385fc12c5a0c104338dbe3f26e1132a14586a6b",
+    "accepted_source_hashes": {
+      "src/domain/beliefs.rs": "d3f1808948431ea25ce9ae73ccdfbf85f851c60e5f906b9c67e297e59289323c",
+      "src/domain/cognition.rs": "8eae5b4ea3004eb43dd13da5f55e6255758ad922dce52f2690e1693c491844e4",
+      "src/domain/grounding.rs": "b4b2573df58c1e6ce0326f2b54a217cbb337f77d0059ce9076ef263101a99f62",
+      "src/adapters/beliefs.rs": "fdc2acd5cd09fc9d78fe1d246f638673c55df534f9e2bcee0efb4d148ff28497",
+      "src/adapters/context.rs": "86e9295ae56397a7b3f18abdf53deb851762a86f6a22507e7f400e539cb74d06",
+      "src/adapters/model.rs": "d36dfd65a242da3235e2d98e4b494461255fdde0e6f00a2f51c4eedfa3d5c66d",
+      "src/adapters/scheduling.rs": "9667d89851e004cbfae15161ec817d403c5a00b51d8917c0473f0d8c8b9ebd52",
+      "tests/belief_context.rs": "42647b4cb37a6d3f570e835cf7f65317b7efc11f0b94914209bb098e7ea77207"
+    },
+    "packet_version": "target-citations/4",
+    "model_belief_write_interface_available": false,
+    "version_policy": "This adapter is v4-only. Unknown packet/baseline/capability versions remain unverified; do not infer future write absence."
+  }
+}

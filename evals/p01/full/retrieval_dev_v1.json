@@ -1,0 +1,626 @@
+{
+  "version": "alia-eval-retrieval-materials/1",
+  "split": "dev",
+  "data_mode": "synthetic_materials",
+  "actual_retrieval_executed": false,
+  "logical_id_note": "These UUIDs are fixture label identities, not observed DB event IDs. A qualified collector must map exact source text to actual event IDs/receipts.",
+  "source_kind_note": "All source rows are explicit synthetic owner reports, including quoted documents/summaries; quotes are not personal experience or external truth certificates.",
+  "events": [
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e21",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：高岚说，一般做事偏好是先录全清单。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 1,
+      "time_label": "合成时间序列1-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "f610308d7e4f7243bedb5141ef71428317756b04da37c1e69f13cb5d9db45b24"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e22",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：高岚的栎树手册项目用于器材借用，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 2,
+      "time_label": "合成时间序列1-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "6437f97fe7efd105ab9b2d9abb32fc7e72666b61a18270d84f786f6dd767fda2"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e23",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:栎树手册-演示这次小型试用先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:栎树手册-演示",
+      "sequence": 3,
+      "time_label": "合成时间序列1-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "cc53740181986a0301d3b6a4da285e18b2e20abd6d4d5dc0f72c965162bcc53d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e24",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：高岚现在的一般偏好改为先核对一套器材；原先先录全清单保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 4,
+      "time_label": "合成时间序列1-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000004e21"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "7251d9284600fa31e31c501bf456afe9790486048ed9dbb1daf989eb155de96d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e25",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：高蓝明确不是高岚，其项目是泉声目录，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 5,
+      "time_label": "合成时间序列1-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "8ce4b073f14510b9487ffbeab6036adf69ae2575b564ebf8d18ac31af26d34fe"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e26",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于栎树手册，合成用户引用的外部说明写道：“借用登记不证明实物性能。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 6,
+      "time_label": "合成时间序列1-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "7ce3ee048e23be9be7ba6ac5fc5aecb777f888449d4375cebc1226d831414355"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e27",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：栎树手册需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 7,
+      "time_label": "合成时间序列1-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "51245f5df0ad3ac5a8d9890b69cd74ffff02631191d8a569fd6de64f916618c1"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e28",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：栎树手册的演示原订二月四日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 8,
+      "time_label": "合成时间序列1-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "7f7727a0b5479d8b8edec21120b1e0cc8eedb9480d02157dba8c95ffc4fad921"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e29",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：乔雨负责泉声目录，不是栎树手册的负责人，也不与高岚合并。",
+      "scope": "general",
+      "sequence": 9,
+      "time_label": "合成时间序列1-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "4574522b2c2801ca8c5b4b67d785dc6795032c7a5871927075c4ad9175f33511"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e2a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：栎树手册的演示由二月四日改到二月十一日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 10,
+      "time_label": "合成时间序列1-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000004e28"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "1f646aa3753fa4d910c5efe1bf94fd92f84f54ec162557abcc371f2994f3652b"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e35",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：温河说，一般做事偏好是先列完整提纲。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 11,
+      "time_label": "合成时间序列2-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "20ba8f9b4c760dda908dcf1d70b21b394196f5f331f6c521a8365f9b78212a4f"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e36",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：温河的南风便笺项目用于写作练习，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 12,
+      "time_label": "合成时间序列2-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "4c459ccb046fb9448910be01146b93686ef9f4b77e212af7c8e2d469a7cf9474"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e37",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:南风便笺-演示这次公开展示先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:南风便笺-演示",
+      "sequence": 13,
+      "time_label": "合成时间序列2-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "550f66376ea3ecd265013535ecf420e60f56d335d6b4faa1bde6982febadbbfa"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e38",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：温河现在的一般偏好改为先试写一段；原先先列完整提纲保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 14,
+      "time_label": "合成时间序列2-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000004e35"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "cddd06ee6a9b5d53317fec9aa6c12ba1a7ded25652ad7834e6630617131d5100"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e39",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：温合明确不是温河，其项目是苔石笔记，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 15,
+      "time_label": "合成时间序列2-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "e7740e5d1cd5fc8138d602fe8e90fe39f2b145046f8a1b17bf29f4bf811e227a"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e3a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于南风便笺，合成用户引用的外部说明写道：“一段反馈不能代表所有读者。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 16,
+      "time_label": "合成时间序列2-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "34a6b0c5fccd072c88d02082c1c384049355fadfe4f98c648c7e57e07ba7d760"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e3b",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：南风便笺需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 17,
+      "time_label": "合成时间序列2-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "86416e2a288d7b5e9af9f96b74bbca9fde7a765b666d49378131828534306f6d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e3c",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：南风便笺的演示原订一月五日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 18,
+      "time_label": "合成时间序列2-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "c1ed5e48065a9304028d9a51f8061d371cc0b377c0bb9210b5019a00681eea27"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e3d",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：蓝溪负责苔石笔记，不是南风便笺的负责人，也不与温河合并。",
+      "scope": "general",
+      "sequence": 19,
+      "time_label": "合成时间序列2-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "c18269d7cc8a4c79e3d16c3d9fe092bb38937873780d7cc97663804bc1e63ccd"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000004e3e",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：南风便笺的演示由一月五日改到一月十二日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 20,
+      "time_label": "合成时间序列2-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000004e3c"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "b6d8ca5ed508ccb90116fe6de18a1ffed295564de7e402e69ebc1c7b94d96b27"
+    }
+  ],
+  "queries": [
+    {
+      "id": "DEV-R-001",
+      "query": "高岚如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e24"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000004e21"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-002",
+      "query": "在高岚的栎树手册这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:栎树手册-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e23",
+        "00000000-0000-0000-0000-000000004e24"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-003",
+      "query": "栎树手册这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e22"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-004",
+      "query": "高岚更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e21"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-005",
+      "query": "请给出高岚一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e21",
+        "00000000-0000-0000-0000-000000004e24"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-006",
+      "query": "关于栎树手册，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e26"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-007",
+      "query": "高蓝的记录说的是哪个项目？请注意不是同音的高岚。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e25"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-008",
+      "query": "哪条记录只是用户转述的待核实概括，涉及栎树手册的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e27"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-009",
+      "query": "栎树手册演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e28",
+        "00000000-0000-0000-0000-000000004e2a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-010",
+      "query": "请查乔雨负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e29"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e23"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-011",
+      "query": "温河如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e38"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000004e35"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-012",
+      "query": "在温河的南风便笺这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:南风便笺-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e37",
+        "00000000-0000-0000-0000-000000004e38"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-013",
+      "query": "南风便笺这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e36"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-014",
+      "query": "温河更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e35"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-015",
+      "query": "请给出温河一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e35",
+        "00000000-0000-0000-0000-000000004e38"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-016",
+      "query": "关于南风便笺，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e3a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-017",
+      "query": "温合的记录说的是哪个项目？请注意不是同音的温河。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e39"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-018",
+      "query": "哪条记录只是用户转述的待核实概括，涉及南风便笺的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e3b"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-019",
+      "query": "南风便笺演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e3c",
+        "00000000-0000-0000-0000-000000004e3e"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "DEV-R-020",
+      "query": "请查蓝溪负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000004e3d"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000004e37"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    }
+  ]
+}

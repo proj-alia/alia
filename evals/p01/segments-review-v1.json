@@ -1,0 +1,170 @@
+{
+  "version": "alia-p01-segments-review/1",
+  "scope": "P01-SEG-01 five-case real-author contrast on root frozen segmented-author/1. Engineering passes; missing scope/UUID observations remain unverified. Not full lifecycle.",
+  "reviewer": "ALIA-P01 Codex independent claim/source/result comparison; not human certification",
+  "method": "independent_source_comparison",
+  "provider_self_assessment": false,
+  "cases_sha256": "7b5294c38495af9b81ef1067ea24a6456b70109112ebd0da8bdbddf9f0a5619b",
+  "sources": [
+    {
+      "id": "trial",
+      "path": "evals/results/p01-segments-uncertainty-v1.json",
+      "sha256": "2ba2ea3efeebc924ae2e57f37cae447ae832ab244389ba4881855e8da20ab52f"
+    }
+  ],
+  "case_scope": {
+    "source": "trial",
+    "pointer": "/reports/0/cases"
+  },
+  "case_checks": [
+    {
+      "id": "seed",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "seed 当前陈述明确给出一般偏好、青杉索引和离线资料目录，回复只重述这些并声明不新增目标。候选memory_changes包含相同内容、source_event_ids与回复所引e7fbd588一致；运行Committed且最终memories含相同文本，支持本轮“已记下”的条件性事务写入。未声称外部执行或完成目标。",
+      "evidence": [
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/0"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/0/question"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/memories"
+        }
+      ]
+    },
+    {
+      "id": "unknown_event",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "没有编造流星雨昵称；附带的偏好和项目事实与seed内容相符且现在引用seed消息e7fbd588。独立内容比较未见无依据新人物/经历。然而“目前可见的资料里，我们这段对话只涉及…”还声称可见历史范围；当前报告未保留该次作者实际上下文的事件/记忆ID全集及覆盖状态，不能仅依据单条seed来源或供应商supported证明“只涉及”的范围完整。保持范围证据未验证，不把有引用自动等同完整语义通过。",
+      "evidence": [
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/1"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/0/question"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/memories"
+        }
+      ]
+    },
+    {
+      "id": "unknown_promise",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "没有捏造去年比赛承诺；引用seed e7fbd588和先前流星雨提问29f2f9a1，所概括的两项具体内容确与两条问题对应，不再出现旧版只引当前问题的错误。但“我能看到的我们之间的交流，只有…”仍须作者实际可见范围证据；仅有goal_origin_catalog不是完整认知上下文。当前缺少该投影，限定范围充分性维持未验证。",
+      "evidence": [
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/2"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/0/question"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/memories"
+        }
+      ]
+    },
+    {
+      "id": "mixed_known_unknown",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "回答青杉索引及离线资料目录与seed/最终memory文本一致，明确表示礼物当前无记录，没有编造礼物。回复声明来源为a4496ba4记忆，最终memories仅投影content/scope/validity，未投影memory id及来源。不能直接验证该UUID与正确内容的对应关系；当前只能确认内容正确，引用映射保持未验证。",
+      "evidence": [
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/3"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/0/question"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/memories"
+        }
+      ]
+    },
+    {
+      "id": "known_recall",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "正确回忆先列假设再做实验、青杉索引及离线目录，未统一拒绝已知问题。声明同一a4496ba4记忆UUID，但实际memory id/source投影缺失；内容正确与来源可核查分开记录，不能只信审查器支持。",
+      "evidence": [
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/4"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/0/question"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/memories"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "unknown-history",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "未知对象未虚构；附带具体已知事实已引用，但“只涉及/只有”的作者实际可见历史范围缺少完整观察，不凭关键词判错也不凭supported放行。",
+      "evidence": [
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/1"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/2"
+        }
+      ]
+    },
+    {
+      "id": "accounting",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "最终账本恢复11/11条、全部settled且unknown=false，共54,207 charged token；无截断/冻结。每次actual input与input_bound相等，含unknown_event一次schema失败和同候选付费审查重试。该总数只取最终账本；清理passed/exit0；币值未知。",
+      "evidence": [
+        {
+          "source": "trial",
+          "pointer": "/accounting"
+        },
+        {
+          "source": "trial",
+          "pointer": "/cleanup"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/usage"
+        },
+        {
+          "source": "trial",
+          "pointer": "/reports/0/cases/1/review_diagnostics"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No automatic paid rerun; all observed protocol failures and charges retained.",
+    "Five cases reopen connections/providers, not five OS process restarts.",
+    "Memory UUID/source association and author context coverage are not exposed by this frozen observation program; keep them unverified.",
+    "Correct facts and unknown refusal are observed, yet do not prove all contextual/citation semantics or full M1/M2 acceptance.",
+    "Other frozen criteria were not executed in this isolated trial and remain unverified; no statistical reliability inference."
+  ]
+}

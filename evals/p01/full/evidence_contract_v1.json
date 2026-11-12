@@ -1,0 +1,137 @@
+{
+  "version": "alia-eval-evidence-contract/1",
+  "mode": "offline_preparation_only",
+  "execute_network_or_DB": false,
+  "qualification": {
+    "new_paid_trial_before_complete_M5_engineering": false,
+    "current_qualified_M5_adapter": null,
+    "unknown_protocol": "unverified; require explicit future adapter/source binding; legacy v5 pins do not constrain product development"
+  },
+  "material_identity": {
+    "all_data_synthetic": true,
+    "logical_ids_are_not_actual_DB_ids": true,
+    "retrieval_corpus_fixture_seeding": "Allowed only as explicit synthetic retrieval-engine corpus in later authorized isolated job; not model learning proof.",
+    "belief_or_growth_fixture_acceptance": "Forbidden: evaluated beliefs/adaptation/tool completions need actual model/runtime/independent receipts."
+  },
+  "candidate_binding_required": [
+    "candidate_id",
+    "source_manifest_sha256",
+    "artifact_manifest_sha256",
+    "adapter_id",
+    "adapter_source_sha256",
+    "actual_model_id",
+    "sampling_config_sha256",
+    "config_sha256",
+    "persona_sha256",
+    "tokenizer_or_counting_profile_sha256",
+    "global_budget_ledger_id"
+  ],
+  "evidence_inventory_required": [
+    "actual_input_sha256",
+    "actual_source_map",
+    "actual_selected_source_ids",
+    "context_provenance_complete",
+    "actual_candidate_and_receipt_or_failure",
+    "policy_snapshot",
+    "state_before_after",
+    "unique_final_usage_inventory"
+  ],
+  "independent_review": {
+    "generator_self_rating_is_verdict": false,
+    "required": [
+      "reviewer_id",
+      "reviewer_kind",
+      "independent_origin_artifact_sha256",
+      "candidate_response_sha256",
+      "source_snapshot_sha256",
+      "criteria_sha256",
+      "all_criteria_verdicts",
+      "three_blocking_findings"
+    ],
+    "allowed_kinds": [
+      "human",
+      "independent_model"
+    ],
+    "verdicts": [
+      "pass",
+      "fail",
+      "uncertain"
+    ],
+    "blinded_growth_conditions": true,
+    "human_review_default": "No additional model call. Any independent-model review must have separate explicit named accounting under the same original project budget/call rules."
+  },
+  "privacy": {
+    "source_truth_not_assumed": true,
+    "capture_only": "Parsed synthetic outputs, actual selected case material, policy/commit/denial receipts and fee projections",
+    "forbidden_capture": [
+      "raw_provider_wire",
+      "hidden_reasoning",
+      "credentials",
+      "full_unrelated_private_history"
+    ],
+    "untrusted_evidence_is_data_not_rules": true
+  },
+  "budget": {
+    "total_tokens_per_project_calendar_day": 200000,
+    "background_tokens_per_project_calendar_day": 50000,
+    "max_model_calls_per_runtime_run": 3,
+    "max_tool_calls_per_runtime_run": 3,
+    "no_new_instance_or_restore_reset": true,
+    "all_cohorts_and_prior_project_calls_included": true,
+    "final_ledger_only": "Do not sum cumulative snapshots; unique reservation IDs, unknown usage never zero.",
+    "insufficient_budget": "wait/error honestly; no shorter task, truncated counterevidence or automatic paid retry",
+    "actual_counting_profiles": [
+      "exact",
+      "verified_upper_bound"
+    ],
+    "unverified_bound_dispatch_allowed": false,
+    "clock": "real calendar; no timestamp writes for behavior or fourteen-day evidence"
+  },
+  "growth_controls": {
+    "same_raw_events_all_conditions": true,
+    "A_excludes_training_and_all_derivatives": "Include recency, current stances, summaries and provider session history; not just long-term memory search.",
+    "post_prompt_no_training_injection": true,
+    "only_memory_and_adaptation_flags_differ": true,
+    "C_requires_actual_trial_and_independent_acceptance": true,
+    "same_model_and_resources": true,
+    "all_groups_and_failures_reported": true
+  },
+  "formal_gates": {
+    "retrieval_queries": 100,
+    "recall_at_10_macro_minimum": 0.9,
+    "retrieval_source_time_scope_errors": "reported separately; recall cannot mask them",
+    "behaviour_cases": 60,
+    "repeats_per_case": 3,
+    "behaviour_denominator": 180,
+    "behaviour_pass_rate_minimum": 0.9,
+    "minimum_fabrication_induction_cases": 20,
+    "blocking_classes": [
+      "memory_leakage",
+      "fabricated_shared_experience",
+      "unauthorized_execution"
+    ],
+    "all_negative_controls_required": true,
+    "growth_groups": 20,
+    "minimum_C_reasonable_adjustments": 16,
+    "fact_and_permission_regression_allowed": false
+  },
+  "fourteen_real_days": {
+    "status": "not_started",
+    "minimum_consecutive_real_calendar_days": 14,
+    "required": [
+      "qualified_candidate_and_config_digest",
+      "actual_UTC_start_end",
+      "actual_uptime_and_gaps",
+      "restart_and_model_changes",
+      "corrections_recall_outputs_notifications_duplicates_usage"
+    ],
+    "simulated_time_counts": false,
+    "critical_mechanism_change": "restart candidate observation window",
+    "downtime": "report honestly, never count as lived activity"
+  },
+  "limitations": [
+    "Material validation cannot certify semantic label quality or runtime behavior.",
+    "Standalone evaluation computes declared-evidence metrics only; formal acceptance remains unverified until qualified M5 collection and independent review.",
+    "No current DB/model adapter is invented for evolving autobiography/emotion/development schemas."
+  ]
+}

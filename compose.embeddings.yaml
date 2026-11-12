@@ -1,0 +1,18 @@
+# Optional local index worker and shared hybrid reader. Install pinned assets first.
+# Query encoding failures are explicit; no silent lexical fallback.
+services:
+  app:
+    build:
+      args:
+        ALIA_CARGO_FEATURES: local-embeddings
+        ALIA_RUST_IMAGE: rust:1.99.1-trixie
+        ALIA_BASE_IMAGE: debian:trixie-slim
+    environment:
+      ALIA_EMBEDDING_DIR: /app/models/e5
+    volumes:
+      - type: bind
+        source: ./data/models/multilingual-e5-small
+        target: /app/models/e5
+        read_only: true
+        bind:
+          create_host_path: false

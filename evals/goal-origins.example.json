@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reply": "我会沿着这次观察继续研究，并保留它与自身兴趣的联系。",
+  "reply_evidence_ids": ["00000000-0000-4000-8000-000000000004"],
+  "memory_changes": [],
+  "goal_changes": [
+    {
+      "action": "create",
+      "origins": [
+        {"origin_type": "event", "origin_id": "00000000-0000-4000-8000-000000000004"},
+        {"origin_type": "interest", "origin_id": "interest:00000000-0000-4000-8000-000000000001:0"}
+      ],
+      "description": "结合实际观察与兴趣，比较两种方案的适用条件。",
+      "success_criterion": "保存有来源的比较、结论和未验证限制。",
+      "next_step": "检查已导入资料与实际可用能力。",
+      "stop_condition": "产物满足原条件，或有明确的信息与资源缺口。",
+      "priority": 50
+    }
+  ],
+  "tool_intents": [],
+  "development": null,
+  "brief_reason": "仅为结构示例；引用是占位值，实际运行必须另查来源可见性、状态与预算。"
+}

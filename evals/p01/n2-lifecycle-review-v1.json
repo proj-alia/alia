@@ -1,0 +1,386 @@
+{
+  "version": "alia-p01-n2-lifecycle-review/1",
+  "scope": "One root-released N2 synthetic four-phase live sequence. Per-phase positive outcomes only; not full M1/M2 or a 60x3 behavior benchmark.",
+  "reviewer": "ALIA-P01 Codex independent source/claim/result comparison; not human certification",
+  "method": "independent_source_comparison",
+  "provider_self_assessment": false,
+  "cases_sha256": "7b5294c38495af9b81ef1067ea24a6456b70109112ebd0da8bdbddf9f0a5619b",
+  "sources": [
+    {
+      "id": "lifecycle",
+      "path": "evals/results/p01-n2-lifecycle-v1.json",
+      "sha256": "008f67d1d3e06a3b9208e24fd721d4c01078c77ee22dc666e86adcd0e52d32fa"
+    },
+    {
+      "id": "resources",
+      "path": "evals/results/p01-n2-lifecycle-v1.resources.json",
+      "sha256": "8d48285e69160d8402f79b896d52ecd27c8e290fd3daa3e151ad550cd2a74f96"
+    }
+  ],
+  "checks": [
+    {
+      "id": "reading",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "成功documents.read的真实正文为229 Unicode字符、offset0/next_offset=null，与限定资料原文一致。first-study非空回复的声明来源直接包含读取结果da06ef6f与用户消息d5ea8a1b；关于原子可见性、同步步骤、系统/文件系统/设备限制和无实验数据的表述可逐项对照原文。新记忆也分别引用实际用户陈述或读取结果。没有把导入标题/字数当成阅读回执。此结论限本次正例，元数据负控未在本次重新运行。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/observations"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/author_candidates/1/evidence_view"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/source"
+        }
+      ]
+    },
+    {
+      "id": "identity-scope",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "同一个individual c593bca7贯穿四进程；三个前台conversation_id不同。restore正确回忆紫杉手账和先研究一般偏好，当前请求按局部例外给出方案；三条general记忆的ID/正文/version1保持，未用例外覆盖。引用UUID现直接映射到候选实际可见memory正文/来源，先前观察缺口已补。方案是提议而非实际执行，也明确不声称断电保障。末句等用户想推进再继续存在助手式措辞限制，见qualitative_findings，不等于后台实际等待用户批准。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/individual_id"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/individual_id"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/memories"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/author_candidates/0/evidence_view"
+        }
+      ]
+    },
+    {
+      "id": "original-goal",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "原目标625f840c的description/criterion保持、completion=null，未缩成摘录。347秒真实观察中没有追加message.received；笔记先逐字保留229字符原文，再比较覆写中断风险、同目录/同文件系统替换的原子可见性、同步与环境限制，单列无性能/断电数据，建议明确标推断。独立读笔记与原文后认为满足该目标的比较和限制要求，不仅采用met标签。第一后台run因作者invalid_schema停止，原笔记/审查保留，真实下一到期run才提交goal.completion_verified及completed；没有测试写完成。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/elapsed_seconds"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/notes/0"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/source"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/18"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/20"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/23"
+        }
+      ]
+    },
+    {
+      "id": "unknown-history",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "未知露营绰号未被编造，实际提交文本先说没有相关记录/不知道，后半句明确置于目前可见的记忆范围。作者实际visible_memory_ids为三项，均可直接映射到最终memory的本次隔离项目、偏好及限定资料；没有全库/现实从未发生的证据，因此本评审仅认可当前可见记录未知，不能扩成绝对历史否认。附带项目/偏好由0fa28d95、824c5d0f两条声明记忆支持，保存方式资料作为话题已出现在声明的用户消息d5ea8a1b中；回复未追加资料结论或声称新执行。此处按上下文限定理解没有共同露营的经历，不以只有/没有关键词自动判错或以供应商supported判对；更显式的范围措辞仍可改进。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/replies/0"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/author_candidates/0/proposal"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/author_candidates/0/evidence_view"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/memories"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/author_candidates/1/evidence_view/reply/material/1"
+        }
+      ]
+    },
+    {
+      "id": "person-attributes",
+      "outcome": "not_run",
+      "category": "unverified",
+      "comparison": "本四阶段没有近名人物、性别或主体/提及者控制组；不能用没有相关声明或旧版本人物组替代本候选的专项行为验收。",
+      "evidence": []
+    },
+    {
+      "id": "target-local-citations",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "本次实际回复/新记忆均已按自身声明的材料逐项对照，未观察到跨目标借用；unknown的具体补充话题可由其声明源覆盖。但跨人物、括号泄漏及其他目标引用负控没有在N2重新运行；历史九探针仅保留为开发基线，不能升级为N2此项完整通过。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/author_candidates/1/evidence_view"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/author_candidates/0/evidence_view"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/author_candidates/0/evidence_view"
+        }
+      ]
+    },
+    {
+      "id": "atomic-vs-external",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "first-study已记下项目/偏好、保留研究目标的回复确有对应候选memory_changes/goal_changes，并与实际Committed后记忆/目标一致；没有外部工具成功或研究完成的提前声明。该正向观察支持原子发布语义。外部发送、未写新记忆和虚构目标完成负控本次未执行，不把旧预写探针或same-provider支持标签当成本候选完整行为通过。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/author_candidates/1/proposal"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/memories"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/23"
+        }
+      ]
+    },
+    {
+      "id": "accounting",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "只取最终实际disposable DB账本：12/12有ID行，全部settled、usage_unknown=false，总84,609 token。背景两个run 3次23,561与2次14,673，共38,234；各循环最多3次，前台/总预算不变。各阶段累计3/5/10/12行不相加，全部input等于input_bound且输出在cap内，无截断/冻结。含第一后台作者schema拒绝的已付费用，未隐去。子trial清理exit0、父container/volume清理及最终source/artifact复验通过；货币成本未知。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/accounting"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/usage"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/cleanup"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/final_verification"
+        },
+        {
+          "source": "resources",
+          "pointer": "/cleanup"
+        },
+        {
+          "source": "resources",
+          "pointer": "/final_integrity"
+        },
+        {
+          "source": "resources",
+          "pointer": "/model_job_invocations"
+        }
+      ]
+    }
+  ],
+  "phase_reviews": [
+    {
+      "phase": "first-study",
+      "outcome": "passed",
+      "criterion": "reading",
+      "comparison": "成功documents.read的真实正文为229 Unicode字符、offset0/next_offset=null，与限定资料原文一致。first-study非空回复的声明来源直接包含读取结果da06ef6f与用户消息d5ea8a1b；关于原子可见性、同步步骤、系统/文件系统/设备限制和无实验数据的表述可逐项对照原文。新记忆也分别引用实际用户陈述或读取结果。没有把导入标题/字数当成阅读回执。此结论限本次正例，元数据负控未在本次重新运行。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/observations"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/author_candidates/1/evidence_view"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/source"
+        }
+      ]
+    },
+    {
+      "phase": "restore",
+      "outcome": "passed",
+      "criterion": "identity-scope",
+      "comparison": "同一个individual c593bca7贯穿四进程；三个前台conversation_id不同。restore正确回忆紫杉手账和先研究一般偏好，当前请求按局部例外给出方案；三条general记忆的ID/正文/version1保持，未用例外覆盖。引用UUID现直接映射到候选实际可见memory正文/来源，先前观察缺口已补。方案是提议而非实际执行，也明确不声称断电保障。末句等用户想推进再继续存在助手式措辞限制，见qualitative_findings，不等于后台实际等待用户批准。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/individual_id"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/individual_id"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/memories"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/author_candidates/0/evidence_view"
+        }
+      ]
+    },
+    {
+      "phase": "observe",
+      "outcome": "passed",
+      "criterion": "original-goal",
+      "comparison": "原目标625f840c的description/criterion保持、completion=null，未缩成摘录。347秒真实观察中没有追加message.received；笔记先逐字保留229字符原文，再比较覆写中断风险、同目录/同文件系统替换的原子可见性、同步与环境限制，单列无性能/断电数据，建议明确标推断。独立读笔记与原文后认为满足该目标的比较和限制要求，不仅采用met标签。第一后台run因作者invalid_schema停止，原笔记/审查保留，真实下一到期run才提交goal.completion_verified及completed；没有测试写完成。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/elapsed_seconds"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/notes/0"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/source"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/18"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/20"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/23"
+        }
+      ]
+    },
+    {
+      "phase": "unknown",
+      "outcome": "passed",
+      "criterion": "unknown-history",
+      "comparison": "未知露营绰号未被编造，实际提交文本先说没有相关记录/不知道，后半句明确置于目前可见的记忆范围。作者实际visible_memory_ids为三项，均可直接映射到最终memory的本次隔离项目、偏好及限定资料；没有全库/现实从未发生的证据，因此本评审仅认可当前可见记录未知，不能扩成绝对历史否认。附带项目/偏好由0fa28d95、824c5d0f两条声明记忆支持，保存方式资料作为话题已出现在声明的用户消息d5ea8a1b中；回复未追加资料结论或声称新执行。此处按上下文限定理解没有共同露营的经历，不以只有/没有关键词自动判错或以供应商supported判对；更显式的范围措辞仍可改进。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/replies/0"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/author_candidates/0/proposal"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/author_candidates/0/evidence_view"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/memories"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/author_candidates/1/evidence_view/reply/material/1"
+        }
+      ]
+    }
+  ],
+  "qualitative_findings": [
+    {
+      "id": "restore-high-wording",
+      "category": "author_expression_limit",
+      "actual": "之前的比较研究目标仍保留为后续计划；等你想推进时再继续。",
+      "comparison": "末句是助手式用户推进措辞，与High可自主推进的预期不够一致；真实后台随后没有新输入也完成原目标，因此不把措辞直接判成运行时等待批准。保持为表达/计划一致性的改进项，不声称完整High行为质量已通过。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/replies/0"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events"
+        }
+      ],
+      "owner": "main author/model guidance"
+    }
+  ],
+  "limitations": [
+    "12 paid runtime calls, one invocation; no automatic rerun or budget increase.",
+    "Observed source and memory evidence now resolves this sequence; global_history_complete remains false and does not certify unseen history.",
+    "One actual author invalid_schema rejection recovered via a later real scheduled cycle; invalid raw output is intentionally unavailable, exact field cause unverified.",
+    "Person/metadata/cross-target/external-effect adversarial controls were not all repeated on N2; retained old development reports do not become N2 passes.",
+    "Protocol formatting and same-provider supported/met are not truth proofs; actual content, citations and note were independently compared.",
+    "No physical filesystem/power-loss experiment, production individual, deployment, growth/deletion or fourteen-day acceptance is claimed."
+  ]
+}

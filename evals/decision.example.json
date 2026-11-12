@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "reply": "这次先做简单原型；你通常喜欢先研究的偏好，我会保留为一般背景。",
+  "reply_evidence_ids": [
+    "00000000-0000-4000-8000-000000000001",
+    "00000000-0000-4000-8000-000000000002"
+  ],
+  "memory_changes": [
+    {
+      "content": "这次任务希望先做简易原型。",
+      "kind": "semantic",
+      "scope": "task:prototype-001",
+      "source_event_ids": [
+        "00000000-0000-4000-8000-000000000002"
+      ],
+      "supersedes": null
+    }
+  ],
+  "goal_changes": [],
+  "tool_intents": [],
+  "development": null,
+  "brief_reason": "当前明确要求只适用于这次任务，不覆盖一般偏好。",
+  "entity_changes": []
+}

@@ -1,0 +1,4 @@
+services:
+  db:
+    ports:
+      - "127.0.0.1:${ALIA_DB_PORT:-55433}:5432"

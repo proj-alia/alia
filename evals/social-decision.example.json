@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "reply": "我会把这次明确的沟通约定分别记入自己的评价与关系理解。",
+  "reply_evidence_ids": [
+    "00000000-0000-4000-8000-000000000003"
+  ],
+  "memory_changes": [],
+  "appraisal_changes": [
+    {
+      "event_ids": [
+        "00000000-0000-4000-8000-000000000003"
+      ],
+      "goal_id": null,
+      "subject_id": "00000000-0000-4000-8000-000000000006",
+      "valence": 0.1,
+      "arousal": 0.4,
+      "goal_relevance": 0.5,
+      "expectation_gap": 0.2,
+      "controllability": 0.7,
+      "uncertainty": 0.5,
+      "brief_basis": "对实际陈述的短期有限评价"
+    }
+  ],
+  "attitude_changes": [
+    {
+      "topic": "discussion.evidence",
+      "subject_id": "00000000-0000-4000-8000-000000000006",
+      "stance": "愿意核对依据并接受反证",
+      "event_ids": [
+        "00000000-0000-4000-8000-000000000003"
+      ],
+      "supersedes": null,
+      "brief_basis": "自己的长期态度，不推断对方感情"
+    }
+  ],
+  "relationship_changes": [
+    {
+      "subject_id": "00000000-0000-4000-8000-000000000006",
+      "expected_relationship_version": 1,
+      "changes": {
+        "expectations": [
+          "讨论分歧时说明具体依据"
+        ]
+      },
+      "event_ids": [
+        "00000000-0000-4000-8000-000000000003"
+      ],
+      "brief_basis": "记录明确沟通约定"
+    }
+  ],
+  "goal_changes": [],
+  "tool_intents": [],
+  "development": null,
+  "brief_reason": "结构示例；ID和版本须由实际上下文提供，本例不证明已执行"
+}

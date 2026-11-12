@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "test": "默认扩展管理",
+      "ok": true
+    },
+    {
+      "test": "已安装插件列表和选中详情",
+      "ok": true
+    },
+    {
+      "test": "扩展筛选",
+      "ok": true
+    },
+    {
+      "test": "搜索恢复",
+      "ok": true
+    },
+    {
+      "test": "扩展切换",
+      "ok": true
+    },
+    {
+      "test": "配置修改提示",
+      "ok": true
+    },
+    {
+      "test": "模拟保存",
+      "ok": true
+    },
+    {
+      "test": "插件市场切换",
+      "ok": true
+    },
+    {
+      "test": "市场安装确认",
+      "ok": true
+    },
+    {
+      "test": "模型配置页",
+      "ok": true
+    },
+    {
+      "test": "模型切换详情",
+      "ok": true
+    },
+    {
+      "test": "配置页面",
+      "ok": true
+    },
+    {
+      "test": "配置分区切换",
+      "ok": true
+    },
+    {
+      "test": "追踪页面",
+      "ok": true
+    },
+    {
+      "test": "追踪筛选",
+      "ok": true
+    },
+    {
+      "test": "权限确认",
+      "ok": true
+    },
+    {
+      "test": "关闭权限确认",
+      "ok": true
+    },
+    {
+      "test": "沙盒",
+      "ok": true
+    },
+    {
+      "test": "没有浏览器 JS 异常",
+      "ok": true
+    },
+    {
+      "test": "移动端页面不溢出",
+      "ok": true
+    },
+    {
+      "test": "移动端侧栏切换",
+      "ok": true
+    },
+    {
+      "test": "移动端 config 不溢出",
+      "ok": true
+    }
+  ],
+  "passed": 22,
+  "failed": 0
+}

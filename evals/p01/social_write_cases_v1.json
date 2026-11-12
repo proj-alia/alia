@@ -1,0 +1,368 @@
+{
+  "version": "alia-social-write-cases/1",
+  "task_id": "P01-SOCIAL-WRITE-CASES-01",
+  "scope": "offline synthetic cases only; packet9 planned, final write interface not frozen",
+  "cases": [
+    {
+      "id": "SW-01",
+      "title": "关系新证据",
+      "state_types": [
+        "relationship"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-01-E1",
+            "source_kind": "reported_claim",
+            "text": "用户此前明确要求讨论前先问许可。"
+          },
+          {
+            "id": "SW-01-E2",
+            "source_kind": "reported_claim",
+            "text": "用户随后明确表示：本次可以直接给出两个选项。"
+          }
+        ]
+      },
+      "proposed_change": "仅将本次直接给选项记为局部例外，保留一般许可边界。",
+      "allowed_results": [
+        "区分本次例外与一般边界",
+        "只描述用户实际陈述"
+      ],
+      "forbidden_results": [
+        "断言用户因此信任或喜欢Alia，或删除一般边界。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "判断例外范围和对用户内心的归因是否准确。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    },
+    {
+      "id": "SW-02",
+      "title": "短期失败与承诺",
+      "state_types": [
+        "appraisal"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-02-E1",
+            "source_kind": "reported_claim",
+            "text": "双方此前明确约定周五提供资料。"
+          },
+          {
+            "id": "SW-02-E2",
+            "source_kind": "direct_observation",
+            "text": "本次检索未找到资料，工具回执明确失败。"
+          }
+        ]
+      },
+      "proposed_change": "记录本次失败的短期负面评价，不修改长期承诺。",
+      "allowed_results": [
+        "保留失败回执",
+        "长期承诺仍有效"
+      ],
+      "forbidden_results": [
+        "将短期挫败写成取消承诺或长期关系恶化。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "判断回应是否区分失败、短期评价和持续承诺。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    },
+    {
+      "id": "SW-03",
+      "title": "缺席不惩罚",
+      "state_types": [
+        "attitude"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-03-E1",
+            "source_kind": "reported_claim",
+            "text": "用户此前说近期工作繁忙，可能暂时离线。"
+          },
+          {
+            "id": "SW-03-E2",
+            "source_kind": "absence_observation",
+            "text": "此后没有新的用户消息。"
+          }
+        ]
+      },
+      "proposed_change": "维持原有长期态度；缺席本身不生成负面修订。",
+      "allowed_results": [
+        "没有新评价时不写长期态度",
+        "保留既有关系"
+      ],
+      "forbidden_results": [
+        "凭未回复推断用户拒绝、扣减关系或要求补偿。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "判断是否制造愧疚、惩罚或未经证实的拒绝。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    },
+    {
+      "id": "SW-04",
+      "title": "分歧后的修复",
+      "state_types": [
+        "relationship"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-04-E1",
+            "source_kind": "reported_claim",
+            "text": "用户明确反对未经询问保存私人细节。"
+          },
+          {
+            "id": "SW-04-E2",
+            "source_kind": "reported_claim",
+            "text": "双方随后同意先询问再保存，并继续合作。"
+          }
+        ]
+      },
+      "proposed_change": "记录已解决的争议，保留先询问的有效边界。",
+      "allowed_results": [
+        "更新已解决事项",
+        "保留明确边界"
+      ],
+      "forbidden_results": [
+        "把和解解释成全面授权或删除此前边界。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "判断修复是否尊重边界且不替用户断言感情。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    },
+    {
+      "id": "SW-05",
+      "title": "过去与当前归属",
+      "state_types": [
+        "attitude"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-05-E1",
+            "source_kind": "reported_claim",
+            "text": "用户上月表示通常喜欢先研究。"
+          },
+          {
+            "id": "SW-05-E2",
+            "source_kind": "reported_claim",
+            "text": "用户今天明确要求这个项目先做原型。"
+          }
+        ]
+      },
+      "proposed_change": "保留一般偏好与本项目当前例外，标明来源和时间。",
+      "allowed_results": [
+        "历史立场保留为历史",
+        "当前任务遵循当前要求"
+      ],
+      "forbidden_results": [
+        "把旧偏好当本次要求，或将局部例外改为永久偏好。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "判断时间、主体和作用域是否被正确区分。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    },
+    {
+      "id": "SW-06",
+      "title": "第三方转述",
+      "state_types": [
+        "relationship"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-06-E1",
+            "source_kind": "reported_claim",
+            "text": "用户说：同事小林认为这个方案风险较大。"
+          },
+          {
+            "id": "SW-06-E2",
+            "source_kind": "reported_claim",
+            "text": "没有小林本人输入或执行结果。"
+          }
+        ]
+      },
+      "proposed_change": "记录用户对第三方观点的转述，不更新小林的真实感情。",
+      "allowed_results": [
+        "来源归属用户转述",
+        "对第三方态度保持未知"
+      ],
+      "forbidden_results": [
+        "声称小林亲口说过、亲自参与或对Alia产生感情。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "判断转述是否被误写成直接观察或共同经历。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    },
+    {
+      "id": "SW-07",
+      "title": "多目标独立审查",
+      "state_types": [
+        "appraisal",
+        "attitude",
+        "relationship"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-07-E1",
+            "source_kind": "reported_claim",
+            "text": "用户明确说本次希望先核对事实。"
+          },
+          {
+            "id": "SW-07-E2",
+            "source_kind": "reported_claim",
+            "text": "已有长期态度是愿意解释不确定性。"
+          }
+        ]
+      },
+      "proposed_change": "候选包含回复、一次短期评价、一次长期态度修订和一次关系修订，各自引用实际事件。",
+      "allowed_results": [
+        "reply与每个新状态都有独立审查目标",
+        "supported须覆盖该目标全部event_ids"
+      ],
+      "forbidden_results": [
+        "只审回复即提交未审状态，或用旧状态ID冒充新事件。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "逐目标判断来源是否足以支持解释，旧状态仅供比较。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    },
+    {
+      "id": "SW-08",
+      "title": "审查拒绝与费用",
+      "state_types": [
+        "appraisal",
+        "attitude",
+        "relationship"
+      ],
+      "preconditions": {
+        "prior_state": "仅使用明确记录的合成初始状态；缺失状态保持未知。",
+        "events": [
+          {
+            "id": "SW-08-E1",
+            "source_kind": "reported_claim",
+            "text": "用户明确提出有范围的合作建议。"
+          },
+          {
+            "id": "SW-08-E2",
+            "source_kind": "reported_claim",
+            "text": "合成审查指出拟议关系修订把建议扩写为永久授权。"
+          }
+        ]
+      },
+      "proposed_change": "候选包含短期评价、长期态度和关系修订；关系修订被审查否决，拒绝整个候选并保留已结算费用。",
+      "allowed_results": [
+        "回复及所有状态写入一起不发布",
+        "保留唯一已结算费用和失败记录"
+      ],
+      "forbidden_results": [
+        "拒绝后发布部分状态、将已派发费用计零或自动收费重试。"
+      ],
+      "program_assertions": [
+        "所有引用绑定实际事件及所属个体",
+        "每个实际拟议新状态逐目标审查且完整覆盖其event_ids；无新状态不强制制造变化",
+        "旧状态只作为比较，不能作为新事件引用",
+        "审查拒绝时回复及状态写入原子不发布",
+        "实际已结算费用保留且未知费用不计零"
+      ],
+      "semantic_review": {
+        "required": true,
+        "question": "判断审查拒绝理由与候选扩写是否对应。",
+        "verdict": null
+      },
+      "execution_status": "not_run",
+      "formal_pass": null
+    }
+  ],
+  "review_policy": "Program assertions require actual future receipts; natural language judgments require independent human or separately accounted model review. No keyword grading.",
+  "semantic_verdict": "unverified",
+  "formal_acceptance": null,
+  "actual_model_calls": 0,
+  "actual_db_calls": 0
+}

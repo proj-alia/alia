@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "reply": "",
+  "reply_evidence_ids": [],
+  "memory_changes": [],
+  "goal_changes": [
+    {
+      "action": "create",
+      "origin_type": "event",
+      "origin_ids": [
+        "00000000-0000-4000-8000-000000000001"
+      ],
+      "description": "为后续探索保留资料摘录",
+      "success_criterion": "保存指定资料片段的逐字摘录，并保留读取与笔记来源。",
+      "next_step": "实际读取指定片段，再保存带引用的笔记",
+      "stop_condition": "资料缺失或范围不合法时等待",
+      "priority": 50,
+      "completion": {
+        "kind": "source_excerpt",
+        "document_id": "00000000-0000-4000-8000-000000000001",
+        "start_char": 0,
+        "end_char": 8
+      }
+    }
+  ],
+  "tool_intents": [],
+  "development": null,
+  "brief_reason": "这是有固定测试ID的配置示例，不代表已阅读或已经完成。"
+}

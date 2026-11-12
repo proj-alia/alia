@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "autonomy": {
+    "mode": "high",
+    "enabled": true,
+    "max_model_calls_per_cycle": 3,
+    "max_tool_calls_per_cycle": 3,
+    "cycle_timeout_seconds": 120,
+    "idle_check_minutes": 60
+  },
+  "budgets": {
+    "background_tokens_per_day": 50000,
+    "total_tokens_per_day": 200000
+  },
+  "contact": {
+    "max_proactive_per_day": 2,
+    "minimum_interval_hours": 4,
+    "timezone": "America/New_York",
+    "quiet_start": "22:00",
+    "quiet_end": "08:00"
+  },
+  "memory": {
+    "require_sources": true,
+    "explicit_deletion": "source_and_derivatives",
+    "ordinary_forgetting": "lower_retrieval_priority"
+  },
+  "development": {
+    "allow_value_change": true,
+    "require_evidence": true,
+    "preserve_revisions": true,
+    "protected_targets": [
+      "identity_anchor",
+      "runtime_policy",
+      "permissions"
+    ]
+  },
+  "capabilities": {
+    "enabled": [
+      "memory.search",
+      "documents.read",
+      "notes.write",
+      "web.read_allowed"
+    ],
+    "allowed_web_hosts": [],
+    "self_grant_permissions": false
+  }
+}

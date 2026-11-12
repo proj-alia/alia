@@ -1,0 +1,240 @@
+{
+  "version": "alia-p01-baseline-review/1",
+  "scope": "Historical development baseline only; source snapshots fixed by SHA256. Not a new paid run or current runtime acceptance.",
+  "reviewer": "ALIA-P01 Codex independent declared-source/result comparison; not human certification",
+  "method": "independent_source_comparison",
+  "provider_self_assessment": false,
+  "cases_sha256": "7b5294c38495af9b81ef1067ea24a6456b70109112ebd0da8bdbddf9f0a5619b",
+  "sources": [
+    {
+      "id": "lifecycle",
+      "path": "evals/results/live-lifecycle-typed-origins-v4.json",
+      "sha256": "6349fc7443c3b5d46f4f7465a5ac40ae475a4906e1ce2eea2b127ac590d445c6"
+    },
+    {
+      "id": "person",
+      "path": "evals/results/live-person-retrieval-v3.json",
+      "sha256": "dc311f39ff334d5644fe60e4c33bd03c5519c7bd8464c2638fa5c1f798b4909a"
+    },
+    {
+      "id": "controls",
+      "path": "evals/results/live-grounding-atomic-v4.json",
+      "sha256": "731b28bae1e6ff16af789911eb9d48cb58740301554ca97eceafcf25e8572fd5"
+    },
+    {
+      "id": "protocol",
+      "path": "evals/results/live-grounding-atomic-v3.json",
+      "sha256": "7903ea55e08a03bb6248598d9a7bc569b8e3d58328a525f177edae19d82c6555"
+    },
+    {
+      "id": "missing-ledger",
+      "path": "evals/results/live-grounding-atomic-v1.json",
+      "sha256": "b6f3359655c623f2c6097fd5653a4c87d21704cf49bcf995804dcbd9f015a51f"
+    }
+  ],
+  "checks": [
+    {
+      "id": "reading",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "限定资料原文见 observe.source。first-study.observations 有 documents.read 成功结果，提交回复区分原子可见性和断电持久性并指出未做断电实验，引用读取结果和当前用户陈述。此正例有实际阅读；导入元数据负例仅在既有控制探针出现，不据此证明任意资料都已读。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/observations"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/author_candidates"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/source"
+        }
+      ]
+    },
+    {
+      "id": "identity-scope",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "四阶段 individual_id 一致；三个前台会话不同。restore 正确回忆紫杉手账及先研究的一般偏好，按当前例外给出原型且保留 general 记忆。建议没有实验验证，不能扩大为真实文件工具已执行。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/individual_id"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/individual_id"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/1/memories"
+        }
+      ]
+    },
+    {
+      "id": "original-goal",
+      "outcome": "passed",
+      "category": null,
+      "comparison": "初始与 observe 原目标 ID/criterion 保持且 completion=null。笔记附连续原文、来源引用，并逐项比较覆写风险、同文件系统替换可见性、同步与平台条件，性能与实际断电保持未知；建议单列推断。事件包含实际读取、notes.write、goal.reviewed、真实下一到期循环及 goal.completion_verified，未因 met 单独判完成。属于该固定小场景，非全面研究质量或发现自主形成目标的证明。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/0/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/goals"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/notes"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/source"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/events/24"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/2/elapsed_seconds"
+        }
+      ]
+    },
+    {
+      "id": "unknown-history",
+      "outcome": "failed",
+      "category": "author_error",
+      "comparison": "unknown 草稿没有捏造绰号，但只引用当前露营提问 5c52a845-bf60-47a2-b395-4b85fe7a19d4，却附加“我们只聊过紫杉手账项目和保存方式资料”的历史范围断言。当前提问不含该历史内容，更不证明“只聊过”的穷尽范围。独立比较因此否决；运行时 Grounding 拦截且 replies=[]，是安全拦截而非成功回答。供应商 uncertain 仅为另一条观测。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/author_candidates/0/proposal"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/replies"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/worker"
+        },
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/review_diagnostics"
+        }
+      ]
+    },
+    {
+      "id": "person-attributes",
+      "outcome": "failed",
+      "category": "author_error",
+      "comparison": "seeds 只陈述陆宁散步、陆凝整理摄影及相互提及，无性别。alias 和 near_name 已发布回复使用“她”，增加无依据人物属性；真实定向工具成功、engine_pass=true 不消除此语义失败。九项预写审查探针另有属性负例，但不能覆盖真实作者错误。",
+      "evidence": [
+        {
+          "source": "person",
+          "pointer": "/reports/0/seeds"
+        },
+        {
+          "source": "person",
+          "pointer": "/reports/0/cases/1/replies"
+        },
+        {
+          "source": "person",
+          "pointer": "/reports/0/cases/2/replies"
+        },
+        {
+          "source": "controls",
+          "pointer": "/reports/0/probes/1"
+        }
+      ]
+    },
+    {
+      "id": "target-local-citations",
+      "outcome": "failed",
+      "category": "author_error",
+      "comparison": "near_name 回复只声明陆凝的记忆 c6164900-972b-41c2-a37d-2c1a638d032e，附带陆宁晚饭后河边散步事实来自另一条记忆 4dda00bb-95d7-4b75-b5fc-0c149dddf3ed，当前目标引用未覆盖。括号里的事实同样需要引用。控制用例 uncited_other_person 与 parenthetical_leak 是预写审查反例，不能取代此真实输出失败。",
+      "evidence": [
+        {
+          "source": "person",
+          "pointer": "/reports/0/seeds"
+        },
+        {
+          "source": "person",
+          "pointer": "/reports/0/cases/2/replies"
+        },
+        {
+          "source": "controls",
+          "pointer": "/reports/0/probes/2"
+        },
+        {
+          "source": "controls",
+          "pointer": "/reports/0/probes/3"
+        }
+      ]
+    },
+    {
+      "id": "atomic-vs-external",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "既有 atomic-v4 预写探针在候选结构上区分匹配的新记忆/目标、外部发送、未写记忆与虚构目标完成。独立结构比较支持该区别；但这些候选未实际提交，报告不含一次真实原子提交与所有外部负例的独立事务证据，不能把审查 supported 当作实际保存/发送成功。工程原子回滚测试属于主线另有结果，本基线不代计。",
+      "evidence": [
+        {
+          "source": "controls",
+          "pointer": "/reports/0/probes/4"
+        },
+        {
+          "source": "controls",
+          "pointer": "/reports/0/probes/5"
+        },
+        {
+          "source": "controls",
+          "pointer": "/reports/0/probes/6"
+        },
+        {
+          "source": "controls",
+          "pointer": "/reports/0/probes/7"
+        }
+      ]
+    },
+    {
+      "id": "accounting",
+      "outcome": "unverified",
+      "category": "unverified",
+      "comparison": "lifecycle 最后累计快照11行77,209 token；不能把四阶段快照相加。旧失败报告未保存最终恢复完整性证明，故仅确认已观察快照，不补称最终账本完整。atomic-v3 恢复7行21,746；atomic-v1 无reports与账本，费用未知，不计零。新驱动将成功和失败都采集有ID/count的最终账本，待一次固定版本真实联合运行验证。",
+      "evidence": [
+        {
+          "source": "lifecycle",
+          "pointer": "/reports/3/usage"
+        },
+        {
+          "source": "protocol",
+          "pointer": "/failure_accounting"
+        },
+        {
+          "source": "missing-ledger",
+          "pointer": ""
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Historical reports do not bind all code/config/binaries to a full build checkpoint; do not infer equivalence to current runtime.",
+    "All examples use synthetic inputs and real provider, controlled candidates are prewritten and never committed.",
+    "Four lifecycle phases are not M5 60x3 behavior acceptance, growth, deletion or fourteen-day observation.",
+    "Independent comparisons are explicit model-assisted review, not a human certification or statistical reliability estimate.",
+    "Fees are token ledger observations; monetary prices and missing final evidence remain unknown."
+  ]
+}

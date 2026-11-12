@@ -1,0 +1,3 @@
+# Optional reproducible verification of published model artifacts; not runtime dependencies.
+tokenizers==0.22.2
+jinja2==3.1.6

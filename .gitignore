@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+/target/
+/web/node_modules/
+/web/dist/
+/data/
+.env
+.env.*
+*.env
+*.log
+/evals/results/
+
+/tmp/
+/work/

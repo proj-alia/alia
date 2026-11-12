@@ -1,0 +1,4 @@
+export type MemoryTotals={total:number;active:number;disputed:number;superseded:number;stale:number};
+export type GoalTotals={total:number;proposed:number;active:number;waiting:number;completed:number;abandoned:number};
+export type RunTotals={total:number;queued:number;running:number;committed:number;failed:number;cancelled:number;stale:number};
+export type OverviewSnapshot={individual_id:string;state_version:number;privacy_epoch:number;observed_at:string;scope:'full_visible_metadata';totals:{memories:MemoryTotals;goals:GoalTotals;runs:RunTotals};trend:{timezone:'UTC';group_by:'created_at';days:{date:string;partial:boolean;created:number;failed:number;foreground:number;background:number}[]};recent_failed_runs:{id:string;created_at:string;finished_at:string|null;mode:'foreground'|'background';error_code:string|null}[]};

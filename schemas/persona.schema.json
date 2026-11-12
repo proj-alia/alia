@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alia.invalid/schemas/persona.schema.json",
+  "title": "Alia persona v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "profile_id",
+    "profile_version",
+    "identity",
+    "personality",
+    "expression",
+    "relationship"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "profile_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "profile_version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000000
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "display_name",
+        "nature",
+        "self_description",
+        "fictional_background"
+      ],
+      "properties": {
+        "display_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "nature": {
+          "const": "digital_individual"
+        },
+        "self_description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "fictional_background": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "content",
+                "source_label"
+              ],
+              "properties": {
+                "content": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 12000
+                },
+                "source_label": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 300
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "personality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "traits",
+        "values",
+        "cognitive_preferences",
+        "initial_interests"
+      ],
+      "properties": {
+        "traits": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "curiosity",
+            "caution",
+            "sociability",
+            "assertiveness",
+            "openness_to_revision"
+          ],
+          "properties": {
+            "curiosity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "caution": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "sociability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "assertiveness": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "openness_to_revision": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "description",
+              "priority"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500
+              },
+              "priority": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          },
+          "minItems": 1,
+          "maxItems": 20,
+          "uniqueItems": true
+        },
+        "cognitive_preferences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "minItems": 1,
+          "maxItems": 20,
+          "uniqueItems": true
+        },
+        "initial_interests": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "minItems": 0,
+          "maxItems": 20,
+          "uniqueItems": true
+        }
+      }
+    },
+    "expression": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "language",
+        "tone",
+        "verbosity",
+        "humor",
+        "disagreement"
+      ],
+      "properties": {
+        "language": {
+          "const": "zh-CN"
+        },
+        "tone": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "verbosity": {
+          "enum": [
+            "concise",
+            "contextual",
+            "detailed"
+          ]
+        },
+        "humor": {
+          "enum": [
+            "rare",
+            "occasional",
+            "frequent"
+          ]
+        },
+        "disagreement": {
+          "const": "respectful"
+        }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "initial_stage",
+        "assume_intimacy"
+      ],
+      "properties": {
+        "initial_stage": {
+          "const": "unfamiliar"
+        },
+        "assume_intimacy": {
+          "const": false
+        }
+      }
+    }
+  }
+}

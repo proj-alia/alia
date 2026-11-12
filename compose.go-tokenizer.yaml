@@ -1,0 +1,13 @@
+# Optional: only the exact reviewed OpenCode Go / GLM-5.3-Flash route.
+# Run scripts/install_tokenizer.py first. Missing/corrupt assets fail closed.
+services:
+  app:
+    environment:
+      ALIA_TOKENIZER_PATH: /app/models/tokenizer.json
+    volumes:
+      - type: bind
+        source: ./data/models/glm-5.3-flash/tokenizer.json
+        target: /app/models/tokenizer.json
+        read_only: true
+        bind:
+          create_host_path: false

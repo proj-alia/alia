@@ -1,0 +1,3083 @@
+{
+  "version": "alia-eval-retrieval-materials/1",
+  "split": "supplemental_holdout",
+  "data_mode": "synthetic_materials",
+  "actual_retrieval_executed": false,
+  "logical_id_note": "These UUIDs are fixture label identities, not observed DB event IDs. A qualified collector must map exact source text to actual event IDs/receipts.",
+  "source_kind_note": "All source rows are explicit synthetic owner reports, including quoted documents/summaries; quotes are not personal experience or external truth certificates.",
+  "events": [
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002711",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：林舟说，一般做事偏好是先读资料再试作。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 1,
+      "time_label": "合成时间序列1-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "3bf5c6f2d87eb852bef41c63b7d9b6b72aa642b9a0de4c1a03a64d9e142be5a1"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002712",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：林舟的银杏书签项目用于读书笔记，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 2,
+      "time_label": "合成时间序列1-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "bbebeff69e3107b03867b1ffbf11011249d230e4ed82c78a514194b7d316b5ce"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002713",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:银杏书签-演示这次小型演示先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:银杏书签-演示",
+      "sequence": 3,
+      "time_label": "合成时间序列1-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "fc0269411bd43e5f5ddedf68582419811f1a7b9169b1717f1d310c6b874b9ccb"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002714",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：林舟现在的一般偏好改为先做小验证再补研究；原先先读资料再试作保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 4,
+      "time_label": "合成时间序列1-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002711"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "066b6919bb994fbb14401df278a50c5f413cfaf9365eaa6be47b1519523c830c"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002715",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：林周明确不是林舟，其项目是纸鹤清单，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 5,
+      "time_label": "合成时间序列1-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "2db630047ce947fa4be68a0d99ce07ac4179895d4bc9f90adb3457c87d9718d4"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002716",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于银杏书签，合成用户引用的外部说明写道：“同目录替换仅改善样本可见性，未做断电试验。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 6,
+      "time_label": "合成时间序列1-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "ccdb0bb2e301ffa77e9fbc685036c87213bfdcc4b98e1adecb1fcd5199425003"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002717",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：银杏书签需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 7,
+      "time_label": "合成时间序列1-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "70bb6117f0414bfda8b9ed3ab99ce79dc881d63943d8c1ab54475f8170a94cde"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002718",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：银杏书签的演示原订三月十二日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 8,
+      "time_label": "合成时间序列1-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "f45d5b478e328f85ee3da1a1395875860f538a640c24296025e089fc98a9327f"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002719",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：许清负责纸鹤清单，不是银杏书签的负责人，也不与林舟合并。",
+      "scope": "general",
+      "sequence": 9,
+      "time_label": "合成时间序列1-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "5147a30a18d6283c270787e82c88a5bd22cc50c6cf56cff2d5972dcd8c15a81c"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000271a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：银杏书签的演示由三月十二日改到三月十九日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 10,
+      "time_label": "合成时间序列1-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002718"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "f0752541c36cd693c21b0623e80c45bde91e9f97af73dccd74950b4803801bc0"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002725",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：周予说，一般做事偏好是先把路线列全再出发。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 11,
+      "time_label": "合成时间序列2-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "945b5c19302433c9e3719a55ffdd65185f25da7e8228a943a4fd39ee3cd94590"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002726",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：周予的青禾地图项目用于步道记录，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 12,
+      "time_label": "合成时间序列2-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "9c0aa19fbc8f675baf96e123abb46aa038a2b98dc3141a668ded847b00485768"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002727",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:青禾地图-演示这次周末试走先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:青禾地图-演示",
+      "sequence": 13,
+      "time_label": "合成时间序列2-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "4250b604e321eb01236d206b7f9d2f5dd1d09fcc8de9f0f22a3dd6a1903adb42"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002728",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：周予现在的一般偏好改为先核对一段开放路线；原先先把路线列全再出发保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 14,
+      "time_label": "合成时间序列2-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002725"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "ce4c6e6939161d0da412004201d15fd137fd60825c4920f56d838ad435d5e108"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002729",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：周宇明确不是周予，其项目是雨滴相册，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 15,
+      "time_label": "合成时间序列2-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "d9e1b6850462fe05e96bfb8840e91d6e8a46790f4f523885cc0571e69eaec0a2"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000272a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于青禾地图，合成用户引用的外部说明写道：“地图标记只是记录，不代表道路此刻开放。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 16,
+      "time_label": "合成时间序列2-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "a461806368a675f08d5395da4e498aee692fdda4864aea43e281aee9ea306a0e"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000272b",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：青禾地图需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 17,
+      "time_label": "合成时间序列2-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "3839e43f66fcc0a7236fc5fb300716a4b0835a361a897a78d9b854b2716f152d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000272c",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：青禾地图的演示原订四月二日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 18,
+      "time_label": "合成时间序列2-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "1d884916fe2625f22611a2e5502f86ef4526cd92d3f1a9a81b8b93615e0b4011"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000272d",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：陈夏负责雨滴相册，不是青禾地图的负责人，也不与周予合并。",
+      "scope": "general",
+      "sequence": 19,
+      "time_label": "合成时间序列2-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "4d9e10db368755e5d09c5dc7e306fccfb1e958b27fca5c5cc9673a7fe7c64bc2"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000272e",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：青禾地图的演示由四月二日改到四月九日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 20,
+      "time_label": "合成时间序列2-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-00000000272c"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "512ec646497014e84091586cd616d3abc567c50a3cd7bc465f4b9b181f329281"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002739",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：许安说，一般做事偏好是先记词再练句。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 21,
+      "time_label": "合成时间序列3-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "b3401702b855c7cccc490b3e418d9c21ea360f79b10853604d9fa51513e1a45d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000273a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：许安的海盐词卡项目用于语言学习，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 22,
+      "time_label": "合成时间序列3-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "3aac7ad3ace4ef9dd3e5caff285e815f6a9c9c68961c7846967d554c6044bfe6"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000273b",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:海盐词卡-演示这次课堂演示先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:海盐词卡-演示",
+      "sequence": 23,
+      "time_label": "合成时间序列3-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "cb6a77ad238c00ff5ecb4219c2141bcf3c054488b5ee51c0407a32cfb9ccf8d0"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000273c",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：许安现在的一般偏好改为先用短句查出薄弱词；原先先记词再练句保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 24,
+      "time_label": "合成时间序列3-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002739"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "be7231b658ff041b5fd941b1da0aae731808e2eb4771f0a7f6b38d0b5c10c9ba"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000273d",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：徐安明确不是许安，其项目是晨光画板，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 25,
+      "time_label": "合成时间序列3-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "7c6d3c1392577732c76f3609df7a4e4cd5601b5ec23f093899152943c553619d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000273e",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于海盐词卡，合成用户引用的外部说明写道：“词频来自给定样本，不证明所有场景频率。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 26,
+      "time_label": "合成时间序列3-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "301b7a446c09dc759b91506a3711e3359a50eb75eb49915f5c4d020854f95a5f"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000273f",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：海盐词卡需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 27,
+      "time_label": "合成时间序列3-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "027d5348e7d8642a960ad4e3c01610991ffb4a184a26e0c88ed343074aee6e98"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002740",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：海盐词卡的演示原订五月六日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 28,
+      "time_label": "合成时间序列3-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "9ed52a288371f0dbe26796695bc65f4573a7f0a07405ec3aa39ef090b80d7b62"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002741",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：唐禾负责晨光画板，不是海盐词卡的负责人，也不与许安合并。",
+      "scope": "general",
+      "sequence": 29,
+      "time_label": "合成时间序列3-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "be2395fcde8ed62da77b82103557cd5a0a62d3d321682414d66dec3b7c824555"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002742",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：海盐词卡的演示由五月六日改到五月十三日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 30,
+      "time_label": "合成时间序列3-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002740"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "57c12029b8a3b0973f825bce8cd5fb93bdb143d6f10ca705d3ed352a59bb01df"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000274d",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：沈青说，一般做事偏好是先盘点再采购。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 31,
+      "time_label": "合成时间序列4-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "905b16d7c20c5d226f85a72f321c7f45cc6bfea31393e36d2bbd9d35f192d38f"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000274e",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：沈青的琥珀台账项目用于手工材料，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 32,
+      "time_label": "合成时间序列4-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "a41b90538ebcf8e01b9e1c7dd134868646b8392d6706e525bc364780645b3f43"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000274f",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:琥珀台账-演示这次临时展台先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:琥珀台账-演示",
+      "sequence": 33,
+      "time_label": "合成时间序列4-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "89dbd12cd8e8a4113edab1ee9562b16f5238b85db11e021fe83db2cd031f22d5"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002750",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：沈青现在的一般偏好改为先核对缺口再少量补货；原先先盘点再采购保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 34,
+      "time_label": "合成时间序列4-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-00000000274d"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "5c156df11fc4b783d55f4f226defe9cc83840e2187588a42a43d1ee8f33eb74e"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002751",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：沈清明确不是沈青，其项目是远山行程，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 35,
+      "time_label": "合成时间序列4-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "d20a9525cc8557fa6f944d93e75a6a2261258c3869ef6489ecb191e58d97c710"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002752",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于琥珀台账，合成用户引用的外部说明写道：“账面数量是合成登记，未做实体盘点。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 36,
+      "time_label": "合成时间序列4-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "c991297b9353328e5713355df987cfd0d06743ac7b298156b597905b68972ce8"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002753",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：琥珀台账需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 37,
+      "time_label": "合成时间序列4-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "0bdeaaae237cb8c7f3be12e4dccaabf925ba083fe9d40d56258670fb2cd02329"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002754",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：琥珀台账的演示原订六月三日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 38,
+      "time_label": "合成时间序列4-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "5eb1df5a63bec0481f7c935dc5f08eb100be87254b1e994cdda1f9edeeea6dab"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002755",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：叶宁负责远山行程，不是琥珀台账的负责人，也不与沈青合并。",
+      "scope": "general",
+      "sequence": 39,
+      "time_label": "合成时间序列4-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "bc710debe8c77af726bec2b5ebf9756ef8627bc43a8ef07a9ec7ea6cec7bd9a1"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002756",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：琥珀台账的演示由六月三日改到六月十日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 40,
+      "time_label": "合成时间序列4-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002754"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "862e9cab38e3da0a5acf76d62355c0e3d5169139c02e218088cae521522d4bcd"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002761",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：陆遥说，一般做事偏好是先定全季活动再招募。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 41,
+      "time_label": "合成时间序列5-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "8ff7328bd30c1ce9d400744d6afcf7687314a3808e80c6648794a09c33434c59"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002762",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：陆遥的蒲公英计划项目用于社区阅读，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 42,
+      "time_label": "合成时间序列5-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "6f0c0c51ac82bcf6fc3b4918f261528c7c7caf556f1ebf9c0a1011bd8eaef4c4"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002763",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:蒲公英计划-演示这次开放日先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:蒲公英计划-演示",
+      "sequence": 43,
+      "time_label": "合成时间序列5-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "0244751db4df8dffe30963d03c85a5d2e1469ebd6e72999f6123723fed21268a"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002764",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：陆遥现在的一般偏好改为先试办一次小活动；原先先定全季活动再招募保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 44,
+      "time_label": "合成时间序列5-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002761"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "dbd2c4f583e4bac45f7d43a6f14dcb77a7627f1443d27b44a7db95fcd45fab14"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002765",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：路遥明确不是陆遥，其项目是星河问答，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 45,
+      "time_label": "合成时间序列5-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "fcf4adfa79a39256bc05aba7813ab1e16a510bbad5471d86a2a27bc711579e46"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002766",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于蒲公英计划，合成用户引用的外部说明写道：“报名数与实际到场不同，未核实出席。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 46,
+      "time_label": "合成时间序列5-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "f741ef667a0de2cc197c110771a302db7b52076c1a9125b807c373f5894c2f98"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002767",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：蒲公英计划需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 47,
+      "time_label": "合成时间序列5-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "d7b2bd757a3d5311ca49aef8682983514fd10e847bbece663524d97805602f06"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002768",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：蒲公英计划的演示原订七月八日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 48,
+      "time_label": "合成时间序列5-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "59c1cbff36cfbd27556bc5ea39cd5cec5a11aab3a5507c4bbadad79b12fe4dea"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002769",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：江洛负责星河问答，不是蒲公英计划的负责人，也不与陆遥合并。",
+      "scope": "general",
+      "sequence": 49,
+      "time_label": "合成时间序列5-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "206cc9dad39373a2943adf36ac712165a83d72c93544166f5bc09581f1bd8c45"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000276a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：蒲公英计划的演示由七月八日改到七月十五日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 50,
+      "time_label": "合成时间序列5-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002768"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "936542b7e51aa9df5a003ecd80279c679e655b5efdce3ff0d620d8b56d4726e8"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002775",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：陈澄说，一般做事偏好是先细分全天时段。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 51,
+      "time_label": "合成时间序列6-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "16ef0725c3d7688765def772fda90624ff27c475075ca73e46c89981ee4df928"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002776",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：陈澄的松针计时项目用于专注记录，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 52,
+      "time_label": "合成时间序列6-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "48813266761d039df323c01879893822072ad1c71aa39b1cfe27bfc6caa1e01b"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002777",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:松针计时-演示这次一次短会先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:松针计时-演示",
+      "sequence": 53,
+      "time_label": "合成时间序列6-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "18775bfa0e04bb2b7356cd69f048a9dcb0c34c1a38942f7d31994204e85f0d78"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002778",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：陈澄现在的一般偏好改为先记录一段再调整安排；原先先细分全天时段保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 54,
+      "time_label": "合成时间序列6-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002775"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "10a0f94c02be261c9d1ccad64df736f6ae947a4cf079cb1dfd21a9a0ccc5a773"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002779",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：陈橙明确不是陈澄，其项目是月湾样本，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 55,
+      "time_label": "合成时间序列6-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "7eb164651742e5abfcb566ba9b7258687a0b45e9b725bdc4c3d981d2897d3bf6"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000277a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于松针计时，合成用户引用的外部说明写道：“计时记录不能证明注意力或健康状态。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 56,
+      "time_label": "合成时间序列6-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "e3c8845e5c1e6a1ae87749c5b01209a3c9c7ce0f0783158dad1812527a7e111f"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000277b",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：松针计时需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 57,
+      "time_label": "合成时间序列6-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "6443ae124e052c0d9caa69fc02bbf387a59b829b555a9b40c3bafe799075563a"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000277c",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：松针计时的演示原订八月四日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 58,
+      "time_label": "合成时间序列6-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "22d0abff57d7ec290ec4a991135a8876e991ad1d4dcdb939fc03f62ab19d7712"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000277d",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：白乔负责月湾样本，不是松针计时的负责人，也不与陈澄合并。",
+      "scope": "general",
+      "sequence": 59,
+      "time_label": "合成时间序列6-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "a22733d957d475b90705c7eeecc3715ae87499f73380c52556fdb36d1c6290da"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000277e",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：松针计时的演示由八月四日改到八月十一日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 60,
+      "time_label": "合成时间序列6-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-00000000277c"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "1a85a42193f2a0d4cb0ec08bd4d159a3a29b7eaf7266a8b31f3665e0e005e285"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002789",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：唐梨说，一般做事偏好是先按作者整理。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 61,
+      "time_label": "合成时间序列7-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "f64c4ba73351a4db8e0aaa690d435fd2ed639b0f9034d8397c9a46d046c20e9b"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000278a",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：唐梨的白露索引项目用于文献目录，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 62,
+      "time_label": "合成时间序列7-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "a62c5f052c3709c680f7d42714e62f5dbd42f8133b638f2807b48dbce331dbaf"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000278b",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:白露索引-演示这次小组讨论先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:白露索引-演示",
+      "sequence": 63,
+      "time_label": "合成时间序列7-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "0101f093411272577f5718e7c306492816821a693473e0356c40d8712f46475e"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000278c",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：唐梨现在的一般偏好改为先按待解问题建立索引；原先先按作者整理保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 64,
+      "time_label": "合成时间序列7-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002789"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "33c659bed92944f26d7e3f5a66dc03bd0b143411066c8d7b89393c243e98f4fb"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000278d",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：唐黎明确不是唐梨，其项目是石桥日历，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 65,
+      "time_label": "合成时间序列7-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "4a4bf0652edeabca1ed3a82482e824cc1ba37f2c1f565c96c8a19fc40f6c0dcb"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000278e",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于白露索引，合成用户引用的外部说明写道：“摘要是作者陈述的概括，不是独立验证。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 66,
+      "time_label": "合成时间序列7-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "20902dfd7be7e0342b975e068175fbb8854180c4c38452c8f98b2b4b97a77a46"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000278f",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：白露索引需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 67,
+      "time_label": "合成时间序列7-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "d37eda2582ea184d10bd7c03439d52f9e0993b2e08b6fd3f82f6a5bc8e980c38"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002790",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：白露索引的演示原订九月一日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 68,
+      "time_label": "合成时间序列7-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "0adf3a4722ded9ec0ed12c353d4157dbb80ddd864ac907a150e336be9f6f8a88"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002791",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：顾南负责石桥日历，不是白露索引的负责人，也不与唐梨合并。",
+      "scope": "general",
+      "sequence": 69,
+      "time_label": "合成时间序列7-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "ef23a63888e6e2d7ce5702c9cf4af029e279232d71ec9315b88607283b21321b"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-000000002792",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：白露索引的演示由九月一日改到九月八日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 70,
+      "time_label": "合成时间序列7-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-000000002790"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "939801c7de40552a6e0468dac82789eb933ea6df58aa8e197ad2c37b4fcd510d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000279d",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：顾言说，一般做事偏好是先统一全部分类。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 71,
+      "time_label": "合成时间序列8-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "d98197c10d910d6fac752d9466d1463e36cbc53769e1e40493ccf11ec401c9f1"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000279e",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：顾言的蓝鲸账本项目用于家庭支出，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 72,
+      "time_label": "合成时间序列8-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "09393c3f58ac9c9915abacd5af12320d3f5d17f390f6cdc2f142dac5dd6aaf5a"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-00000000279f",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:蓝鲸账本-演示这次简版预览先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:蓝鲸账本-演示",
+      "sequence": 73,
+      "time_label": "合成时间序列8-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "6359ef14d8df1a0feee0571134e1db9d8a506d6d0ace3a4be311d756f4f0f879"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027a0",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：顾言现在的一般偏好改为先核对一周样本分类；原先先统一全部分类保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 74,
+      "time_label": "合成时间序列8-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-00000000279d"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "2a92c9b725a069f4b234d864904f8757285b1b0aa6daed423e29e01626ad2d6b"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027a1",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：顾研明确不是顾言，其项目是竹影菜谱，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 75,
+      "time_label": "合成时间序列8-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "1e4f8d1d81196f362515088a6885e7149351054a624d3343aa7902cfb124d2e0"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027a2",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于蓝鲸账本，合成用户引用的外部说明写道：“示例金额是合成数，不是实际财务建议。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 76,
+      "time_label": "合成时间序列8-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "ba80ecd969155016f0f80fc701f8e76e5d13fde71521c9c9ba17eb5bec023dc0"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027a3",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：蓝鲸账本需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 77,
+      "time_label": "合成时间序列8-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "e0e00f855c1e89734291f6c4fd9d0d37fd9eba2b01e39cd769ad8a0ad0a24a98"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027a4",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：蓝鲸账本的演示原订十月五日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 78,
+      "time_label": "合成时间序列8-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "7cf7ce26061608b1c32d73f0e50193e8ef475b1c9174abd99f4749954c8a996d"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027a5",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：苏棠负责竹影菜谱，不是蓝鲸账本的负责人，也不与顾言合并。",
+      "scope": "general",
+      "sequence": 79,
+      "time_label": "合成时间序列8-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "a8765c051965bcd00dde171768f6c2883385891d6a21a00d17d76c58b657e861"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027a6",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：蓝鲸账本的演示由十月五日改到十月十二日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 80,
+      "time_label": "合成时间序列8-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-0000000027a4"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "aefc550ce102fcf3240435914ac77f05a53b93f0b22886a956e1ae16a9b3a506"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b1",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：叶川说，一般做事偏好是先写完整养护表。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 81,
+      "time_label": "合成时间序列9-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "e56802a921b6b4b52d897e316ac18a9d8e6bc79375c68c9e74b33efc5056d996"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b2",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：叶川的晨雾温室项目用于植物观察，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 82,
+      "time_label": "合成时间序列9-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "e45ca4c5e33406d02fa3e6a3556ddf21f9227fe9c9441c95fcee1e39f695ee19"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b3",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:晨雾温室-演示这次访客讲解先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:晨雾温室-演示",
+      "sequence": 83,
+      "time_label": "合成时间序列9-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "758a7b257a748f1f6f7cd89d05a0a1ee39c4461b65063449aaafed8d8de8fa6f"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b4",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：叶川现在的一般偏好改为先观察当前一盆再修订；原先先写完整养护表保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 84,
+      "time_label": "合成时间序列9-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-0000000027b1"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "e2111adc99f30f67ee607df49b1c1c8d7fd492bdd0c44e995237356e660328e2"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b5",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：叶穿明确不是叶川，其项目是流萤歌单，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 85,
+      "time_label": "合成时间序列9-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "0aa5cc108b5f938ec275e9d92925f9ebc7d0cd41f8ef27b137e0a52ffd06d4af"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b6",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于晨雾温室，合成用户引用的外部说明写道：“一次观察不能推出所有植物的养护规律。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 86,
+      "time_label": "合成时间序列9-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "8dbdbd6f1ae9583ff37a92a1783ff78e779b43266ed6b766cfa265a1cf528c14"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b7",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：晨雾温室需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 87,
+      "time_label": "合成时间序列9-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "d290dd50b16b7a92b4659a84097a8500d4e313a53edae906078a17c49675d379"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b8",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：晨雾温室的演示原订十一月三日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 88,
+      "time_label": "合成时间序列9-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "35cf411b3e16516335aa321c8ea4af62c6f511e1670bb51d22063960a20d69c5"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027b9",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：温弦负责流萤歌单，不是晨雾温室的负责人，也不与叶川合并。",
+      "scope": "general",
+      "sequence": 89,
+      "time_label": "合成时间序列9-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "475d313aae386a7d5ee013aeb7f1ca2416fe3a8f5b815c038dc839b12af2f57b"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027ba",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：晨雾温室的演示由十一月三日改到十一月十日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 90,
+      "time_label": "合成时间序列9-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-0000000027b8"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "071a38fee3360b5fe110cf485fce44154c75f29b39553e98014f64f2cf2de3e2"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027c5",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：江禾说，一般做事偏好是先按颜色统一命名。这是较早的陈述，不抹去历史。",
+      "scope": "general",
+      "sequence": 91,
+      "time_label": "合成时间序列10-1",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "6691dc5b6807e87cb09bcf5a43fc1bafdcee588affb9013d0a93b200984cb9e4"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027c6",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：江禾的云帆画册项目用于插图归档，项目名和用途都按这次陈述保留。",
+      "scope": "general",
+      "sequence": 92,
+      "time_label": "合成时间序列10-2",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "cd9e4899211d9899b7a7fcf6552c6f7cce8678b15f8d01e89f67e068c4e268eb"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027c7",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成记录：仅task:云帆画册-演示这次展览预排先出最简原型；这是局部例外，不永久改写一般偏好。",
+      "scope": "task:云帆画册-演示",
+      "sequence": 93,
+      "time_label": "合成时间序列10-3",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "9eda5768a874822e0a504a9a7a6e9d69232b14313961d0a6079746f32abcfe9c"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027c8",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成后续更正：江禾现在的一般偏好改为先按用途试编一批；原先先按颜色统一命名保留为旧陈述，项目用途没有因此改变。",
+      "scope": "general",
+      "sequence": 94,
+      "time_label": "合成时间序列10-4",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-0000000027c5"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "2b82980c86e29b0582e97d81318d9b88f68f54f4a8864681475bf81f4c27e1f8"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027c9",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成另一人记录：江河明确不是江禾，其项目是麦浪纪要，不要因同音合并身份。",
+      "scope": "general",
+      "sequence": 95,
+      "time_label": "合成时间序列10-5",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "ffa341789f7afca173f8f700ebe01a56c74a0136fc4a30ddca0f5e09957b74fc"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027ca",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "关于云帆画册，合成用户引用的外部说明写道：“归档标签是当前解释，不代表作品唯一含义。”这是引用，不是Alia与用户共同做过的实验或经历。",
+      "scope": "general",
+      "sequence": 96,
+      "time_label": "合成时间序列10-6",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "quoted_document",
+      "text_sha256": "5af7b737ac897117feb7ef192a299b1c54ebe91f3600d9f7619b166f5f2426cc"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027cb",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成用户报告的一条待核实概括：云帆画册需要结合当前偏好安排；概括不是已证实事实，依据是两次偏好陈述。",
+      "scope": "general",
+      "sequence": 97,
+      "time_label": "合成时间序列10-7",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "reported_summary",
+      "text_sha256": "159ab5d2d7e52088b8616f0bcc4037db1ed83d4e2d7c73ac642245563f4619a3"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027cc",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成较早安排：云帆画册的演示原订十二月二日，此项后来发生变更。",
+      "scope": "general",
+      "sequence": 98,
+      "time_label": "合成时间序列10-8",
+      "interpretation_status": "superseded",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "7daf8e3845561ac8bcac2cd0f50a8baae440e063f739e4f2b41d161428934af4"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027cd",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成独立记录：方屿负责麦浪纪要，不是云帆画册的负责人，也不与江禾合并。",
+      "scope": "general",
+      "sequence": 99,
+      "time_label": "合成时间序列10-9",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "5adb9bd3138f278abc4a7636da4761a13c9a39792dcf71d866c402c516647b7f"
+    },
+    {
+      "logical_event_id": "00000000-0000-0000-0000-0000000027ce",
+      "kind": "message.received",
+      "source_kind": "reported_claim",
+      "actor": "synthetic-owner",
+      "text": "合成最新安排：云帆画册的演示由十二月二日改到十二月九日；旧安排作为历史保留。",
+      "scope": "general",
+      "sequence": 100,
+      "time_label": "合成时间序列10-10",
+      "interpretation_status": "current",
+      "supersedes_logical_event_ids": [
+        "00000000-0000-0000-0000-0000000027cc"
+      ],
+      "semantic_origin": "owner_statement",
+      "text_sha256": "c6d0da102c2c595ac1663e992873abd0e4cd43487769ef932935ec5ea5c43ea3"
+    }
+  ],
+  "queries": [
+    {
+      "id": "SUP-R-001",
+      "query": "林舟如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002714"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000002711"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-002",
+      "query": "在林舟的银杏书签这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:银杏书签-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002713",
+        "00000000-0000-0000-0000-000000002714"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-003",
+      "query": "银杏书签这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002712"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-004",
+      "query": "林舟更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002711"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-005",
+      "query": "请给出林舟一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002711",
+        "00000000-0000-0000-0000-000000002714"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-006",
+      "query": "关于银杏书签，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002716"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-007",
+      "query": "林周的记录说的是哪个项目？请注意不是同音的林舟。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002715"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-008",
+      "query": "哪条记录只是用户转述的待核实概括，涉及银杏书签的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002717"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-009",
+      "query": "银杏书签演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002718",
+        "00000000-0000-0000-0000-00000000271a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-010",
+      "query": "请查许清负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002719"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002713"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-011",
+      "query": "周予如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002728"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000002725"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-012",
+      "query": "在周予的青禾地图这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:青禾地图-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002727",
+        "00000000-0000-0000-0000-000000002728"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-013",
+      "query": "青禾地图这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002726"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-014",
+      "query": "周予更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002725"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-015",
+      "query": "请给出周予一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002725",
+        "00000000-0000-0000-0000-000000002728"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-016",
+      "query": "关于青禾地图，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000272a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-017",
+      "query": "周宇的记录说的是哪个项目？请注意不是同音的周予。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002729"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-018",
+      "query": "哪条记录只是用户转述的待核实概括，涉及青禾地图的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000272b"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-019",
+      "query": "青禾地图演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000272c",
+        "00000000-0000-0000-0000-00000000272e"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-020",
+      "query": "请查陈夏负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000272d"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002727"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-021",
+      "query": "许安如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000273c"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000002739"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-022",
+      "query": "在许安的海盐词卡这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:海盐词卡-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000273b",
+        "00000000-0000-0000-0000-00000000273c"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-023",
+      "query": "海盐词卡这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000273a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-024",
+      "query": "许安更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002739"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-025",
+      "query": "请给出许安一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002739",
+        "00000000-0000-0000-0000-00000000273c"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-026",
+      "query": "关于海盐词卡，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000273e"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-027",
+      "query": "徐安的记录说的是哪个项目？请注意不是同音的许安。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000273d"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-028",
+      "query": "哪条记录只是用户转述的待核实概括，涉及海盐词卡的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000273f"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-029",
+      "query": "海盐词卡演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002740",
+        "00000000-0000-0000-0000-000000002742"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-030",
+      "query": "请查唐禾负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002741"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000273b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-031",
+      "query": "沈青如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002750"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-00000000274d"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-032",
+      "query": "在沈青的琥珀台账这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:琥珀台账-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000274f",
+        "00000000-0000-0000-0000-000000002750"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-033",
+      "query": "琥珀台账这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000274e"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-034",
+      "query": "沈青更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000274d"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-035",
+      "query": "请给出沈青一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000274d",
+        "00000000-0000-0000-0000-000000002750"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-036",
+      "query": "关于琥珀台账，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002752"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-037",
+      "query": "沈清的记录说的是哪个项目？请注意不是同音的沈青。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002751"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-038",
+      "query": "哪条记录只是用户转述的待核实概括，涉及琥珀台账的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002753"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-039",
+      "query": "琥珀台账演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002754",
+        "00000000-0000-0000-0000-000000002756"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-040",
+      "query": "请查叶宁负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002755"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000274f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-041",
+      "query": "陆遥如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002764"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000002761"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-042",
+      "query": "在陆遥的蒲公英计划这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:蒲公英计划-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002763",
+        "00000000-0000-0000-0000-000000002764"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-043",
+      "query": "蒲公英计划这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002762"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-044",
+      "query": "陆遥更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002761"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-045",
+      "query": "请给出陆遥一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002761",
+        "00000000-0000-0000-0000-000000002764"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-046",
+      "query": "关于蒲公英计划，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002766"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-047",
+      "query": "路遥的记录说的是哪个项目？请注意不是同音的陆遥。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002765"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-048",
+      "query": "哪条记录只是用户转述的待核实概括，涉及蒲公英计划的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002767"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-049",
+      "query": "蒲公英计划演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002768",
+        "00000000-0000-0000-0000-00000000276a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-050",
+      "query": "请查江洛负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002769"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002763"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-051",
+      "query": "陈澄如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002778"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000002775"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-052",
+      "query": "在陈澄的松针计时这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:松针计时-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002777",
+        "00000000-0000-0000-0000-000000002778"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-053",
+      "query": "松针计时这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002776"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-054",
+      "query": "陈澄更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002775"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-055",
+      "query": "请给出陈澄一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002775",
+        "00000000-0000-0000-0000-000000002778"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-056",
+      "query": "关于松针计时，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000277a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-057",
+      "query": "陈橙的记录说的是哪个项目？请注意不是同音的陈澄。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002779"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-058",
+      "query": "哪条记录只是用户转述的待核实概括，涉及松针计时的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000277b"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-059",
+      "query": "松针计时演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000277c",
+        "00000000-0000-0000-0000-00000000277e"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-060",
+      "query": "请查白乔负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000277d"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-000000002777"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-061",
+      "query": "唐梨如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000278c"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-000000002789"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-062",
+      "query": "在唐梨的白露索引这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:白露索引-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000278b",
+        "00000000-0000-0000-0000-00000000278c"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-063",
+      "query": "白露索引这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000278a"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-064",
+      "query": "唐梨更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002789"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-065",
+      "query": "请给出唐梨一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002789",
+        "00000000-0000-0000-0000-00000000278c"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-066",
+      "query": "关于白露索引，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000278e"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-067",
+      "query": "唐黎的记录说的是哪个项目？请注意不是同音的唐梨。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000278d"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-068",
+      "query": "哪条记录只是用户转述的待核实概括，涉及白露索引的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000278f"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-069",
+      "query": "白露索引演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002790",
+        "00000000-0000-0000-0000-000000002792"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-070",
+      "query": "请查顾南负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-000000002791"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000278b"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-071",
+      "query": "顾言如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027a0"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-00000000279d"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-072",
+      "query": "在顾言的蓝鲸账本这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:蓝鲸账本-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000279f",
+        "00000000-0000-0000-0000-0000000027a0"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-073",
+      "query": "蓝鲸账本这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000279e"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-074",
+      "query": "顾言更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000279d"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-075",
+      "query": "请给出顾言一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-00000000279d",
+        "00000000-0000-0000-0000-0000000027a0"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-076",
+      "query": "关于蓝鲸账本，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027a2"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-077",
+      "query": "顾研的记录说的是哪个项目？请注意不是同音的顾言。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027a1"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-078",
+      "query": "哪条记录只是用户转述的待核实概括，涉及蓝鲸账本的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027a3"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-079",
+      "query": "蓝鲸账本演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027a4",
+        "00000000-0000-0000-0000-0000000027a6"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-080",
+      "query": "请查苏棠负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027a5"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-00000000279f"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-081",
+      "query": "叶川如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b4"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-0000000027b1"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-082",
+      "query": "在叶川的晨雾温室这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:晨雾温室-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3",
+        "00000000-0000-0000-0000-0000000027b4"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-083",
+      "query": "晨雾温室这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b2"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-084",
+      "query": "叶川更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b1"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-085",
+      "query": "请给出叶川一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b1",
+        "00000000-0000-0000-0000-0000000027b4"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-086",
+      "query": "关于晨雾温室，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b6"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-087",
+      "query": "叶穿的记录说的是哪个项目？请注意不是同音的叶川。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b5"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-088",
+      "query": "哪条记录只是用户转述的待核实概括，涉及晨雾温室的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b7"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-089",
+      "query": "晨雾温室演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b8",
+        "00000000-0000-0000-0000-0000000027ba"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-090",
+      "query": "请查温弦负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027b9"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027b3"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-091",
+      "query": "江禾如今通常怎样开始一项工作？请找最新的一般偏好。",
+      "scope": "general",
+      "category": "current_preference",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027c8"
+      ],
+      "historical_only_event_ids": [
+        "00000000-0000-0000-0000-0000000027c5"
+      ],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-092",
+      "query": "在江禾的云帆画册这次演示中应先做什么，它与一般偏好有什么区别？",
+      "scope": "task:云帆画册-演示",
+      "category": "local_vs_general",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7",
+        "00000000-0000-0000-0000-0000000027c8"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-093",
+      "query": "云帆画册这个名字对应什么用途，是谁提到的？",
+      "scope": "general",
+      "category": "name_and_paraphrase",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027c6"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-094",
+      "query": "江禾更正之前那次较早的一般做事偏好是什么？",
+      "scope": "general",
+      "category": "historical_time",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027c5"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-095",
+      "query": "请给出江禾一般偏好修订前后的两次原始陈述。",
+      "scope": "general",
+      "category": "revision_pair",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027c5",
+        "00000000-0000-0000-0000-0000000027c8"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-096",
+      "query": "关于云帆画册，用户引用的说明有哪些适用边界？不要当作共同亲历。",
+      "scope": "general",
+      "category": "source_classification",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027ca"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-097",
+      "query": "江河的记录说的是哪个项目？请注意不是同音的江禾。",
+      "scope": "general",
+      "category": "chinese_homophone",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027c9"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-098",
+      "query": "哪条记录只是用户转述的待核实概括，涉及云帆画册的安排？",
+      "scope": "general",
+      "category": "inference_vs_fact",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027cb"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-099",
+      "query": "云帆画册演示的日期改动前后各是什么，当前应采用哪次安排？",
+      "scope": "general",
+      "category": "temporal_change",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027cc",
+        "00000000-0000-0000-0000-0000000027ce"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    },
+    {
+      "id": "SUP-R-100",
+      "query": "请查方屿负责的项目，排除名字相近或同一批记录造成的混淆。",
+      "scope": "general",
+      "category": "distractor_disambiguation",
+      "relevant_event_ids": [
+        "00000000-0000-0000-0000-0000000027cd"
+      ],
+      "historical_only_event_ids": [],
+      "out_of_scope_event_ids": [
+        "00000000-0000-0000-0000-0000000027c7"
+      ],
+      "forbidden_event_ids": [],
+      "label_reason": "相关ID逐一指向本题所求原始陈述；历史/局部记录不得冒充当前一般结论。",
+      "gold_review_status": "authored_labels_not_independent_runtime_review"
+    }
+  ],
+  "purpose": "Additional authored stress material, never replaces original frozen 100-query benchmark."
+}

@@ -1,0 +1,18 @@
+{
+  "format": "alia-accepted-slice/1",
+  "id": "p05-02",
+  "scope": "locally verified sources, stable N3 derived test snapshot; not full live integration",
+  "handoff": "docs/ai/ALIA_P05_02_HANDOFF.md",
+  "handoff_sha256": "2687c305b7cce478c85691543c164cd14c8db60e592f4552a2f083897bbb0f74",
+  "sources": {
+    "src/adapters/notes_view.rs": "dc906db0f9aab4b83558694fe8f8753d4f7a4e0625874dd7516c04d16dded942",
+    "src/service/notes_view.rs": "3bc42c6978563a2d874fffc5d792241c1dfe76937d39648ef85395372f33a9a0",
+    "tests/notes_view.rs": "77914811662fe27636a39d4d888367a0881d3f9a57f42b0d2b66b15240ab59c3",
+    "web/scripts/test-notes.mjs": "6224ce2b847a0c641ba8461e9650dd3b6030d08601a3364aef39b105cdc88e05",
+    "web/src/features/Notes.tsx": "bbe23d769d7842b98ec872c5ef836462450da7fa1a36db6e4032e9a4bbaebbe8",
+    "web/src/features/Settings.tsx": "2f7d6d8a94f06dbe210c14a2e5a021bca1956d8159c1360d7b463650e2419378",
+    "web/src/features/notes/notes.css": "852070d9373d6f15d8b112fe1a1129cea5ccf53090e12bb03fb362a188962d9d",
+    "web/src/features/notes/types.ts": "ed9031f5be4f555fdd80bdbf1742067893d19b75371b657fa2856284f29b1e44",
+    "web/src/features/notes/useNotesRead.ts": "d818cc2efa2613fec530701d2ee8718091584c4488ffe929bce89eb930da2d2a"
+  }
+}

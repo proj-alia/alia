@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "reply": "我目前理解这是一般偏好，这次任务保留明确例外。",
+  "reply_evidence_ids": [
+    "00000000-0000-4000-8000-000000000003",
+    "00000000-0000-4000-8000-000000000004"
+  ],
+  "memory_changes": [],
+  "goal_changes": [],
+  "tool_intents": [],
+  "development": null,
+  "brief_reason": "当前明确要求只适用于这次任务，不覆盖一般偏好。",
+  "entity_changes": [],
+  "belief_changes": [
+    {
+      "statement": "本次任务先做原型，不据此撤销对方通常先研究的一般偏好。",
+      "scope": "event:00000000-0000-4000-8000-000000000004",
+      "position": "held",
+      "support_event_ids": [
+        "00000000-0000-4000-8000-000000000004"
+      ],
+      "counter_event_ids": [
+        "00000000-0000-4000-8000-000000000003"
+      ],
+      "supersedes": null,
+      "brief_basis": "当前明确要求决定本次任务，历史一般偏好保留为有范围的参考。"
+    }
+  ]
+}

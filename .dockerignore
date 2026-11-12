@@ -1,0 +1,15 @@
+.git
+.env
+.env.*
+*.env
+.venv
+target
+data
+contexts
+web/node_modules
+web/dist
+evals/results
+__pycache__
+
+tmp
+docs/design/ALIA_UIUX/prototype/screens
